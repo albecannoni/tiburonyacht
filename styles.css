@@ -12,7 +12,15 @@
     background-color: whitesmoke
     }
     
-    
+    :root {
+      /* --colore1: #00c9a6; */
+      --colore1: #00DCFF;
+      --colore2: #4E9BAE;
+      --colore3: #E5FEFF;
+      --colore4: #372b4a;
+      --text1: #E6F4F1;
+      --text2: rgba(254, 255, 249, 1);
+  }
     
     /*NAVBAR*/
     #header{
@@ -98,7 +106,7 @@
     
     /*bottoni*/
     .btnNew{
-    background-color: #ffc86d;
+    background-color: var(--colore2);
     border-radius: 8px;
     height: 1.9rem;
     margin: 25px auto;
@@ -142,7 +150,7 @@
       padding-right: 20px
       }
     
-    i{color: #81C923;
+    i{color: var(--colore1);
     }
     
     /*VIDEO*/
@@ -183,7 +191,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #E99438;
+    background-color: var(--colore1);
     border: 1px solid grey;
     overflow: hidden;
     }
@@ -192,7 +200,7 @@
     width: 100%;
     height: 20%;
     margin: 0 auto;
-    background-color: #ffc86d;
+    background-color: var(--colore2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +216,7 @@
     }
     
     .card > .cardBody > p:first-child {
-      color: white;
+      color: var(--text2);
       margin: 0 auto;
       font-size: 1.3em;
       margin-bottom: 10px;
@@ -219,7 +227,7 @@
     bottom: 0;
     height: 6vh;
     width: 100%;
-    background-color: #E99438;
+    background-color: var(--colore1);
     }
     
     /*GENERICS*/
@@ -253,22 +261,22 @@
     }
     
     .bg1{
-    background-color: #E99438;
+    background-color: var(--colore2);
     }
     .bg2{
-    background-color: #ffeace;
+    background-color: var(--colore3);
     }
     
     /*effetti*/
     .btnNew:hover  {
-    background-color: #81C923;
+    background-color: var(--colore3);
     transition: 350ms;
     padding: 7.5px ;
     
     }
     
     li:hover{
-    background-color: white;
+    background-color: var(--colore3);
     padding: 7px;
     border-radius: 4px;
     transition: 200ms;
@@ -284,7 +292,7 @@
     }
     
     .btnNew{
-    background-color: #ffc86d;
+    background-color: var(--colore2);
     border-radius: 8px;
     height: 28px;
     max-width: 200px;
