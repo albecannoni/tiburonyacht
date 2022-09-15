@@ -29,7 +29,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: var(--colore2) !important;
+    background-color: var(--colore1) !important;
     }
     #header ul{
     list-style: none;
@@ -39,7 +39,7 @@
     }
 
     #hamburger{
-      background-color: var(--colore1) !important;
+      background-color: var(--colore2) !important;
     }
     
     #logo {
