@@ -29,18 +29,17 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    background-color: var(--colore2) !important;
     }
     #header ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     list-style: none;
-    width: 50vw;
-    height: auto;
-    min-width: 200px;
-    max-width: 50vw;  
-    min-height: 40px;
-    max-height: 80px;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;   
+    }
+
+    #hamburger{
+      background-color: var(--colore1) !important;
     }
     
     #logo {
@@ -61,12 +60,12 @@
     
     a{
     text-decoration: none;
-    color: #070604;
+    color: var(--colore4);
     }
     
     .nav-link{
     width: auto;
-    text-align: center;
+    text-align: left;
     height: 2rem;
     display: flex;
     align-items: center;
