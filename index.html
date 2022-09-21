@@ -9,41 +9,23 @@
   <!--bootstrap-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
  
-  <!--FONT Roboto-->
+  <!--FONT Oswald-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
-</head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
 
 <body>
-  <!-- <header id="header" class="toTop w-100 bg1">
-    <div id="logo">
-      <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
-    </div>
-    <nav id="nav-bar" class="navbar-expand-md">
-      <ul>
-        <a href="#Premium" class="nav-link">
-          <li>Features</li>
-        </a>
-        <a href="#video" class="nav-link">
-          <li href="">how it works</li>
-        </a>
-        <a href="#pricing" class="nav-link">
-          <li href="">Pricing</li>
-        </a>
-      </ul>
-    </nav>
-  </header> -->
+  
   <nav class="navbar navbar-expand-sm bg-light" id="header">
     <div class="container-fluid">
       <div id="logo">
-        <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
+        <img id="header-img" src="assets\images\01Tavola disegno 1.png">
       </div>
       <button id="hamburger" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul>
+        <ul class="">
           <a href="#Premium" class="nav-link">
             <li>Chi siamo</li>
           </a>
@@ -69,35 +51,34 @@
 
     <!--Chi siamo-->
     <section id="callTo">
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <label><h3>Handcrafted, home-made masterpieces</h3> <input id="email" class="email" type="email" name="email" required placeholder="Enter your mail address" /></label>
+      <!-- <form action="https://www.freecodecamp.com/email-submit" id="form">
+        <label><h3>Copertisti navali, i <span class="bold">migliori.</span></h3> <input id="email" class="email" type="email" name="email" required placeholder="Enter your mail address" /></label>
         <input class="btnNew" id="submit" type="submit" value="Get started"/>
-      </form>
+      </form> -->
     </section>
 
     <!--Servizi-->
     <section id="Materials">
       <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+        <div class="icon"><i class="fa-sharp fa-3x fa-solid fa-sailboat"></i></div>
         <div id="Premium" class="features">
-          <h2>Premium Materials</h2>
-          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-            purchase. </p>
+          <span class="evidenziato"><h2>Precisione</h2></span>
+          <p>Our trombones use the shiniest brass which is sourced locally. This will increase the  of</p>
         </div>
       </div>
       <div class="grid ">
-        <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+        <div class="icon"><i class="fa-sharp fa-3x fa-solid fa-anchor"></i></div>
         <div class="features">
-          <h2>Fast Shipping</h2>
+          <span class="evidenziato"><h2>Pulizia</h2></span>
           <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns
             if
             you are not satisfied. </p>
         </div>
       </div>
       <div class="grid">
-        <div class="icon"><i class="fa fa-3x fa-battery-full"></i></div>
+        <div class="icon"><i class="fa-sharp fa-3x fa-solid fa-bolt"></i></div>
         <div class="features">
-          <h2>Quality Assurance</h2>
+          <h2>Materiali di <span class="evidenziato">qualità</span></h2>
           <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
             pitch of your instrument.</p>
         </div>
@@ -111,53 +92,7 @@
 
     <!--Galleria-->
     <section id="pricing">
-      <!-- CARD-->
-      <div class="card">
-        <div class="headingCard bg2">
-          <h4>TENOR TROMBONE</h4>
-        </div>
-        <div class="cardBody">
-          <p class="bold">$600</p>
-          <p class="">Lorem ipsum.</p>
-          <p class="">Lorem ipsum.</p>
-          <p class="">Lorem ipsum dolor.</p>
-          <p class="">Lorem ipsum.</p>
-        </div class="">
-        <div>
-          <button  class="btnNew" type="submit">SELECT</button>
-        </div>
-
-
-      </div>
-      <div class="card">
-        <div class="headingCard bg2">
-          <h4>BASS TROMBONE</h4>
-        </div>
-        <div class="cardBody">
-          <p class="bold ">$900</p>
-          <p class="">Lorem ipsum.</p>
-          <p class="">Lorem ipsum.</p>
-          <p class="">Lorem ipsum dolor.</p>
-          <p class="">Lorem ipsum.</p>
-
-        </div>
-        <div>
-          <button  class="btnNew" type="submit">SELECT</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="headingCard bg2">
-          <div class="">
-            <h4>VALVE TROMBONE</h4>
-          </div>
-        </div class="">
-        <div class="cardBody">
-          <p class="bold">$1200</p>
-          <p class="">Lorem ipsum.</p>
-          <p class="">Lorem ipsum.</p>
-          <p class="">Lorem ipsum dolor.</p>
-          <p class="">Lorem ipsum.</p>
-        </div>
+      
         <div>
           <input class="btnNew" id="" type="submit" value="Select"/>
         </div>
