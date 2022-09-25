@@ -56,6 +56,7 @@ body {
 
 #hamburger {
   background-color: var(--colore2) !important;
+  margin-right: 2.5vw;
 }
 
 #logo {
@@ -146,13 +147,18 @@ form input {
   right: 8vw;
   background-color: var(--colore2);
   border-radius: 50%;
-  border: 1px var(--colore2) solid;
+  /* border: 1px var(--colore3) solid; */
   z-index: 101;
   height:60px;
   width: 60px;
+  display: flex;
+  justify-content: center;
 }
-#telButton div i{
+
+#telButton div svg{
 color: var(--colore4);
+height: 4vh;
+
 }
 
 .email {
@@ -175,12 +181,9 @@ color: var(--colore4);
   align-items: center;
 }
 
-
-
 i {
   color: var(--colore2);
 }
-
 
 /*PARTNER*/
 #partner {
@@ -234,11 +237,12 @@ footer {
   height: 6vh;
   width: 100%;
   background-color: var(--colore1);
+  box-shadow: 0px 0px 7px 1px rgba(10, 31, 59, 0.6);
+  border: solid 1px var(--colore4);
   z-index: 101;
 }
 
 /*GENERICS*/
-
 .centraturaFlex {
   display: flex;
   justify-content: center;
@@ -251,7 +255,9 @@ footer {
   border-bottom: 4px var(--colore4) dashed;
   border-top: 4px var(--colore4) dashed;
 }
-
+.ombra{
+  box-shadow: inset 0px 0px 4px 1px var(--colore4);
+}
 .bordo{
   border: #070604 2px solid;
 }
@@ -259,7 +265,7 @@ footer {
 .evidenziato {
   font-size: larger;
   text-decoration: underline;
-}
+} 
 
 .grid {
   display: grid;
@@ -286,6 +292,13 @@ footer {
 .w-100 {
   width: 100%;
 }
+.w-80 {
+  width: 80%;
+}
+.h-80 {
+  height: 80%;
+}
+
 
 .bold {
   font-weight: 700;
@@ -315,7 +328,6 @@ li:hover {
   background-color: var(--colore2);
   border-radius: 4px;
   transition: 200ms;
-
 }
 
 /*MEDIA QUERIES*/
