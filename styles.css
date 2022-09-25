@@ -17,8 +17,10 @@ body {
 :root {
   --colore1: #00DCFF;
   --colore2: #4E9BAE;
-  --colore3: #E5FEFF;
+  --colore2: #8CAFCE;
+  --colore3: #aefcff;
   --colore4: #372b4a;
+  --colore5: #90D279;
   --text1: #E6F4F1;
   --text2: rgba(254, 255, 249, 1);
 }
@@ -138,6 +140,20 @@ form input {
   color: #070604;
   padding: 2px;
 }
+#telButton{
+  position: fixed;
+  bottom: 8vh;
+  right: 8vw;
+  background-color: var(--colore2);
+  border-radius: 50%;
+  border: 1px var(--colore2) solid;
+  z-index: 101;
+  height:60px;
+  width: 60px;
+}
+#telButton div i{
+color: var(--colore4);
+}
 
 .email {
   max-width: 200px;
@@ -162,7 +178,7 @@ form input {
 
 
 i {
-  color: var(--colore1);
+  color: var(--colore2);
 }
 
 
@@ -234,8 +250,8 @@ footer {
   width: 100%;
   border-bottom: 4px var(--colore4) dashed;
   border-top: 4px var(--colore4) dashed;
-
 }
+
 .bordo{
   border: #070604 2px solid;
 }
@@ -288,8 +304,8 @@ footer {
 }
 
 /*effetti*/
-.btnNew:hover {
-  background-color: var(--colore3);
+.btnNew:hover, #telButton:hover {
+  background-color: var(--colore1);
   transition: 350ms;
   padding: 7.5px;
 
@@ -297,7 +313,6 @@ footer {
 
 li:hover {
   background-color: var(--colore2);
-
   border-radius: 4px;
   transition: 200ms;
 
