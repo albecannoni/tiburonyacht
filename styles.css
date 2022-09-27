@@ -53,7 +53,6 @@ body {
   margin-left: 0px;
 }
 
-
 #hamburger {
   background-color: var(--colore2) !important;
   margin-right: 2.5vw;
@@ -98,13 +97,11 @@ a {
 main {
   position: absolute;
   top: 8vh;
-  /* z-index:-1; */
   height: auto;
 }
 
 main {
   position: relative;
-
 }
 
 .callTo {
@@ -129,20 +126,23 @@ form input {
 
 #focusPoint {
   max-width: 85vw;
-  min-width: 260x;
+  min-width: 260px;
+  border: RED 1px solid;
 }
 
 .icon {
-  margin: auto;
+  margin: 12px 12px;
   height: 100px;
   width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: RED 1px solid;
 }
 
-i {
+.icon div i {
   color: var(--colore2);
+  margin: 0 auto;
 }
 
 /*PARTNER*/
@@ -152,7 +152,6 @@ i {
   width: 100%;
   max-width: 700px;
   height: 40vh;
-  
 }
 
 .partnerLogo {
@@ -204,18 +203,19 @@ footer {
 
 /*CAROSELLO*/
 
-#carosello{
+#carosello {
   width: aauto !important;
   height: auto !important;
   border: #372b4a 4px solid;
   margin: 0 auto;
 }
-#carosello div img{
+
+#carosello div img {
   height: 180px !important;
   width: 180px !important;
 }
 
-/*bottoni*/
+/*BOTTONI*/
 .btnNew {
   background-color: var(--colore2);
   border-radius: 8px;
@@ -229,23 +229,23 @@ footer {
   color: #070604;
   padding: 2px;
 }
-#telButton{
+
+#telButton {
   position: fixed;
   bottom: 8vh;
   right: 8vw;
   background-color: rgb(22, 242, 22);
   border-radius: 50%;
   z-index: 101;
-  height:60px;
+  height: 60px;
   width: 60px;
   display: flex;
   justify-content: center;
 }
 
-#telButton div svg{
-color: var(--colore4);
-height: 4vh;
-
+#telButton div svg {
+  color: var(--colore4);
+  height: 4vh;
 }
 
 .email {
@@ -267,17 +267,15 @@ height: 4vh;
   border-top: 4px var(--colore4) dashed;
   padding: 20px 0;
 }
-.ombra{
+
+.ombra {
   box-shadow: inset 0px 0px 4px 1px var(--colore4);
-}
-.bordo{
-  border: #070604 2px solid;
 }
 
 .evidenziato {
   font-size: larger;
   text-decoration: underline;
-} 
+}
 
 .grid {
   display: grid;
@@ -285,50 +283,27 @@ height: 4vh;
   margin: 0 auto;
 }
 
-.start {
-  display: flex;
-  justify-content: start;
-}
-
 .marginTop {
   margin-top: 50px;
-
-}
-
-.toTop {
-  position: fixed;
-  top: 0;
-  z-index: 100;
 }
 
 .w-100 {
   width: 100%;
 }
+
 .w-80 {
   width: 80%;
 }
+
 .h-80 {
   height: 80%;
 }
-
 
 .bold {
   font-weight: 700;
 }
 
-.PT2 {
-  margin-top: 3rem
-}
-
-.bg1 {
-  background-color: var(--colore2);
-}
-
-.bg2 {
-  background-color: var(--colore3);
-}
-
-/*effetti*/
+/*EFFETTI INTERATTIVI*/
 .btnNew:hover, #telButton:hover {
   background-color: var(--colore1);
   transition: 350ms;
@@ -343,9 +318,7 @@ li:hover {
 }
 
 /*MEDIA QUERIES TABLET*/
-@media screen and (min-width: 767px) and (max-width: 1023px) {
-  
-}
+@media screen and (min-width: 767px) and (max-width: 1023px) {}
 
 
 /*MEDIA QUERIES LAPTOP*/
@@ -426,15 +399,20 @@ li:hover {
     width: 75%;
   }
 
+  .grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   #partner {
     margin-bottom: 4vh;
     padding: 1vh 0;
     width: 100%;
     max-width: inherit;
-    height: auto;    
+    height: auto;
   }
 
-  #galleria{
+  #galleria {
     height: auto;
   }
 
