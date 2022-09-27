@@ -127,49 +127,9 @@ form input {
   display: block;
 }
 
-/*bottoni*/
-.btnNew {
-  background-color: var(--colore2);
-  border-radius: 8px;
-  height: 1.9rem;
-  margin: 25px auto;
-  align-self: center;
-  display: block;
-  max-width: 200px;
-  min-width: 150px;
-  font-weight: 600;
-  color: #070604;
-  padding: 2px;
-}
-#telButton{
-  position: fixed;
-  bottom: 8vh;
-  right: 8vw;
-  background-color: var(--colore2);
-  border-radius: 50%;
-  /* border: 1px var(--colore3) solid; */
-  z-index: 101;
-  height:60px;
-  width: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-#telButton div svg{
-color: var(--colore4);
-height: 4vh;
-
-}
-
-.email {
-  max-width: 200px;
-  min-width: 150px;
-}
-
 #focusPoint {
   max-width: 85vw;
   min-width: 260x;
-
 }
 
 .icon {
@@ -242,6 +202,57 @@ footer {
   z-index: 101;
 }
 
+/*CAROSELLO*/
+
+#carosello{
+  width: aauto !important;
+  height: auto !important;
+  border: #372b4a 4px solid;
+  margin: 0 auto;
+}
+#carosello div img{
+  height: 180px !important;
+  width: 180px !important;
+}
+
+/*bottoni*/
+.btnNew {
+  background-color: var(--colore2);
+  border-radius: 8px;
+  height: 1.9rem;
+  margin: 25px auto;
+  align-self: center;
+  display: block;
+  max-width: 200px;
+  min-width: 150px;
+  font-weight: 600;
+  color: #070604;
+  padding: 2px;
+}
+#telButton{
+  position: fixed;
+  bottom: 8vh;
+  right: 8vw;
+  background-color: rgb(22, 242, 22);
+  border-radius: 50%;
+  z-index: 101;
+  height:60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+#telButton div svg{
+color: var(--colore4);
+height: 4vh;
+
+}
+
+.email {
+  max-width: 200px;
+  min-width: 150px;
+}
+
 /*GENERICS*/
 .centraturaFlex {
   display: flex;
@@ -250,10 +261,11 @@ footer {
 }
 
 .segnaposto {
-  height: 30vh;
+  height: auto;
   width: 100%;
   border-bottom: 4px var(--colore4) dashed;
   border-top: 4px var(--colore4) dashed;
+  padding: 20px 0;
 }
 .ombra{
   box-shadow: inset 0px 0px 4px 1px var(--colore4);
@@ -330,10 +342,14 @@ li:hover {
   transition: 200ms;
 }
 
-/*MEDIA QUERIES*/
-@media screen and (max-width: 778px) {}
+/*MEDIA QUERIES TABLET*/
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  
+}
 
-@media screen and (min-width: 768px) {
+
+/*MEDIA QUERIES LAPTOP*/
+@media screen and (min-width: 1024px) {
   main {
     position: relative;
     top: 150px;
@@ -359,7 +375,6 @@ li:hover {
   .menuList {
     display: flex;
     flex-direction: row;
-    /* border: red 2px solid; */
     height: auto;
     display: flex;
     flex-direction: row;
@@ -369,7 +384,6 @@ li:hover {
     font-size: 1.25rem;
     display: flex;
     flex-direction: column;
-    /* border: red 2px solid; */
     width: auto;
     height: 100%;
     font-weight: 700;
@@ -381,7 +395,6 @@ li:hover {
 
   .menuList {
     height: 70px;
-    /* border: white 2px solid; */
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -402,6 +415,27 @@ li:hover {
     display: flex;
     flex-direction: row;
     text-align: left;
+  }
+
+  #focusPoint {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3vh;
+    width: 75%;
+  }
+
+  #partner {
+    margin-bottom: 4vh;
+    padding: 1vh 0;
+    width: 100%;
+    max-width: inherit;
+    height: auto;    
+  }
+
+  #galleria{
+    height: auto;
   }
 
 }
