@@ -24,6 +24,8 @@ body {
   --colore5: #90D279;
   --text1: #E6F4F1;
   --text2: rgba(254, 255, 249, 1);
+  --gradiente: linear-gradient(to bottom, #00dcff, #4dd0f7, #6bc5ec, #7fbade, #8cafce);
+  --invertedGradient: linear-gradient(to top, #00dcff, #4dd0f7, #6bc5ec, #7fbade, #8cafce);
 }
 
 /*NAVBAR*/
@@ -33,8 +35,8 @@ body {
   display: flex;
   width: 100vw;
   grid-column-end: auto;
-  background-color: var(--colore1) !important;
-  border-bottom: 1px solid var(--colore4);
+  background-image: var(--gradiente) !important;
+  border-bottom: 1px solid var(--colore2);
   z-index: 101;
   box-shadow: 0px 0px 7px 1px rgba(10, 31, 59, 0.6);
 }
@@ -78,8 +80,8 @@ a {
 }
 
 #header ul li {
-  text-align: right;
-  margin-left: 0px;
+  text-align: left;
+  margin-left:6.5vw;
   margin-right: 0px !important;
   padding-right: 2.5vw;
   width: 100%;
@@ -126,14 +128,12 @@ form input {
 
 #focusPoint {
   max-width: 85vw;
-  min-width: 260px;
-  margin: 0 auto;  
+  min-width: 260px;  
 }
 
 .icon {
-  margin: 12px 12px;
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -141,7 +141,8 @@ form input {
   
 }
 i{
-  filter: drop-shadow( 4px 4px 4px var(--colore1));
+  filter: drop-shadow( 2px 2px 2px var(--colore2));
+  padding-right: 8px;
 }
 
 .icon div i {
@@ -200,9 +201,9 @@ footer {
   bottom: 0;
   height: 6vh;
   width: 100%;
-  background-color: var(--colore1);
+  background-image: var(--invertedGradient);
   box-shadow: 0px 0px 7px 1px rgba(10, 31, 59, 0.6);
-  border: solid 1px var(--colore4);
+  border: solid 1px var(--colore2);
   z-index: 101;
 }
 
@@ -258,7 +259,7 @@ footer {
   min-width: 150px;
 }
 
-/*GENERICS*/
+/***GENERICI****/
 
 .resetBootstrap{
 box-sizing: border-box;
@@ -272,6 +273,10 @@ padding: 0 !important;
 }
  .upperText{
 text-transform: uppercase;
+ }
+ .giustificato{
+  text-align:start;
+  
  }
 
 .segnaposto {
