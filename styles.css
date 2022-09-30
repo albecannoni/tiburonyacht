@@ -4,20 +4,12 @@
   padding: 0;
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Lato', sans-serif;
-}
-
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--colore3)
+  
 }
 
 :root {
   --colore1: #00DCFF;
-  --colore2: #4E9BAE;
+  /* --colore2: #4E9BAE; */
   --colore2: #8CAFCE;
   --colore3: #aefcff;
   --colore4: #372b4a;
@@ -26,6 +18,12 @@ body {
   --text2: rgba(254, 255, 249, 1);
   --gradiente: linear-gradient(to bottom, #00dcff, #4dd0f7, #6bc5ec, #7fbade, #8cafce);
   --invertedGradient: linear-gradient(to top, #00dcff, #4dd0f7, #6bc5ec, #7fbade, #8cafce);
+  --sfumaturaInterna: inset 0px 0px 4px 1px var(--colore4);
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;  
 }
 
 /*NAVBAR*/
@@ -106,26 +104,6 @@ main {
   height: auto;
 }
 
-main {
-  position: relative;
-}
-
-form {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-form input {
-  width: 30vw;
-  height: 1.5rem;
-  max-width: 400px;
-  margin: 25px auto;
-  align-self: center;
-  display: block;
-}
-
 #focusPoint {
   max-width: 85vw;
   min-width: 260px;  
@@ -157,7 +135,7 @@ i{
   padding: 1vh 0;
   width: 100%;
   max-width: 700px;
-  height: 40vh;
+  height: auto;
 }
 
 .partnerLogo {
@@ -189,11 +167,21 @@ i{
   align-items: start
 }
 
-.card>.cardBody>p:first-child {
-  color: var(--text2);
-  margin: 0 auto;
-  font-size: 1.3em;
-  margin-bottom: 10px;
+/**FORM*/
+form {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form input {
+  width: 30vw;
+  height: 1.5rem;
+  max-width: 400px;
+  margin: 25px auto;
+  align-self: center;
+  display: block;
 }
 
 footer {
@@ -221,7 +209,7 @@ footer {
   width: 180px !important;
 }
 
-/*BOTTONI*/
+/*!BOTTONI*/
 .btnNew {
   background-color: var(--colore2);
   border-radius: 8px;
@@ -234,6 +222,7 @@ footer {
   font-weight: 600;
   color: #070604;
   padding: 2px;
+  box-shadow: var(--sfumaturaInterna);
 }
 
 #telButton {
