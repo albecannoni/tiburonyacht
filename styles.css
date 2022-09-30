@@ -210,9 +210,9 @@ footer {
 /*CAROSELLO*/
 
 #carosello {
-  width: aauto !important;
+  width: 45%!important;
   height: auto !important;
-  border: #372b4a 4px solid;
+  /* border: #372b4a 4px solid; */
   margin: 0 auto;
 }
 
