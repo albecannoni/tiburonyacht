@@ -2,14 +2,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: 'Oswald', sans-serif; */
-  font-family: 'Lato', sans-serif;
-  
+  font-family: 'Lato', sans-serif;  
 }
 
 :root {
   --colore1: #00DCFF;
-  /* --colore2: #4E9BAE; */
   --colore2: #8CAFCE;
   --colore3: #aefcff;
   --colore4: #372b4a;
@@ -26,7 +23,7 @@ html {
   scroll-behavior: smooth;  
 }
 
-/*NAVBAR*/
+/**------------------------------------------------- NAVBAR ---------------------------------------------------*/
 #header {
   position: fixed;
   top: 0;
@@ -86,7 +83,6 @@ a {
 }
 
 .nav-link {
-  /* width: 30vw !important; */
   text-align: center;
   text-transform: uppercase;
   height: 100%;  
@@ -97,7 +93,7 @@ a {
   width: 33vw;
 }
 
-/*MAIN*/
+/**------------------------------------ MAIN ------------------------------------*/
 main {
   position: absolute;
   top: 8vh;
@@ -115,9 +111,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: RED 1px solid;
-  
+  border: RED 1px solid;  
 }
+
 i{
   filter: drop-shadow( 2px 2px 2px var(--colore2));
   padding-right: 8px;
@@ -125,11 +121,10 @@ i{
 
 .icon div i {
   color: var(--colore2);
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
-/*PARTNER*/
+/**-------------------------------------- PARTNER -----------------------------------------*/
 #partner {
   margin: 4rem auto;
   padding: 1vh 0;
@@ -164,7 +159,7 @@ i{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: start
+  align-items: start;
 }
 
 /**FORM*/
@@ -195,7 +190,7 @@ footer {
   z-index: 101;
 }
 
-/*CAROSELLO*/
+/**-------------------------------------------- CAROSELLO --------------------------------------------*/
 
 #carosello {
   width: 45%!important;
@@ -209,7 +204,7 @@ footer {
   width: 180px !important;
 }
 
-/*!BOTTONI*/
+/** BOTTONI */
 .btnNew {
   background-color: var(--colore2);
   border-radius: 8px;
@@ -248,7 +243,7 @@ footer {
   min-width: 150px;
 }
 
-/***GENERICI****/
+/**--------------------------------------------- GENERICI ------------------------------------------*/
 
 .resetBootstrap{
 box-sizing: border-box;
@@ -324,7 +319,7 @@ display: flex;  align-self: center;
   font-weight: 700;
 }
 
-/*EFFETTI INTERATTIVI*/
+/**------------------------------------------EFFETTI INTERATTIVI--------------------------------------------------*/
 .btnNew:hover, #telButton:hover {
   background-color: var(--colore1);
   transition: 350ms;
