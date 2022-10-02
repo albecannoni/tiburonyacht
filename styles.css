@@ -6,21 +6,24 @@
 }
 
 :root {
-  --colore1: #00DCFF;
-  --colore2: #8CAFCE;
+  --colore1: #76adcb;
+  --colore2: #aea3a5;
+  --colore5: #9bab86;
   --colore3: #aefcff;
   --colore4: #372b4a;
-  --colore5: #90D279;
+  
   --text1: #E6F4F1;
   --text2: rgba(254, 255, 249, 1);
-  --gradiente: linear-gradient(to bottom, #00dcff, #4dd0f7, #6bc5ec, #7fbade, #8cafce);
-  --invertedGradient: linear-gradient(to top, #00dcff, #4dd0f7, #6bc5ec, #7fbade, #8cafce);
+  --gradiente: linear-gradient(to bottom, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
+  --invertedGradient: linear-gradient(to bottom, #76adcb, #96a6c7, #aba2ba, #b2a1ad, #aea3a5);
   --sfumaturaInterna: inset 0px 0px 4px 1px var(--colore4);
+
 }
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;  
+  scroll-behavior: smooth; 
+  background-color: var(--colore1); 
 }
 
 /**------------------------------------------------- NAVBAR ---------------------------------------------------*/
@@ -98,8 +101,13 @@ main {
   position: absolute;
   top: 8vh;
   height: auto;
+  background-image: url(./assets/images/teak.jpg);
+  width: 70%;
 }
-
+ section{
+  background-color: rgba(254, 255, 249, 0.69);
+  padding: 20px;
+ }
 #focusPoint {
   max-width: 85vw;
   min-width: 260px;  
@@ -184,7 +192,7 @@ footer {
   bottom: 0;
   height: 6vh;
   width: 100%;
-  background-image: var(--invertedGradient);
+  background-image: var(--gradiente);
   box-shadow: 0px 0px 7px 1px rgba(10, 31, 59, 0.6);
   border: solid 1px var(--colore2);
   z-index: 101;
@@ -193,7 +201,7 @@ footer {
 /**-------------------------------------------- CAROSELLO --------------------------------------------*/
 
 #carosello {
-  width: 45%!important;
+  width: 45% !important;
   height: auto !important;
   /* border: #372b4a 4px solid; */
   margin: 0 auto;
