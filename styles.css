@@ -23,6 +23,7 @@ html {
 
   /*SFUMATURE*/
   --gradiente: linear-gradient(to bottom, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
+  --gradienteBlu: linear-gradient(to bottom, #000099, #aeaeaf, #c8c8c9, #e4e4e4, #ffffff);
   --invertedGradient: linear-gradient(to top, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
   --sfumaturaInterna: inset 0px 0px 4px 1px var(--colore4);
   --auraBianca: 0px 0px 15px 3px rgba(255, 255, 255, 0.438);
@@ -230,27 +231,35 @@ main {
   top: 8vh;
   height: auto;
   background-image: url(./assets/images/mare.jpeg);
+  background-position: 50% 0%;
+  background-size: cover;
   width: 70%;
 }
 
 section {
-  background-color: rgba(254, 255, 249, 0.69);
-  padding: 20px;
+  background-color: rgba(0, 0, 180, 0.50);
+  /* padding: 20px; */
   /* border-radius: var(--radius2); */
-  box-shadow: var(--auraNera);
+  /* box-shadow: var(--auraNera); */
   z-index: 99;
-  /* border: 6px red solid; */
+  color: #ffffff;
+  /* border: 6px white solid; */
   
 }
 
 #teaser {
   border-radius: var(--radius4);
   padding-top: 100px;
+  border-left:  white 3px solid;
+  border-right:  white 3px solid;
+  border-top: white 3px solid;
 }
 
 #focusPoint {
   max-width: 85vw;
   min-width: 260px;
+  border-left:  white 3px solid;
+  border-right:  white 3px solid;
 }
 
 .focus {
@@ -263,7 +272,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: RED 1px solid;
+  border: white 1px solid;
 }
 
 i {
@@ -278,11 +287,13 @@ i {
 
 /**-------------------------------------- PARTNER -----------------------------------------*/
 #partner {
-  margin: 15px auto;
+  margin: 0 auto;
   padding: 1vh 0;
   width: 100%;
   max-width: 700px;
   height: auto;
+  border-left:  white 3px solid;
+  border-right:  white 3px solid;
 }
 
 .partnerLogo {
@@ -290,16 +301,6 @@ i {
   width: 65%;
   background-color: var(--colore1);
   margin: 8px 8px 8px 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.headingCard {
-  width: 100%;
-  height: 20%;
-  margin: 0 auto;
-  background-color: var(--colore2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,6 +316,11 @@ form {
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-bottom: white 3px solid;
+  border-bottom-right-radius: 10%; 
+  border-bottom-left-radius: 10%;
+  border-left:  white 3px solid;
+  border-right:  white 3px solid;
 }
 
 form input {
@@ -329,16 +335,18 @@ form input {
 /**-------------------------------------------- CAROSELLO --------------------------------------------*/
 
 #carosello {
-  width: 45% !important;
+  width: 100% !important;
   height: auto !important;
   /* border: #372b4a 4px solid; */
   margin: 0 auto;
+  border-left:  white 3px solid;
+  border-right:  white 3px solid;
 }
 
-#carosello div img {
+/* #carosello div img {
   height: 180px !important;
   width: 180px !important;
-}
+} */
 
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
