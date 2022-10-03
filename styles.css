@@ -32,6 +32,7 @@ html {
   --radius1: 7% 93% 0% 100% / 94% 13% 87% 6%;
   --radius2: 8% 8% 10% 10% / 21% 26% 27% 27%;
   --radius3: 10% 10% 20% 20% / 0% 0% 10% 10%;
+  --radius4: 50% 50% 51% 49% / 100% 100% 0% 0%;
 }
 
 /**--------------------------------------------- GENERICI ------------------------------------------*/
@@ -70,12 +71,6 @@ html {
   align-self: center;
 }
 
-.rightAlign {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-}
-
 .ombra {
   box-shadow: inset 0px 0px 4px 1px var(--colore4);
 }
@@ -92,7 +87,7 @@ html {
 }
 
 .marginTop {
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
 .w-100 {
@@ -135,11 +130,6 @@ html {
   max-width: 300px;
   min-height: 40px;
   max-height: 80px;
-}
-
-#hamburger {
-  background-color: var(--colore2) !important;
-  margin-right: 2.5vw;
 }
 
 #header-img {
@@ -186,6 +176,14 @@ a {
 }
 
 /** ------------------------------------------ BOTTONI ------------------------------------------------*/
+
+#hamburger {
+  background-color: none !important;
+  margin-right: 2.5vw;
+  border: none !important;
+  box-shadow: none !important;
+}
+
 .btnNew {
   background-color: var(--colore2);
   border-radius: 8px;
@@ -204,12 +202,12 @@ a {
 #telButton {
   position: fixed;
   bottom: 8vh;
-  right: 8vw;
+  right: 1vw;
   background-color: var(--colore1);
   border-radius: 50%;
   z-index: 101;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   box-shadow: var(--auraBianca);
@@ -231,20 +229,23 @@ main {
   position: absolute;
   top: 8vh;
   height: auto;
-  background-image: url(./assets/images/teak.jpg);
+  background-image: url(./assets/images/mare.jpeg);
   width: 70%;
 }
 
 section {
   background-color: rgba(254, 255, 249, 0.69);
   padding: 20px;
-  border-radius: var(--radius2);
+  /* border-radius: var(--radius2); */
   box-shadow: var(--auraNera);
+  z-index: 99;
+  /* border: 6px red solid; */
   
 }
 
 #teaser {
-  border-radius: var(--radius1);
+  border-radius: var(--radius4);
+  padding-top: 100px;
 }
 
 #focusPoint {
@@ -277,7 +278,7 @@ i {
 
 /**-------------------------------------- PARTNER -----------------------------------------*/
 #partner {
-  margin: 4rem auto;
+  margin: 15px auto;
   padding: 1vh 0;
   width: 100%;
   max-width: 700px;
