@@ -111,6 +111,10 @@ html {
   font-weight: 700;
 }
 
+.corsivo{
+font-style: italic;
+}
+
 /**------------------------------------------------- NAVBAR ---------------------------------------------------*/
 #header {
   position: fixed;
@@ -202,8 +206,8 @@ a {
 
 #telButton {
   position: fixed;
-  bottom: 8vh;
-  right: 1vw;
+  top: 12vh;
+  right: 7vw;
   background-color: var(--colore1);
   border-radius: 50%;
   z-index: 101;
@@ -238,28 +242,55 @@ main {
 
 section {
   background-color: rgba(0, 0, 180, 0.50);
-  /* padding: 20px; */
-  /* border-radius: var(--radius2); */
-  /* box-shadow: var(--auraNera); */
   z-index: 99;
-  color: #ffffff;
-  /* border: 6px white solid; */
-  
+  color: #ffffff;  
 }
 
+/**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   border-radius: var(--radius4);
   padding-top: 100px;
-  border-left:  white 3px solid;
-  border-right:  white 3px solid;
-  border-top: white 3px solid;
+  border-left:  var(--colore4) 3px solid;
+  border-right:  var(--colore4) 3px solid;
+  border-top: var(--colore3) 3px solid;
 }
 
+#teaser div div p{
+  font-size: 0.8rem;
+  width: 80%;
+  margin-left: 5vw;
+}
+
+/**-------------------------------------------- CAROSELLO --------------------------------------------*/
+#galleria{
+  border-left:  var(--colore4) 3px solid;
+  border-right:  var(--colore4) 3px solid;
+}
+#carosello {
+  width: 98% !important;
+  height: auto !important;
+  outline: var(--colore3) 2px solid;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {
   max-width: 85vw;
   min-width: 260px;
-  border-left:  white 3px solid;
-  border-right:  white 3px solid;
+  border-left:  var(--colore4) 3px solid;
+  border-right:  var(--colore4) 3px solid;
+  padding-top: 3vh;
+}
+
+#focusPoint div span h4 {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  margin-left: 6vw;  
+} 
+
+#focusPoint div p {
+  margin-left: 3vw;
 }
 
 .focus {
@@ -292,8 +323,8 @@ i {
   width: 100%;
   max-width: 700px;
   height: auto;
-  border-left:  white 3px solid;
-  border-right:  white 3px solid;
+  border-left:  var(--colore4) 3px solid;
+  border-right:  var(--colore4) 3px solid;
 }
 
 .partnerLogo {
@@ -319,8 +350,8 @@ form {
   border-bottom: white 3px solid;
   border-bottom-right-radius: 10%; 
   border-bottom-left-radius: 10%;
-  border-left:  white 3px solid;
-  border-right:  white 3px solid;
+  border-left:  var(--colore4) 3px solid;
+  border-right:  var(--colore4) 3px solid;
 }
 
 form input {
@@ -331,22 +362,6 @@ form input {
   align-self: center;
   display: block;
 }
-
-/**-------------------------------------------- CAROSELLO --------------------------------------------*/
-
-#carosello {
-  width: 100% !important;
-  height: auto !important;
-  /* border: #372b4a 4px solid; */
-  margin: 0 auto;
-  border-left:  white 3px solid;
-  border-right:  white 3px solid;
-}
-
-/* #carosello div img {
-  height: 180px !important;
-  width: 180px !important;
-} */
 
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
