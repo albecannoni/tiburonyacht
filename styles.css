@@ -23,7 +23,8 @@ html {
 
   /*SFUMATURE*/
   --gradiente: linear-gradient(to bottom, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
-  --gradienteBlu: linear-gradient(to bottom, #000099, #aeaeaf, #c8c8c9, #e4e4e4, #ffffff);
+  --gradienteBlu:linear-gradient(to bottom, #2f4858, #4b7182, #699dad, #89ccd6, #aefcff);
+  --gradienteBluInvertito: linear-gradient(to bottom, #aefcff, #89ccd6, #699dad, #4b7182, #2f4858);
   --invertedGradient: linear-gradient(to top, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
   --sfumaturaInterna: inset 0px 0px 4px 1px var(--colore4);
   --auraBianca: 0px 0px 15px 3px rgba(255, 255, 255, 0.438);
@@ -122,8 +123,8 @@ font-style: italic;
   display: flex;
   width: 100vw;
   grid-column-end: auto;
-  background-image: var(--gradiente) !important;
-  border-bottom: 1px solid var(--colore2);
+  background-image: var(--gradienteBlu) !important;
+  border-bottom: 1px solid var(--colore4);
   z-index: 101;
   box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
 }
@@ -369,7 +370,7 @@ footer {
   bottom: 0;
   height: 6vh;
   width: 100%;
-  background-image: var(--invertedGradient);
+  background-image: var(--gradienteBluInvertito);
   box-shadow: 0px 0px 7px 1px rgba(10, 31, 59, 0.6);
   border: solid 1px var(--colore2);
   z-index: 101;
