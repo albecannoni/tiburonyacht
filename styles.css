@@ -248,15 +248,23 @@ main section{
 section {
   background-color: rgba(0, 0, 180, 0.50);
   z-index: 99;
-  color: #ffffff;  
+  color: #ffffff;
+  background-image: url(./assets/images/teak.png);
+  background-size: 1.3%;
+  background-position: 15%
+  
+  
+  
+  
+
 }
 
 /**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   border-radius: var(--radius4);
   padding-top: 100px;
-  border-left:  var(--colore4) 3px solid;
-  border-right:  var(--colore4) 3px solid;
+  border-left:  var(--colore3) 3px solid;
+  border-right:  var(--colore3) 3px solid;
   border-top: var(--colore3) 3px solid;
 }
 
@@ -268,8 +276,8 @@ section {
 
 /**-------------------------------------------- CAROSELLO --------------------------------------------*/
 #galleria{
-  border-left:  var(--colore4) 3px solid;
-  border-right:  var(--colore4) 3px solid;
+  border-left:  var(--colore3) 3px solid;
+  border-right:  var(--colore3) 3px solid;
 }
 #carosello {
   width: 98% !important;
@@ -283,8 +291,8 @@ section {
 #focusPoint {
   max-width: 85vw;
   min-width: 260px;
-  border-left:  var(--colore4) 3px solid;
-  border-right:  var(--colore4) 3px solid;
+  border-left:  var(--colore3) 3px solid;
+  border-right:  var(--colore3) 3px solid;
   padding-top: 3vh;
 }
 
@@ -328,8 +336,8 @@ i {
   width: 100%;
   max-width: 700px;
   height: auto;
-  border-left:  var(--colore4) 3px solid;
-  border-right:  var(--colore4) 3px solid;
+  border-left:  var(--colore3) 3px solid;
+  border-right:  var(--colore3) 3px solid;
 }
 
 .partnerLogo {
@@ -355,8 +363,8 @@ form {
   border-bottom: white 3px solid;
   border-bottom-right-radius: 10%; 
   border-bottom-left-radius: 10%;
-  border-left:  var(--colore4) 3px solid;
-  border-right:  var(--colore4) 3px solid;
+  border-left:  var(--colore3) 3px solid;
+  border-right:  var(--colore3) 3px solid;
 }
 
 form input {
