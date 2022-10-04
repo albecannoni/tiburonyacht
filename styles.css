@@ -240,6 +240,10 @@ main {
   background-size: cover;
   width: 70%;
 }
+main section{
+  box-shadow: 5px 0 0 var(--colore1),
+  -5px 0 0 var(--colore1);
+}
 
 section {
   background-color: rgba(0, 0, 180, 0.50);
