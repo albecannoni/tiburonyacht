@@ -18,10 +18,19 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
 
-    <!--*FONT OSWALD-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+  <!--*FONT OSWALD-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+<!--*FONT KARLA-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
 <body>
 
   <nav class="navbar navbar-expand-sm bg-light" id="header">
@@ -74,11 +83,17 @@
 
     <!--* CHI SIAMO----------->
     <section id="teaser" class="w-75 centraturaFlex marginTop m-auto mt-5">
+      <div class="resina" id="ponteTeaser"></div>
+      <div class="scalini1" id=""></div>
+      <div class="scalini2" id=""></div>
+      <div class="scalini3" id=""></div>
       <div class="centraturFlex">
-        <h2 class=" pt-3 upperText bold text-center corsivo">Chi siamo</h2>
+        <h2 id="headline" class=" pt-3 upperText bold text-center corsivo">Chi siamo</h2>
         <div class="centraturaFlex">
           <p class="pt-1 giustificato">Siamo un azienda che offre servizi di <strong>copertista
-             navale</strong> nata nel 2021, una nuova realtà che in poco tempo si è imposta come la <strong>migliore</strong>  della nostra zona.    </p>
+              navale</strong> nata nel 2021, una nuova realtà che in poco tempo si è imposta come la
+            <strong>migliore</strong> della nostra zona.
+          </p>
         </div>
       </div>
     </section>
@@ -90,16 +105,13 @@
           <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./assets/images/yacht1.jpeg"
-                  class="d-block w-100" alt="...">
+                <img src="./assets/images/yacht1.jpeg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/images/yacht2jpeg.jpeg"
-                  class="d-block w-100" alt="...">
+                <img src="./assets/images/yacht2jpeg.jpeg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="./assets/images/yacht3.jpeg"
-                  class="d-block w-100" alt="...">
+                <img src="./assets/images/yacht3.jpeg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -129,7 +141,7 @@
 
         <div class="pt-2 w-75 focus">
           <span class="bold">
-            <h4 class="upperText semiBold corsivo"> 
+            <h4 class="upperText semiBold corsivo">
               <i class="fa-sharp fa-solid fa-pen-fancy"></i> Dettaglio
             </h4>
           </span>
@@ -169,8 +181,8 @@
               </div>
               <div class="w-50 d-flex flex-column justify-content-center m-auto pt-3">
                 <label class="w-100 text-center upperText" for="informazioni">scrivi la tua richiesta:</label>
-                <textarea class="w-100" id="bio" name="informazioni" rows="2" cols="40"
-                  placeholder="" required></textarea>
+                <textarea class="w-100" id="bio" name="informazioni" rows="2" cols="40" placeholder=""
+                  required></textarea>
                 </label>
               </div>
             </fieldset>
