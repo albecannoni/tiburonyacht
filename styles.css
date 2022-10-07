@@ -41,9 +41,17 @@ background-color: transparent;
   --radius2: 8% 8% 10% 10% / 21% 26% 27% 27%;
   --radius3: 10% 10% 20% 20% / 0% 0% 10% 10%;
   --radius4: 50% 50% 51% 49% / 100% 100% 0% 0%;
+  --smussoNave: 22% 22% 1% 0% / 100% 100% 0% 0% ;
 }
 
 /**--------------------------------------------- GENERICI ------------------------------------------*/
+.absolute{
+  position: absolute;
+}
+
+.centro{
+margin: 0 auto;
+}
 
 .resetBootstrap {
   box-sizing: border-box !important;
@@ -256,7 +264,7 @@ main section{
 }
 
 section {
-  background-color: rgba(0, 0, 180, 0.50);
+background-color: rgba(255, 255, 255, 0.50);
   /* z-index: 99; */
   color: transparent;
   
@@ -264,6 +272,79 @@ section {
   /* background-blend-mode: multiply; */
 }
 
+/**------------------------------------ NAVE-----------------------------------*/
+
+.box{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 8px red solid;
+  z-index: 2008;
+}
+.box div{
+  margin: 0 auto;
+}
+
+#muso{
+  width: 69%;
+  height: 30%;
+  background-color: rgba(168, 180, 0, 0.5);
+  top: 35vh;
+  left: 15vw;
+  margin: auto;
+  z-index: 2001;
+  clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%);
+  border-radius: var(--smussoNave)
+}
+#parabrezza{
+height: 35%;
+width: 80%;
+background-color: rgba(0, 180, 51, 0.4);
+top: 23.5%;
+left: 10%;
+clip-path: polygon(50% 0%, 95% 21%, 100% 100%, 80% 90%, 50% 81%, 20% 90%, 0 100%, 5% 21%);
+border-radius:var(--smussoNave);
+z-index: 2002;
+}
+#calotta{
+height: 35%;
+width: 90%;
+background-color: rgba(174, 180, 0, 0.3);
+top: 47%;
+left: 5%;
+border-radius: var(--smussoNave);
+z-index: 2003;
+}
+#calotta2{
+height: 55%;
+width: 73.15%;
+background-color: rgba(174, 180, 0, 0.4);
+top: 44%;
+left: 14%;
+border-radius:48% 52% 49% 51% / 26% 29% 71% 74% ;
+z-index: 2003;
+}
+#tetto{
+height: 18%;
+width: 73%;
+background-color: rgba(180, 0, 78, 0.6);
+top: 40%;
+left: 13.8%;
+z-index: 2004;
+clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+border-radius: var(--smussoNave)
+}
+#ponte{
+  height: 38%;
+  width: 72.5%;
+  background-color: rgba(0, 174, 180, 0.6);
+  top: 58%;
+  left: 14.0%;
+  z-index: 2004;
+  /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
+   border-radius: 0% 0% 10% 10% / 0% 0% 10% 10% 
+}
 /**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   position: relative;
@@ -275,8 +356,7 @@ section {
   background-image: url(./assets/images/TEAKNUOVO.png);
   background-size: 40%;
   background-position:center;
-  position:relative;
-  height: 40vh;
+  height: 50vh;
   z-index:1;
   /* box-shadow: var(--ombraPiramide);   */
 }
@@ -309,7 +389,7 @@ position: absolute;
 bottom: 0;
 width: 100%;
 height: 25%;
-background-color: rebeccapurple;
+background-color: rgba(0, 0, 180, 0.50);
 background-image: url(./assets/images/TEAKNUOVO.png);
 background-size: 40%;
 border-bottom: 5px white solid;
@@ -322,7 +402,7 @@ position: absolute;
 bottom: 15%;
 width: 98%;
 height: 35%;
-background-color: rebeccapurple;
+background-color: rgba(0, 0, 180, 0.50);
 /* z-index: 1000; */
 background-image: url(./assets/images/TEAKNUOVO.png);
 background-size: 40%;
@@ -345,10 +425,10 @@ z-index:96;
 
 #ponteTeaser{
   position: absolute;
-  bottom: 0px;
-  height: 90%;
-  width: 85%;
-  background-color: whitesmoke;
+  top: 30px;
+  height: 170%;
+  width: 105%;
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: var(--radius4);
   z-index: 100;
   border-left: var(--colore4) 3px solid;
@@ -360,21 +440,19 @@ z-index:96;
 #galleria{
   border-left:  var(--colore3) 3px solid;
   border-right:  var(--colore3) 3px solid;
-  background-image: url(./assets/images/TEAKNUOVO.png);
   background-size: 40%;
   z-index: 1001;
 }
 
 #cabina{
-  box-sizing: border-box;
+box-sizing: border-box;
 height: 20vh;
 width: 65vw;
 position: absolute;
 background-color: black;
-top: 37vh;
+top: 0;
 z-index: 2001;
 clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 95% 70%, 6% 71%, 0% 35%, 20% 10%);
-border-radius: var(--radius2);
 }
 
 #cabina2{
@@ -397,6 +475,7 @@ top: 44.5vh;
 right: 2.5vw;
 z-index: 2003;
 clip-path: polygon(25% 0, 0 61%, 26% 100%);
+border-radius: 90%;
 }
 .leftGlass{
 box-sizing: border-box;
@@ -438,7 +517,6 @@ z-index: 2000;
   border-left:  var(--colore3) 3px solid;
   border-right:  var(--colore3) 3px solid;
   padding-top: 3vh;
-  background-image: url(./assets/images/TEAKNUOVO.png);
   background-size: contain;
   background-position:50%;
 }
