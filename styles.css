@@ -7,6 +7,11 @@
   /* font-family: 'Karla', sans-serif; */
 }
 
+
+/* *{
+  background-color: white !important;
+  border: 3px solid black !important;
+} */
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -52,8 +57,11 @@ body {
 
 .svuota {
   border: black 2px solid !important;
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
   background-image: unset !important;
+}
+.nascondi{
+  display: none !important;
 }
 
 .centro {
@@ -139,7 +147,7 @@ body {
 
 /**------------------------------------------------- NAVBAR ---------------------------------------------------*/
 #header {
-  position: fixed;
+  position: sticky;
   top: 0;
   display: flex;
   width: 100vw;
@@ -256,9 +264,8 @@ main {
   position: absolute;
   top: 8vh;
   height: auto;
-  width: 70%;
+  width:100%;
   background-color: transparent;
-  /* background-image: url(./assets/images/topViewYacht2.png);  */
   background-image: url(./assets/images/topViewYacht.png);
   background-size: 240% 100%;
   background-position: top center;
@@ -266,19 +273,16 @@ main {
   z-index: 1;
 }
 
-main section {
-  box-shadow: 5px 0 0 var(--colore1),
-    -5px 0 0 var(--colore1);
-}
-
 section {
-  background-color: var(--colore3);
-  /* z-index: 99; */
+  /* background-color: rgba(255, 255, 255, 0.3); */
   color: transparent;
-
   background-size: 90%;
-  /* background-blend-mode: multiply; */
 }
+
+/* p, h1, h2, h3, h4, h5, h6{
+  z-index: 80000 !important;
+  color: red;
+} */
 
 /**------------------------------------ NAVE-----------------------------------*/
 
@@ -288,10 +292,27 @@ section {
   width: 100%;
   height: 100%;
   border: 8px red solid;
-  z-index: 2008;
+  z-index: 2;
   display: flex;
   justify-content: center;
 }
+
+.vetro{
+background: rgba(114,105,105,0.4);
+-webkit-backdrop-filter: blur(14px);
+backdrop-filter: blur(14px);
+border: 1px solid rgba(114,105,105,0.2);
+}
+
+#cabrio{
+/* background-color: yellowgreen; */
+border: 2px solid black;
+width: 70%;
+height: 47%;
+top: 10%;
+border-radius: 5%;
+}
+
 #prua{
   width: 73%;
   height: 39%;
@@ -299,9 +320,16 @@ section {
   border-radius: var(--radius4);
   z-index: 1001;
   border: black 2px solid;
-  background-color: var(--colore1 );
+  background-color: var(--colore3);
+  display: flex;
+  justify-content: center;
 }
-
+#centro{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+}
 .scalino:nth-child(1){
   bottom: 3%;
 }
@@ -322,9 +350,9 @@ section {
 
 #muso {
   width: 73.5%;
-  height: 30%;
-  background-color: rgba(168, 180, 0, 0.5);
-  top: 35vh;
+  height: 32%;
+  background-color: white;
+  top: 20%;
   margin: auto;
   z-index: 2001;
   clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%);
@@ -334,68 +362,70 @@ section {
 }
 
 #parabrezza {
-  height: 48%;
-  width: 92%;
-  background-color: rgba(0, 180, 51, 1);
-  top: 20%;
-  
-  clip-path: polygon(50% 0%, 95% 21%, 100% 100%, 80% 90%, 50% 81%, 20% 90%, 0 100%, 5% 21%);
-  border-radius: var(--smussoNave);
-  z-index: 2010;
+  /* background-color:rgba(0, 254, 180, 0.6); */
+  height: 100px;
+  width: 75%;
+  top: 26.5%;
+  clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);
 }
 
 #calotta {
-  height: 35%;
-  width: 90%;
-  background-color: rgba(174, 180, 0, 0.3);
-  top: 47%;
-  left: 5%;
-  border-radius: var(--smussoNave);
+  height: 55%;
+  width: 100%;
+
+  background-color: white;
+  top: 61%;
+  /* left: 5%; */
+  /* border-radius: var(--smussoNave) */
   z-index: 2003;
+  
 }
 
 #calotta2 {
-  height: 55%;
-  width: 73.25%;
-  background-color: rgba(14, 243, 83, 1);
-  top: 35%;
-  left: 14%;
+  height: 65%;
+  width: 91%;
+  
+  background-color: white;
+  /* border: black 2px solid; */
+  top: 46%;
+  left: 4.5%;
   border-radius: 48% 52% 49% 51% / 26% 29% 71% 74%;
   z-index: 3003;
+  
 }
 
 #tetto {
-  height: 18%;
-  width: 73%;
-  background-color: rgba(14, 243, 83, 1);
-  top: 40%;
-  left: 13.8%;
+  height: 24%;
+  width: 68%;
+  /* background-color: green !important; */
+  top: 36%;  
   z-index: 2001;
-  clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%);
+  /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
   border-radius: var(--smussoNave)
 }
 
 #ponte {
   height: 37%;
   width: 72.5%;
-  background-color: rgba(0, 174, 180, 0.6);
-  top: 58%;
+  background-color: white;
+  top: 52%;
   left: 14.0%;
   z-index: 2004;
   /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
-  border-radius: 0% 0% 10% 10% / 0% 0% 10% 10%
+  border-radius: 0% 0% 10% 10% / 0% 0% 10% 10%;
 }
 
 #antenne {
-  height: 72%;
+  height: 66%;
   width: 78%;
-  background-color: red;
-  top: -42%;
+  border: black 2px solid;
+  top: -20%;
   left: 10.0%;
   z-index: 2008;
   border-radius: 25% 25% 20% 20% / 25% 25% 40% 40%;
   display: flex;
   justify-content: center;
+  background-color: var(--colore3);
 }
 
 #radar {
@@ -405,14 +435,14 @@ section {
   rotate: 20deg;
   border-radius: var(--radius2);
   border: 2px solid black;
-  top: 10%;
+  top: 4.8%;
   z-index: 2009;
 }
 
 #radar2 {
   height: 6%;
   width: 8%;
-  top: 9%;
+  top: 4%;
   border-radius: 100%;
   border: 2px solid black;
   background-color: rgba(5, 255, 165, 1)
@@ -433,7 +463,8 @@ section {
   width: 24%;
   background-color: rgba(125, 84, 35, 1);border: 2px solid black;
   left: 10%;
-  clip-path: ellipse(50% 43% at 50% 50%);
+  /* clip-path: ellipse(50% 43% at 50% 50%); */
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
   z-index: 3001;
 }
 #gps .right{
@@ -442,18 +473,18 @@ section {
   background-color: rgba(125, 84, 35, 1);
   border: 2px solid black;
   right: 10%;
-  clip-path: ellipse(50% 43% at 50% 50%);
+  border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  /* clip-path: ellipse(50% 43% at 50% 50%); */
 }
 
 /**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   position: relative;
-  border-radius: var(--radius4);
+  /* border-radius: var(--radius4); */
   padding-top: 100px;
-  border-left: var(--colore3) 3px solid;
-  border-right: var(--colore3) 3px solid;
-  border-top: var(--colore3) 3px solid;
-  background-image: url(./assets/images/TEAKNUOVO.png);
+  /* border-left: var(--colore4) 3px solid;
+  border-right: var(--colore4) 3px solid;
+  border-top: var(--colore4) 3px solid; */
   background-size: 40%;
   background-position: center;
   height: 50vh;
@@ -465,7 +496,7 @@ section {
   position: absolute;
   top: 24%;
   left: 24%;
-  color: black;
+  /* color: black; */
   z-index: 101;
   font-weight: 900;
 }
@@ -479,14 +510,14 @@ section {
   width: 70%;
   /* margin-left: 3vw; */
   z-index: 101;
-  color: black;
+  /* color: black; */
   font-weight: 700;
 }
 
 /**-------------------------------------------- CAROSELLO --------------------------------------------*/
 #galleria {
-  border-left: var(--colore3) 3px solid;
-  border-right: var(--colore3) 3px solid;
+  border-left: var(--colore4) 3px solid;
+  border-right: var(--colore4) 3px solid;
   background-size: 40%;
   z-index: 1001;
 }
@@ -555,19 +586,13 @@ section {
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: hidden;
-  top: -50px;
+  top: -50px; 
   display: none;
 }
 
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {
-  max-width: 85vw;
-  min-width: 260px;
-  border-left: var(--colore3) 3px solid;
-  border-right: var(--colore3) 3px solid;
-  padding-top: 3vh;
-  background-size: contain;
-  background-position: 50%;
+  
 }
 
 #focusPoint div span h4 {
@@ -609,7 +634,7 @@ i {
   padding: 1vh 0;
   width: 100%;
   max-width: 700px;
-  height: auto;
+  /* height: auto; */
   border-left: var(--colore3) 3px solid;
   border-right: var(--colore3) 3px solid;
   background-size: contain;
@@ -652,12 +677,12 @@ form input {
   max-width: 400px;
   margin: 25px auto;
   align-self: center;
-  display: block;
+  /* display: block; */
 }
 
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   height: 6vh;
   width: 100%;
@@ -690,8 +715,8 @@ footer {
   main {
     position: relative;
     top: 150px;
+    width: 100vw;
   }
-
   #header ul li {
     font-weight: 600;
     font-size: larger;
