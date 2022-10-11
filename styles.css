@@ -30,6 +30,7 @@ body {
   --colore2: #aea3a5;
   --colore3: #aefcff;
   --colore4: #2f4858;
+  --galleggiante: linear-gradient(0deg, #19191d 0%, #222327 50%, #ebdcf5 100%);
 
   /*SFUMATURE*/
   --gradiente: linear-gradient(to bottom, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
@@ -337,16 +338,34 @@ z-index: 101;
   background-color: var(--colore3);
   display: flex;
   justify-content: center;
-  outline: var(--colore2) 8px solid;
-  outline-offset: 0px;
+  border-left: 2vw solid var(--colore3) !important;
+  border-right: 2vw solid var(--colore3) !important;
+  border-top: 2vw solid var(--colore3) !important;
+  /* outline: var(--colore2) 8px solid;
+  outline-offset: 0px; */
 }
+.galleggiante{
+  width: 16%;
+  height: 3%;
+  border-radius: 25%;
+  background: var(--galleggiante); 
+}
+
+.top1{top: 28%;} .top2{top: 24%} .top3{ top: 20%}
+
+.left1{left: 16%;} .left2{left: 18%;} .left3{ left: 24%}
+.right1{right: 16%;} .right2{right: 18%;} .right3{ right: 24%}
+
+.rotate1{rotate: 44deg;} .rotate2{rotate: 40deg;} .rotate3{rotate: 23deg;}
+.invRotate1{rotate: -44deg;} .invRotate2{rotate: -40deg;} .invRotate3{rotate: -33deg;}
+
 #centro{
   display: flex;
   justify-content: center;
   height: auto;
   width: 100%;
-  outline: var(--colore2) 8px solid;
-  outline-offset: 0px;
+  /* outline: var(--colore2) 8px solid;
+  outline-offset: 0px; */
 }
 .scalino:nth-child(1){
   bottom: 3%;
@@ -367,9 +386,9 @@ z-index: 101;
 }
 
 #muso {
-  width: 73.5%;
-  height: 32%;
-  background-color: white;
+  width: 61.5%;
+  height: 25%;
+  background-color: gray;
   top: 20%;
   margin: auto;
   z-index: 2001;
@@ -377,24 +396,38 @@ z-index: 101;
   border-radius: var(--smussoNave);
   display: flex;
   justify-content: center;
+  
+  
+}
+#muso2 {
+  width: 99%;
+  height: 100%;
+  background-color: var(--colore3);
+  margin: auto;
+  z-index: 2001;
+  clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%);
+  border-radius: var(--smussoNave);
+  display: flex;
+  justify-content: center;
+  
+  
 }
 
 #parabrezza {
   height: 100px;
-  width: 75%;
-  top: 28.5%;
-  background-repeat: no-repeat;
-background-size: contain;
-z-index: 102;
-  clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);
+  width: 83%;
+  top: 34.5%; 
+  z-index: 102;
+  clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);  
   
 }
+
 #fondoParabrezza {
-  /* background-color:rgba(0, 254, 180, 0.6); */
+  background: var(--galleggiante);
   height: 100px;
-  width: 75%;
-  top: 28.5%;
-  background-image: url(./assets/images/TEAKNUOVO.png);
+  width: 80%;
+  top: 34.5%;
+  /* background-image: url(./assets/images/TEAKNUOVO.png); */
   clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);
   background-repeat: repeat;
 background-size: contain;
@@ -404,21 +437,17 @@ z-index:101;
 #calotta {
   height: 55%;
   width: 100%;
-
-  background-color: white;
+  background-color:var(--colore3);
   top: 61%;
-  /* left: 5%; */
-  /* border-radius: var(--smussoNave) */
-  z-index: 2003;
-  
+  z-index: 2003;  
 }
 
 #calotta2 {
   height: 65%;
   width: 91%;   
-  background-color: white;
+  background-color:var(--colore3);
   /* border: black 2px solid; */
-  top: 46%;
+  top: 54%;
   left: 4.5%;
   border-radius: 48% 52% 49% 51% / 26% 29% 71% 74%;
   z-index: 3003;
@@ -426,39 +455,87 @@ z-index:101;
 }
 
 #tetto {
-  height: 24%;
-  width: 68%;
+  height: 28%;
+  width: 70%;
   /* background-color: green !important; */
   top: 36%;  
   z-index: 2001;
   /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
-  border-radius: var(--smussoNave)
+  border-radius: var(--smussoNave);
+  border-left: 5vw solid var(--colore3) !important;
+  border-right: 5vw solid var(--colore3) !important;
 }
 
 #ponte {
-  height: 37%;
-  width: 72.5%;
+  height: 45%;
+  width: 72.8%;
   background-color: white;
-  top: 52%;
-  left: 14.0%;
+  top: 40.5%;
+  left: 13.5%;
   z-index: 2004;
-  /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
   border-radius: 0% 0% 10% 10% / 0% 0% 10% 10%;
-  outline: var(--colore2) 8px solid;
-  outline-offset: 0px;
+  border-left: 2vw solid var(--colore3) !important;
+  border-right: 2vw solid var(--colore3) !important;
+  border-bottom: 2vw solid var(--colore3) !important;
+  
+  /* outline: var(--colore2) 8px solid;
+  outline-offset: 0px; */
+  z-index:2;
+}
+.divano{
+  width: 15%;
+  height: 20%;
+  background-color: white;
+  top: 60%;
+  left:13%;
+  border-radius: 15%;
+}
+.cuscino{
+  height: 32%;
+  width: 25%;
+  background-color: var(--colore3);
+  left: 2%; 
+  border-radius: 15%;
+  border: 1px gray solid;
+}
+.cuscino2{
+  height: 32%;
+  width: 67%;
+  background-color: var(--colore3);
+  left: 28%; 
+  border-radius: 15%;
+  border: 1px gray solid;
+}
+.cuscino:nth-child(1){
+  top: 4%;
+}
+.cuscino:nth-child(2){
+  top: 35%;
+}
+.cuscino:nth-child(3){
+  bottom: 2%;
+}
+.cuscino2:nth-child(4){
+  top: 4%;
+}
+.cuscino2:nth-child(5){
+  top: 35%;
+}
+.cuscino2:nth-child(6){
+  bottom: 2%;
 }
 
 #antenne {
-  height: 66%;
+  height: 100%;
   width: 78%;
   border: black 2px solid;
-  top: -20%;
+  top: 20%;
   left: 10.0%;
   z-index: 2008;
   border-radius: 25% 25% 20% 20% / 25% 25% 40% 40%;
   display: flex;
   justify-content: center;
-  background-color: var(--colore3);
+  background-color: var(--colore1);
 }
 
 #radar {
@@ -483,7 +560,7 @@ z-index:101;
 
 #gps {
   height: 50px;
-  width: 90%;
+  width: 92%;
   border: 2px solid black;
   top: 63%;
   display: flex;
@@ -492,8 +569,8 @@ z-index:101;
   align-items: center !important;
 }
 #gps .left{
-  height: 70%;
-  width: 24%;
+  height: 71%;
+  width: 25%;
   background-color: rgba(125, 84, 35, 1);border: 2px solid black;
   left: 10%;
   /* clip-path: ellipse(50% 43% at 50% 50%); */
@@ -501,8 +578,8 @@ z-index:101;
   z-index: 3001;
 }
 #gps .right{
-  height: 70%;
-  width: 24%;
+  height: 71%;
+  width: 25%;
   background-color: rgba(125, 84, 35, 1);
   border: 2px solid black;
   right: 10%;
