@@ -299,6 +299,15 @@ section {
   justify-content: center;
 }
 
+.teak{
+  background-image: url(./assets/images/teakChiaro.png);
+  background-size: 30%;
+  background-repeat:repeat;
+  background-position: 10%;
+  
+
+}
+
 .vetro {
   background: rgba(114, 105, 105, 0.4);
   -webkit-backdrop-filter: blur(14px);
@@ -324,7 +333,6 @@ section {
   height: 47%;
   top: 10%;
   border-radius: 5%;
-  background-image: url(./assets/images/TEAKNUOVO.png);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 101;
@@ -525,7 +533,6 @@ section {
   border-right: 5vw solid var(--colore3) !important;
 }
 
-/*?----------PONTE--------*/
 #antenne {
   height: 100%;
   width: 85%;
@@ -595,14 +602,13 @@ section {
 #ponte {
   height: 45%;
   width: 72.8%;
-  /* background-color: white; */
   top: 40.5%;
   left: 13.5%;
   z-index: 2004;
   border-radius: 0% 0% 10% 10% / 0% 0% 10% 10%;
   border-left: 2vw solid var(--colore3) !important;
-  border-right: 2vw solid var(--colore3) !important;
-  border-bottom: 2vw solid var(--colore3) !important;
+  border-right: 2.1vw solid var(--colore3) !important;
+  border-bottom: 2.1vw solid var(--colore3) !important;
   z-index: 2;
 }
 .sdraio{
@@ -699,7 +705,7 @@ section {
 }
 
 .bordo{
-  width: 5vw;
+  width: 4.56vw;
   height: 50%;
   background-color: var(--colore3);
   bottom: 3%;
@@ -709,7 +715,7 @@ section {
   height: 5vw;
   background-color: var(--colore3);
   bottom: 0%;
-  margin: 0 auto;
+  margin: 0 ;
   border-radius: 0 0 20px 20px;
 }
 .leftBorder{
