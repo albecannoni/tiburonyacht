@@ -61,7 +61,8 @@ body {
   background-color: rgba(255, 255, 255, 0.1) !important;
   background-image: unset !important;
 }
-.nascondi{
+
+.nascondi {
   display: none !important;
 }
 
@@ -265,7 +266,7 @@ main {
   position: absolute;
   top: 8vh;
   height: 150vh;
-  width:100%;
+  width: 100%;
   background-color: transparent;
   background-image: url(./assets/images/topViewYacht.png);
   background-size: 240% 100%;
@@ -292,43 +293,44 @@ section {
   top: 10px;
   width: 100%;
   height: 150vh;
-  
+
   z-index: 2;
   display: flex;
   justify-content: center;
 }
 
-.vetro{
-background: rgba(114,105,105,0.4);
--webkit-backdrop-filter: blur(14px);
-backdrop-filter: blur(1.5px);
-border: 1px solid rgba(114,105,105,0.2);
+.vetro {
+  background: rgba(114, 105, 105, 0.4);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(1.5px);
+  border: 1px solid rgba(114, 105, 105, 0.2);
 }
 
-#cabrio{
-border: 2px solid black;
-width: 70%;
-height: 47%;
-top: 10%;
-border-radius: 5%;
-background-repeat: no-repeat;
-background-size: contain;
-z-index: 102;
-}
-#fondoCabrio{
-/* background-color: yellowgreen; */
-border: 2px solid black;
-width: 70%;
-height: 47%;
-top: 10%;
-border-radius: 5%;
-background-image: url(./assets/images/TEAKNUOVO.png);
-background-repeat: no-repeat;
-background-size: contain;
-z-index: 101;
+#cabrio {
+  border: 2px solid black;
+  width: 70%;
+  height: 47%;
+  top: 10%;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 102;
 }
 
-#prua{
+#fondoCabrio {
+  /* background-color: yellowgreen; */
+  border: 2px solid black;
+  width: 70%;
+  height: 47%;
+  top: 10%;
+  border-radius: 5%;
+  background-image: url(./assets/images/TEAKNUOVO.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 101;
+}
+
+#prua {
   width: 73%;
   height: 39%;
   bottom: 57.67%;
@@ -341,25 +343,79 @@ z-index: 101;
   border-left: 2vw solid var(--colore3) !important;
   border-right: 2vw solid var(--colore3) !important;
   border-top: 2vw solid var(--colore3) !important;
+
   /* outline: var(--colore2) 8px solid;
   outline-offset: 0px; */
 }
-.galleggiante{
+
+.galleggiante {
   width: 16%;
   height: 3%;
   border-radius: 25%;
-  background: var(--galleggiante); 
+  background: var(--galleggiante);
+}
+/***/
+.top1 {
+  top: 28%;
 }
 
-.top1{top: 28%;} .top2{top: 24%} .top3{ top: 20%}
+.top2 {
+  top: 24%
+}
 
-.left1{left: 16%;} .left2{left: 18%;} .left3{ left: 24%}
-.right1{right: 16%;} .right2{right: 18%;} .right3{ right: 24%}
+.top3 {
+  top: 20%
+}
 
-.rotate1{rotate: 44deg;} .rotate2{rotate: 40deg;} .rotate3{rotate: 23deg;}
-.invRotate1{rotate: -44deg;} .invRotate2{rotate: -40deg;} .invRotate3{rotate: -33deg;}
+.left1 {
+  left: 16%;
+}
 
-#centro{
+.left2 {
+  left: 18%;
+}
+
+.left3 {
+  left: 24%
+}
+
+.right1 {
+  right: 16%;
+}
+
+.right2 {
+  right: 18%;
+}
+
+.right3 {
+  right: 24%
+}
+
+.rotate1 {
+  rotate: 44deg;
+}
+
+.rotate2 {
+  rotate: 40deg;
+}
+
+.rotate3 {
+  rotate: 23deg;
+}
+
+.invRotate1 {
+  rotate: -44deg;
+}
+
+.invRotate2 {
+  rotate: -40deg;
+}
+
+.invRotate3 {
+  rotate: -33deg;
+}
+
+#centro {
   display: flex;
   justify-content: center;
   height: auto;
@@ -367,17 +423,20 @@ z-index: 101;
   /* outline: var(--colore2) 8px solid;
   outline-offset: 0px; */
 }
-.scalino:nth-child(1){
+
+.scalino:nth-child(1) {
   bottom: 3%;
 }
-.scalino:nth-child(3){
+
+.scalino:nth-child(3) {
   bottom: -3%;
 }
-.scalino:nth-child(4){
+
+.scalino:nth-child(4) {
   bottom: -6%;
 }
 
-.scalino{
+.scalino {
   height: 3%;
   width: 100%;
   bottom: 0;
@@ -396,9 +455,10 @@ z-index: 101;
   border-radius: var(--smussoNave);
   display: flex;
   justify-content: center;
-  
-  
+
+
 }
+
 #muso2 {
   width: 99%;
   height: 100%;
@@ -409,17 +469,16 @@ z-index: 101;
   border-radius: var(--smussoNave);
   display: flex;
   justify-content: center;
-  
-  
+
 }
 
 #parabrezza {
   height: 100px;
   width: 83%;
-  top: 34.5%; 
+  top: 34.5%;
   z-index: 102;
-  clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);  
-  
+  clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);
+
 }
 
 #fondoParabrezza {
@@ -430,35 +489,35 @@ z-index: 101;
   /* background-image: url(./assets/images/TEAKNUOVO.png); */
   clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);
   background-repeat: repeat;
-background-size: contain;
-z-index:101;
+  background-size: contain;
+  z-index: 101;
 }
 
 #calotta {
   height: 55%;
   width: 100%;
-  background-color:var(--colore3);
+  background-color: var(--colore3);
   top: 61%;
-  z-index: 2003;  
+  z-index: 2003;
 }
 
 #calotta2 {
   height: 65%;
-  width: 91%;   
-  background-color:var(--colore3);
+  width: 91%;
+  background-color: var(--colore3);
   /* border: black 2px solid; */
   top: 54%;
   left: 4.5%;
   border-radius: 48% 52% 49% 51% / 26% 29% 71% 74%;
   z-index: 3003;
-  
+
 }
 
 #tetto {
   height: 28%;
   width: 70%;
   /* background-color: green !important; */
-  top: 36%;  
+  top: 36%;
   z-index: 2001;
   /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
   border-radius: var(--smussoNave);
@@ -466,65 +525,7 @@ z-index:101;
   border-right: 5vw solid var(--colore3) !important;
 }
 
-#ponte {
-  height: 45%;
-  width: 72.8%;
-  background-color: white;
-  top: 40.5%;
-  left: 13.5%;
-  z-index: 2004;
-  border-radius: 0% 0% 10% 10% / 0% 0% 10% 10%;
-  border-left: 2vw solid var(--colore3) !important;
-  border-right: 2vw solid var(--colore3) !important;
-  border-bottom: 2vw solid var(--colore3) !important;
-  
-  /* outline: var(--colore2) 8px solid;
-  outline-offset: 0px; */
-  z-index:2;
-}
-.divano{
-  width: 15%;
-  height: 20%;
-  background-color: white;
-  top: 60%;
-  left:13%;
-  border-radius: 15%;
-}
-.cuscino{
-  height: 32%;
-  width: 25%;
-  background-color: var(--colore3);
-  left: 2%; 
-  border-radius: 15%;
-  border: 1px gray solid;
-}
-.cuscino2{
-  height: 32%;
-  width: 67%;
-  background-color: var(--colore3);
-  left: 28%; 
-  border-radius: 15%;
-  border: 1px gray solid;
-}
-.cuscino:nth-child(1){
-  top: 4%;
-}
-.cuscino:nth-child(2){
-  top: 35%;
-}
-.cuscino:nth-child(3){
-  bottom: 2%;
-}
-.cuscino2:nth-child(4){
-  top: 4%;
-}
-.cuscino2:nth-child(5){
-  top: 35%;
-}
-.cuscino2:nth-child(6){
-  bottom: 2%;
-}
-
+/*?----------PONTE--------*/
 #antenne {
   height: 100%;
   width: 85%;
@@ -568,16 +569,19 @@ z-index:101;
   justify-content: space-around !important;
   align-items: center !important;
 }
-#gps .left{
+
+#gps .left {
   height: 71%;
   width: 25%;
-  background-color: rgba(125, 84, 35, 1);border: 2px solid black;
+  background-color: rgba(125, 84, 35, 1);
+  border: 2px solid black;
   left: 10%;
   /* clip-path: ellipse(50% 43% at 50% 50%); */
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
   z-index: 3001;
 }
-#gps .right{
+
+#gps .right {
   height: 71%;
   width: 25%;
   background-color: rgba(125, 84, 35, 1);
@@ -585,6 +589,134 @@ z-index:101;
   right: 10%;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
   /* clip-path: ellipse(50% 43% at 50% 50%); */
+}
+
+/*?-----ponte*/
+#ponte {
+  height: 45%;
+  width: 72.8%;
+  /* background-color: white; */
+  top: 40.5%;
+  left: 13.5%;
+  z-index: 2004;
+  border-radius: 0% 0% 10% 10% / 0% 0% 10% 10%;
+  border-left: 2vw solid var(--colore3) !important;
+  border-right: 2vw solid var(--colore3) !important;
+  border-bottom: 2vw solid var(--colore3) !important;
+  z-index: 2;
+}
+.sdraio{
+  width: 14%;
+  height: 14%;
+  background-color: var(--colore3);
+  bottom: 5%;
+  left: 30%;
+  border-radius: 15%;
+  display:flex;
+  justify-content: center;
+  border: 1px gray solid;
+}
+.sdraio2{
+  width: 14%;
+  height: 14%;
+  background-color: var(--colore3);;
+  bottom: 5%;
+  left: 45%;
+  border-radius: 15%;
+  display:flex;
+  justify-content: center;
+  border: 1px gray solid;
+}
+.sdraio3{
+  width: 14%;
+  height: 14%;
+  background-color: var(--colore3);
+  bottom: 5%;
+  left: 60%;
+  border-radius: 15%;
+  display:flex;
+  justify-content: center;
+  border: 1px gray solid;
+}
+
+.divano {
+  width: 15%;
+  height: 20%;
+  background-color: white;
+  top: 60%;
+  left: 13%;
+  border-radius: 15%;
+}
+
+.cuscino {
+  height: 32%;
+  width: 25%;
+  background-color: var(--colore3);
+  left: 2%;
+  border-radius: 15%;
+  border: 1px gray solid;
+}
+.cuscinoSdraio {
+  height: 15%;
+  width: 95%;
+  background-color: var(--colore3);
+  bottom: 2%;
+  border-radius: 15%;
+  border: 1px gray solid;
+}
+
+.cuscino2 {
+  height: 32%;
+  width: 67%;
+  background-color: var(--colore3);
+  left: 28%;
+  border-radius: 15%;
+  border: 1px gray solid;
+}
+
+.cuscino:nth-child(1) {
+  top: 4%;
+}
+
+.cuscino:nth-child(2) {
+  top: 35%;
+}
+
+.cuscino:nth-child(3) {
+  bottom: 2%;
+}
+
+.cuscino2:nth-child(4) {
+  top: 4%;
+}
+
+.cuscino2:nth-child(5) {
+  top: 35%;
+}
+
+.cuscino2:nth-child(6) {
+  bottom: 2%;
+}
+
+.bordo{
+  width: 5vw;
+  height: 50%;
+  background-color: var(--colore3);
+  bottom: 3%;
+}
+.bordoPoppa{
+  width: 100%;
+  height: 5vw;
+  background-color: var(--colore3);
+  bottom: 0%;
+  margin: 0 auto;
+  border-radius: 0 0 20px 20px;
+}
+.leftBorder{
+  left: 0;
+}
+.rightBorder{
+  right: 0;
 }
 
 /**------------------------------------ CHI SIAMO -------------------------------*/
@@ -696,14 +828,12 @@ z-index:101;
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: hidden;
-  top: -50px; 
+  top: -50px;
   display: none;
 }
 
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
-#focusPoint {
-  
-}
+#focusPoint {}
 
 #focusPoint div span h4 {
   text-decoration: underline;
@@ -818,6 +948,4 @@ footer {
 
 
 /*MEDIA QUERIES LAPTOP*/
-@media screen and (min-width: 1024px) {
-  
-}
+@media screen and (min-width: 1024px) {}
