@@ -28,13 +28,15 @@ body {
   /*COLORI*/
   --colore1: #76adcb;
   --colore2: #aea3a5;
-  --colore3: #aefcff;
+  --colore3: whitesmoke;
   --colore4: #2f4858;
   --galleggiante: linear-gradient(0deg, #19191d 0%, #222327 50%, #ebdcf5 100%);
 
   /*SFUMATURE*/
+  --newGradient: linear-gradient(0deg, #d7d7d7 0%, #eeeeee 100%);
+  --vetro: linear-gradient(0deg, #a0e9ff 0%, #a8f0ff 50%, #c6f5ff 100%);
   --gradiente: linear-gradient(to bottom, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
-  --gradienteBlu: linear-gradient(to bottom, #2f4858, #4b7182, #699dad, #89ccd6, #aefcff);
+  --gradienteBlu: linear-gradient(0deg, #b1b1b1 0%, #cfdaf2 50%, #cfdaf2 100%);
   --gradienteBluInvertito: linear-gradient(to bottom, #aefcff, #89ccd6, #699dad, #4b7182, #2f4858);
   --invertedGradient: linear-gradient(to top, #959695, #aeafaf, #c8c9c9, #e4e4e4, #ffffff);
   --sfumaturaInterna: inset 0px 0px 4px 1px var(--colore4);
@@ -268,7 +270,8 @@ main {
   height: 150vh;
   width: 100%;
   background-color: transparent;
-  background-image: url(./assets/images/topViewYacht.png);
+  /* background-image: url(./assets/images/topViewYacht.png); */
+  background-color: black;
   background-size: 240% 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -276,15 +279,12 @@ main {
 }
 
 section {
-  /* background-color: rgba(255, 255, 255, 0.3); */
-  color: transparent;
-  background-size: 90%;
+z-index: 10000;
 }
 
-/* p, h1, h2, h3, h4, h5, h6{
-  z-index: 80000 !important;
-  color: red;
-} */
+section p{
+  color: transparent;
+}
 
 /**------------------------------------ NAVE-----------------------------------*/
 
@@ -293,7 +293,6 @@ section {
   top: 10px;
   width: 100%;
   height: 150vh;
-
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -301,11 +300,8 @@ section {
 
 .teak{
   background-image: url(./assets/images/teakChiaro.png);
-  background-size: 30%;
-  background-repeat:repeat;
-  background-position: 10%;
-  
-
+  background-size: 20%;
+  background-position: 2%; 
 }
 
 .vetro {
@@ -315,28 +311,7 @@ section {
   border: 1px solid rgba(114, 105, 105, 0.2);
 }
 
-#cabrio {
-  border: 2px solid black;
-  width: 70%;
-  height: 47%;
-  top: 10%;
-  border-radius: 5%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 102;
-}
 
-#fondoCabrio {
-  /* background-color: yellowgreen; */
-  border: 2px solid black;
-  width: 70%;
-  height: 47%;
-  top: 10%;
-  border-radius: 5%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  z-index: 101;
-}
 
 #prua {
   width: 73%;
@@ -351,9 +326,22 @@ section {
   border-left: 2vw solid var(--colore3) !important;
   border-right: 2vw solid var(--colore3) !important;
   border-top: 2vw solid var(--colore3) !important;
+}
 
-  /* outline: var(--colore2) 8px solid;
-  outline-offset: 0px; */
+#sdraioPrua{
+z-index: 10000;
+top: 30%;
+rotate: -80deg;
+left: 30%;
+background-color: red !important;
+}
+
+#sdraioPrua2{
+z-index: 10000;
+top: 30%;
+rotate: 80deg;
+left: 55%;
+background-color: red !important;
 }
 
 .galleggiante {
@@ -364,39 +352,39 @@ section {
 }
 /***/
 .top1 {
-  top: 28%;
+  top: 18%;
 }
 
 .top2 {
-  top: 24%
+  top: 14%
 }
 
 .top3 {
-  top: 20%
+  top: 10%
 }
 
 .left1 {
-  left: 16%;
+  left: 21%;
 }
 
 .left2 {
-  left: 18%;
+  left: 24%;
 }
 
 .left3 {
-  left: 24%
+  left: 28%
 }
 
 .right1 {
-  right: 16%;
+  right: 21%;
 }
 
 .right2 {
-  right: 18%;
+  right: 24%;
 }
 
 .right3 {
-  right: 24%
+  right: 28%
 }
 
 .rotate1 {
@@ -441,7 +429,7 @@ section {
 }
 
 .scalino:nth-child(4) {
-  bottom: -6%;
+  bottom: -20%;
 }
 
 .scalino {
@@ -450,27 +438,26 @@ section {
   bottom: 0;
   border: 1px solid black;
   background-color: var(--colore3);
+  z-index: 10000;
 }
 
 #muso {
   width: 61.5%;
-  height: 25%;
+  height: 26%;
   background-color: gray;
-  top: 20%;
+  top: 19%;
   margin: auto;
   z-index: 2001;
-  clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%);
+  /* clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%); */
   border-radius: var(--smussoNave);
   display: flex;
   justify-content: center;
-
-
 }
 
 #muso2 {
   width: 99%;
   height: 100%;
-  background-color: var(--colore3);
+  background: var(--newGradient);
   margin: auto;
   z-index: 2001;
   clip-path: polygon(13% 0, 87% 0, 100% 100%, 0% 100%);
@@ -490,11 +477,10 @@ section {
 }
 
 #fondoParabrezza {
-  background: var(--galleggiante);
+  background: var(--vetro);
   height: 100px;
   width: 80%;
   top: 34.5%;
-  /* background-image: url(./assets/images/TEAKNUOVO.png); */
   clip-path: polygon(50% 0%, 92.5% 15%, 100.1% 32%, 95% 100.3%, 5% 100.3%, 0% 32%, 8.2% 15%);
   background-repeat: repeat;
   background-size: contain;
@@ -504,7 +490,7 @@ section {
 #calotta {
   height: 55%;
   width: 100%;
-  background-color: var(--colore3);
+  background: var(--newGradient);
   top: 61%;
   z-index: 2003;
 }
@@ -512,38 +498,59 @@ section {
 #calotta2 {
   height: 65%;
   width: 91%;
-  background-color: var(--colore3);
-  /* border: black 2px solid; */
+  background: var(--newGradient);
   top: 54%;
   left: 4.5%;
   border-radius: 48% 52% 49% 51% / 26% 29% 71% 74%;
   z-index: 3003;
-
 }
 
 #tetto {
   height: 28%;
   width: 70%;
-  /* background-color: green !important; */
   top: 36%;
   z-index: 2001;
-  /* clip-path: polygon(8% 0, 92% 0, 100% 100%, 0% 100%); */
   border-radius: var(--smussoNave);
-  border-left: 5vw solid var(--colore3) !important;
-  border-right: 5vw solid var(--colore3) !important;
+  border-left: 5vw solid white !important;
+  border-right: 5vw solid white !important;
+  border-color: var(--gradienteBlu);
 }
 
 #antenne {
   height: 100%;
   width: 85%;
-  border: black 2px solid;
+  border-left: black 1px solid;
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;  
   top: 20%;
   left: 7.5%;
   z-index: 2008;
   border-radius: 25% 25% 20% 20% / 25% 25% 40% 40%;
   display: flex;
   justify-content: center;
-  background-color: var(--colore1);
+  background-color: gray;
+}
+
+#cabrio {
+  border: 2px solid black;
+  width: 70%;
+  height: 47%;
+  top: 10%;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 102;
+}
+
+#fondoCabrio {
+  border: 2px solid black;
+  width: 70%;
+  height: 47%;
+  top: 10%;
+  border-radius: 5%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 101;
 }
 
 #radar {
@@ -583,7 +590,6 @@ section {
   background-color: rgba(125, 84, 35, 1);
   border: 2px solid black;
   left: 10%;
-  /* clip-path: ellipse(50% 43% at 50% 50%); */
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
   z-index: 3001;
 }
@@ -595,7 +601,6 @@ section {
   border: 2px solid black;
   right: 10%;
   border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
-  /* clip-path: ellipse(50% 43% at 50% 50%); */
 }
 
 /*?-----ponte*/
@@ -728,23 +733,17 @@ section {
 /**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   position: relative;
-  /* border-radius: var(--radius4); */
-  padding-top: 100px;
-  /* border-left: var(--colore4) 3px solid;
-  border-right: var(--colore4) 3px solid;
-  border-top: var(--colore4) 3px solid; */
+  padding-top: 100px;  
   background-size: 40%;
   background-position: center;
   height: 50vh;
-  z-index: 1;
-  /* box-shadow: var(--ombraPiramide);   */
+  z-index: 10000;
 }
 
 #headline {
   position: absolute;
   top: 24%;
   left: 24%;
-  /* color: black; */
   z-index: 101;
   font-weight: 900;
 }
@@ -832,12 +831,9 @@ section {
   height: auto !important;
   outline: var(--colore4) 2px solid;
   margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
   top: -50px;
   display: none;
 }
-
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {}
 
@@ -912,8 +908,6 @@ form {
   border-left: var(--colore3) 3px solid;
   border-right: var(--colore3) 3px solid;
   box-shadow: var(--ombraPiramide);
-
-
 }
 
 form input {
