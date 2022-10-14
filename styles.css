@@ -28,7 +28,7 @@ body {
   /*COLORI*/
   --colore1: #76adcb;
   --colore2: #aea3a5;
-  --colore3: whitesmoke;
+  --colore3: #d7d7d7;
   --colore4: #2f4858;
   --galleggiante: linear-gradient(0deg, #19191d 0%, #222327 50%, #ebdcf5 100%);
 
@@ -270,9 +270,9 @@ main {
   height: 150vh;
   width: 100%;
   background-color: transparent;
-  /* background-image: url(./assets/images/topViewYacht.png); */
+  background-image: url(./assets/images/topViewYacht2.png);
   background-color: black;
-  background-size: 240% 100%;
+  background-size: 350% 100%;
   background-position: top center;
   background-repeat: no-repeat;
   z-index: 1;
@@ -511,8 +511,8 @@ background-color: red !important;
   top: 36%;
   z-index: 2001;
   border-radius: var(--smussoNave);
-  border-left: 5vw solid white !important;
-  border-right: 5vw solid white !important;
+  border-left: 5vw solid var(--colore3) !important;
+  border-right: 5vw solid var(--colore3) !important;
   border-color: var(--gradienteBlu);
 }
 
@@ -548,6 +548,7 @@ background-color: red !important;
   height: 47%;
   top: 10%;
   border-radius: 5%;
+  background-color: var(--colore3);
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 101;
