@@ -63,6 +63,22 @@ body {
   background-color: rgba(255, 255, 255, 0.1) !important;
   background-image: unset !important;
 }
+.filtroMare {
+  width: 100%;
+  height: 100%;
+  /* top: 100px; */
+  background-color: rgba(0, 100, 255, 0.25);
+  z-index:
+    65;
+}
+.filtroNave {
+  width: 100%;
+  height: 100%;
+  /* top: 100px; */
+  background-color: rgba(100, 95, 77, 0.05);
+  z-index:
+    65;
+}
 
 .nascondi {
   display: none !important;
@@ -268,21 +284,31 @@ main {
   position: absolute;
   top: 8vh;
   height: 150vh;
-  width: 100%;
+  width: 150%;
   background-color: transparent;
-  background-image: url(./assets/images/topViewYacht2.png);
+  
   background-color: black;
-  background-size: 350% 100%;
-  background-position: top center;
-  background-repeat: no-repeat;
+
   z-index: 1;
 }
 
-section {
-z-index: 10000;
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: brightness(150%);
 }
 
-section p{
+
+
+section {
+  z-index: 10000;
+}
+
+section p {
   color: transparent;
 }
 
@@ -298,10 +324,10 @@ section p{
   justify-content: center;
 }
 
-.teak{
+.teak {
   background-image: url(./assets/images/teakChiaro.png);
   background-size: 20%;
-  background-position: 2%; 
+  background-position: 2%;
 }
 
 .vetro {
@@ -328,20 +354,20 @@ section p{
   border-top: 2vw solid var(--colore3) !important;
 }
 
-#sdraioPrua{
-z-index: 10000;
-top: 30%;
-rotate: -80deg;
-left: 30%;
-background-color: red !important;
+#sdraioPrua {
+  z-index: 10000;
+  top: 30%;
+  rotate: -80deg;
+  left: 30%;
+  background-color: red !important;
 }
 
-#sdraioPrua2{
-z-index: 10000;
-top: 30%;
-rotate: 80deg;
-left: 55%;
-background-color: red !important;
+#sdraioPrua2 {
+  z-index: 10000;
+  top: 30%;
+  rotate: 80deg;
+  left: 55%;
+  background-color: red !important;
 }
 
 .galleggiante {
@@ -350,6 +376,7 @@ background-color: red !important;
   border-radius: 25%;
   background: var(--galleggiante);
 }
+
 /***/
 .top1 {
   top: 18%;
@@ -521,7 +548,7 @@ background-color: red !important;
   width: 85%;
   border-left: black 1px solid;
   border-right: black 1px solid;
-  border-bottom: black 1px solid;  
+  border-bottom: black 1px solid;
   top: 20%;
   left: 7.5%;
   z-index: 2008;
@@ -615,38 +642,42 @@ background-color: red !important;
   border-left: 2vw solid var(--colore3) !important;
   border-right: 2.1vw solid var(--colore3) !important;
   border-bottom: 2.1vw solid var(--colore3) !important;
-  z-index: 2;
+  z-index: 66;
 }
-.sdraio{
+
+.sdraio {
   width: 14%;
   height: 14%;
   background-color: var(--colore3);
   bottom: 5%;
   left: 30%;
   border-radius: 15%;
-  display:flex;
+  display: flex;
   justify-content: center;
   border: 1px gray solid;
 }
-.sdraio2{
+
+.sdraio2 {
   width: 14%;
   height: 14%;
-  background-color: var(--colore3);;
+  background-color: var(--colore3);
+  ;
   bottom: 5%;
   left: 45%;
   border-radius: 15%;
-  display:flex;
+  display: flex;
   justify-content: center;
   border: 1px gray solid;
 }
-.sdraio3{
+
+.sdraio3 {
   width: 14%;
   height: 14%;
   background-color: var(--colore3);
   bottom: 5%;
   left: 60%;
   border-radius: 15%;
-  display:flex;
+  display: flex;
   justify-content: center;
   border: 1px gray solid;
 }
@@ -668,6 +699,7 @@ background-color: red !important;
   border-radius: 15%;
   border: 1px gray solid;
 }
+
 .cuscinoSdraio {
   height: 15%;
   width: 95%;
@@ -710,31 +742,34 @@ background-color: red !important;
   bottom: 2%;
 }
 
-.bordo{
+.bordo {
   width: 4.56vw;
   height: 50%;
   background-color: var(--colore3);
   bottom: 3%;
 }
-.bordoPoppa{
+
+.bordoPoppa {
   width: 100%;
   height: 5vw;
   background-color: var(--colore3);
   bottom: 0%;
-  margin: 0 ;
+  margin: 0;
   border-radius: 0 0 20px 20px;
 }
-.leftBorder{
+
+.leftBorder {
   left: 0;
 }
-.rightBorder{
+
+.rightBorder {
   right: 0;
 }
 
 /**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   position: relative;
-  padding-top: 100px;  
+  padding-top: 100px;
   background-size: 40%;
   background-position: center;
   height: 50vh;
@@ -835,6 +870,7 @@ background-color: red !important;
   top: -50px;
   display: none;
 }
+
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {}
 
