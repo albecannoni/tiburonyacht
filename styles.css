@@ -4,18 +4,14 @@
   padding: 0;
   font-family: 'Lato', sans-serif;
   font-family: 'Oswald', sans-serif;
-  /* font-family: 'Karla', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 
-/* *{
-  background-color: white !important;
-  border: 3px solid black !important;
-} */
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  /* background-color: var(--colore1); */
 }
 
 body {
