@@ -1,0 +1,12 @@
+/**------------------------------------------EFFETTI INTERATTIVI--------------------------------------------------*/
+.btnNew:hover, #telButton:hover {
+    background-color: var(--colore1);
+    transition: 350ms;
+    padding: 7.5px;
+  }
+  
+  .nav-link:hover {
+    background-color: var(--colore2);
+    border-radius: 4px;
+    transition: 200ms;
+  }

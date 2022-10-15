@@ -3,9 +3,16 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/92b4624bd5.js" crossorigin="anonymous"></script>
   <title>Tiburon Yacht</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mediaQueries.css" />
+  <link rel="stylesheet" href="nave.css" />
+  <link rel="stylesheet" href="animazioni.css" />
+
+  <!--*CDN-->
+  <script src="https://kit.fontawesome.com/92b4624bd5.js" crossorigin="anonymous"></script>  
 
   <!--bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -127,16 +134,18 @@
           <div class="absolute scalino"></div>
           <div class="absolute scalino"></div>
         </div>
-        <div id="muso" class="absolute centro filtroNave">
-          <div id="muso2" class="absolute centro ">
+        <div id="muso" class="absolute centro filtroNave ">
+          <div id="muso2" class="absolute centro">
+            <div id="filtroMuso" class="absolute"></div>
             <div id="parabrezza" class="absolute vetro"></div>
             <div id="fondoParabrezza" class="absolute "></div>
             <div id="calotta" class="absolute "></div>
             <div id="calotta2" class="absolute "></div>
+            <div id="calotta3" class="absolute "></div>
           </div>
         </div>
 
-        <div id="tetto" class="absolute filtroNave filtroNave">
+        <div id="tetto" class="absolute">
           <div id="antenne" class="absolute filtroNave">
           
             <!--?! FARE MODALE PER GALLERIA FOTO-->
@@ -148,11 +157,12 @@
             <div id="gps" class="absolute">
               <div class="absolute left"></div>
               <div class="absolute right"></div>
+              <div class="absolute pinna"></div>
             </div>
           </div>
         </div>
 
-        <div id="ponte" class="absolute teak filtroNave">
+        <div id="ponte" class="absolute teak filtroNave filtroInvGradientGray">
           <div class="absolute  divano">
             <div class="absolute cuscino"></div>
             <div class="absolute cuscino"></div>
