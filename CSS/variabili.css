@@ -2,9 +2,9 @@
 :root {
 
     /*COLORI*/
-    --colore1: #76adcb;
+    --colore1: #76adcb69;
     --colore2: #aea3a5;
-    --colore3: #d7d7d7;
+    --colore3: #d7d7d7d1;
     --colore4: #2f4858;
     --galleggiante: linear-gradient(0deg, #19191d 0%, #222327 50%, #ebdcf5 100%);
   
@@ -19,5 +19,4 @@
     --radius2: 8% 8% 10% 10% / 21% 26% 27% 27%;
     --radius3: 10% 10% 20% 20% / 0% 0% 10% 10%;
     --radius4: 50% 50% 51% 49% / 100% 100% 0% 0%;
-    --smussoNave: 22% 22% 1% 0% / 100% 100% 0% 0%;
-  }
+    --smussoNave: 22% 22% 1% 0% / 100% 100% 0% 0%}

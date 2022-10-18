@@ -136,7 +136,7 @@ body {
 }
 
 .h-80 {
-  height: 80%;
+  height: 90%;
 }
 
 .bold {
@@ -167,7 +167,7 @@ nav {
   /* grid-column-end: auto; */
   background-color: var(--colore1);
   /* background-image: var(--gradienteBlu) !important; */
-  border-bottom: 1px solid var(--colore4);
+  /* border-bottom: 1px solid var(--colore4); */
   z-index: 102;
   box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
 }
@@ -325,7 +325,12 @@ section p{
 
 /**-------------------------------------------- CAROSELLO --------------------------------------------*/
 
-
+#galleria{
+  background-color: transparent;
+}
+#galleria div{
+  border-radius: 5%;
+}
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {}
 
@@ -439,7 +444,7 @@ footer {
 
 #telButton {
   position: fixed;
-  top: 8vh;
+  bottom: 10vh;
   right: 1vw;
   /* background-color: white; */
   border-radius: 50%;
