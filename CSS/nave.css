@@ -2,17 +2,19 @@
 
 .boxNave {
     position: absolute;
-    width: 20%;   
-    height: 28vh; 
-    top: 20vh;
-    right: 50%;   
+    width: 100%;   
+    height: 120vh; 
+    /* width: 50%;   
+    height: 60vh;  */
+    /* top: 32.5vh; */
+    /* right: 50%;    */
     z-index: -2;
     display: flex;
     justify-content: center;
     /* display: none; */
     /*? dimensioni originali h: 140vh w: 100%*/
-    rotate: 180deg;
-    /* display: none; */
+    /* rotate: 90deg; */
+    display: none;
   }
   
   .teak {
@@ -278,7 +280,7 @@
   
   #radar {
     height: 4%;
-    width: 100px;
+    width: 40%;
     background-color: rgba(125, 60, 8, 0.5);
     rotate: 20deg;
     border-radius: var(--radius2);
@@ -297,9 +299,9 @@
   }
   
   #gps {
-    height: 50px;
+    height: 20%;
     width: 92%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     top: 63%;
     display: flex;
     flex-direction: row;

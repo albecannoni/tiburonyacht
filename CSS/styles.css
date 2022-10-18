@@ -12,6 +12,7 @@ html {
   scroll-behavior: smooth;
   height: auto;
   width: 100vw;
+  background-color: var(--colore1);
 }
 
 body {
@@ -164,7 +165,7 @@ nav {
   display: flex;
   width: 100%;
   /* grid-column-end: auto; */
-  background-color: transparent !important;
+  background-color: var(--colore1);
   /* background-image: var(--gradienteBlu) !important; */
   border-bottom: 1px solid var(--colore4);
   z-index: 102;
@@ -259,6 +260,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* display: none; */
 }
 
 section {
@@ -437,8 +439,8 @@ footer {
 
 #telButton {
   position: fixed;
-  top: 12vh;
-  right: 7vw;
+  top: 9vh;
+  right: 1vw;
   background-color: var(--colore1);
   border-radius: 50%;
   z-index: 2001;
