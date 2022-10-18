@@ -232,9 +232,9 @@ a {
 }
 
 .myShadow{
-  -webkit-box-shadow: 0 -15px 22.5px -18px #dddddd;
--moz-box-shadow: 0 -15px 22.5px -18px #dddddd;
-box-shadow: 0 -15px 22.5px -18px #dddddd;
+  -webkit-box-shadow: 0 -13px 14.5px -18px #dddddd;
+-moz-box-shadow: 0 -13px 14.5px -18px #dddddd;
+box-shadow: 0 -13px 14.5px -18px #dddddd;
 
 }
 
@@ -282,25 +282,6 @@ section p{
   top: 15%;
   width: 100%;
 }
-
-/*?posizionamento sezioni*/
-
-/* #galleria {
-  top: 50vh;
-}
-
-#focusPoint {
-  top: 80vh;
-}
-
-#partner {
-  top: 124vh;
-}
-
-#contatti {
-  top: 155vh;
-} */
-
 /**------------------------------------ CHI SIAMO -------------------------------*/
 #teaser {
   display: flex;
@@ -330,6 +311,9 @@ section p{
 }
 #galleria div{
   border-radius: 5%;
+}
+#galleria div img{
+  height: 24vh;
 }
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {}
