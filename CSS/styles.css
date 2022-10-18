@@ -305,7 +305,7 @@ section p{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 35vh;
+  height: auto;
   
 }
 
