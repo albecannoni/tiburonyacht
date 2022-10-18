@@ -2,10 +2,10 @@
 
 .boxNave {
     position: absolute;
-    width: 10%;   
-    height: 14vh; 
+    width: 20%;   
+    height: 28vh; 
     top: 20vh;
-    right: 0.5vw;   
+    right: 50%;   
     z-index: -2;
     display: flex;
     justify-content: center;
