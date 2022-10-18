@@ -439,22 +439,25 @@ footer {
 
 #telButton {
   position: fixed;
-  top: 9vh;
+  top: 8vh;
   right: 1vw;
-  background-color: var(--colore1);
+  /* background-color: white; */
   border-radius: 50%;
-  z-index: 2001;
-  height: 50px;
-  width: 50px;
+  z-index: 20001;
+  /* height: 45px;
+  width: 45px; */
   display: flex;
   justify-content: center;
-  box-shadow: var(--auraBianca);
-  border: greenyellow 3px solid;
+  align-items: center;
+ 
+  /* box-shadow: var(--auraBianca); */
+  /* border: greenyellow 3px solid; */
 }
 
-#telButton div svg {
-  color: var(--colore4);
-  height: 4vh;
+#telButton i {
+  color: #25D366;
+  /* background-color: #dddddd; */
+  /* height: 4vh; */
 }
 
 .email {
