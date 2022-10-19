@@ -2,10 +2,10 @@
 :root {
 
     /*COLORI*/
-    --colore1: #76adcb69;
+    --colore1: #2d426e;
     --colore2: #aea3a5;
     --colore3: #d7d7d7d1;
-    --colore4: #0d1317;
+    --colore4: white;
     --galleggiante: linear-gradient(0deg, #19191d 0%, #222327 50%, #ebdcf5 100%);
   
     /*SFUMATURE*/
