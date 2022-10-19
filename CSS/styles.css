@@ -359,6 +359,11 @@ section p {
 #galleria2 div img {
   height: 24vh;
 }
+/**-------------------------------------------- SERVIZI ---------------------------------------------------------*/
+
+#servizi ul li{
+  padding-top: 1vh;  
+}
 
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {}
@@ -438,7 +443,7 @@ form input {
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
   z-index: 10001;
-  background-color: var(--colore4);
+  background-color: var(--colore1);
   color: wheat;
   position: absolute;
   bottom: 0;
@@ -449,6 +454,8 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 4vw;
+  margin-top: 1vh;;
 }
 
 /** ------------------------------------------ BOTTONI ------------------------------------------------*/
