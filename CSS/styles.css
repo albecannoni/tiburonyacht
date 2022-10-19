@@ -157,6 +157,12 @@ body {
   backdrop-filter: blur(2.5px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+.navGlass {
+  background: rgba(195, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
 
 /**------------------------------------------------- NAVBAR ---------------------------------------------------*/
 nav {
@@ -202,15 +208,16 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-right: 0 !important;
+  padding-right: 10vw !important;
+  
 }
 
 #header ul li {
-  text-align: left;
+  text-align: right;
   margin-left: 6.5vw;
-  margin-right: 0px !important;
+  margin-right: 6.5vw !important;
   padding-right: 2.5vw;
   width: 100%;
   color: var(--colore4);
@@ -314,6 +321,18 @@ section p{
 #galleria div img{
   height: 24vh;
 }
+
+/*?-----clienti------*/
+#galleria2{
+  background-color: transparent;
+}
+#galleria2 div{
+  border-radius:  5% 5% 5% 5% / 0% 0% 5% 5%;;
+}
+#galleria2 div img{
+  height: 24vh;
+}
+
 /**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
 #focusPoint {}
 

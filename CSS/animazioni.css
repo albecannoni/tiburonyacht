@@ -5,8 +5,4 @@
     /* padding: 7.5px; */
   }
   
-  .nav-link:hover {
-    background-color: var(--colore2);
-    border-radius: 4px;
-    transition: 200ms;
-  }
+ 
