@@ -415,29 +415,32 @@ i {
 }
 
 /**------------------------------------------- FORM -------------------------------------------------*/
-#contatti {
-  border-radius: var(--radius3);
+#contatti{
+  padding: 2vh auto;
 }
 
-form {
-  width: 100%;
+form, #contatti p{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  border-bottom: white 3px solid;
-  border-bottom-right-radius: 10%;
-  border-bottom-left-radius: 10%;
-  border-left: var(--colore3) 3px solid;
-  border-right: var(--colore3) 3px solid;
-  box-shadow: var(--ombraPiramide);
+  margin: 0 auto;
+  /* border: #25D366 1px solid; */
 }
-
-form input {
-  width: 30vw;
-  height: 1.5rem;
-  max-width: 400px;
-  margin: 25px auto;
-  align-self: center;
+form fieldset{
+  /* border: #25D366 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh auto;
+}
+fieldset label{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 1vh auto;
 }
 
 /**------------------------------------------ FOOTER -----------------------------------------------*/

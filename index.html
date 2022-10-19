@@ -26,30 +26,10 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
 
-    <script src="/assets/script.js"></script>
+  <script src="/assets/script.js"></script>
 </head>
 
 <body>
-     <!--*modale-->
-     <div class="modal" tabindex="-1">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-
   <nav class="navbar  navbar-expand-sm navGlass fixed-top" id="header">
     <div class="container-fluid">
       <div id="logo" class="">
@@ -221,7 +201,8 @@
             <h2 class="headLine semiBold upperText">Cosa facciamo</h2>
           </div>
           <ul>
-            <li><strong>Montaggio</strong> di accessori di coperta (bitte, osteriggi, plexiglass, teak, imbarchi, musone ancora,
+            <li><strong>Montaggio</strong> di accessori di coperta (bitte, osteriggi, plexiglass, teak, imbarchi, musone
+              ancora,
               delfiniera, pulpiti, candelieri, pultrusi e altri accessori.)</li>
             <li><strong>Riparazione</strong> e modifica di accessori coperta. </li>
             <li><strong>Aggiornamento</strong> degli strumenti di navigazione</li>
@@ -261,7 +242,8 @@
               <h4 class="semiBold "><i class="fa-sharp fa-solid fa-shield-dog"></i> Affidabilit&aacute;</h4>
             </span>
             <p>Diamo il massimo per rispettare i tempi e gli standard previsti.</p>
-            <div class="w-100 text-center pb-2"><span class="upperText"><strong> Il RISULTATO &eacute; GARANTITO!</strong></span></div>
+            <div class="w-100 text-center pb-2"><span class="upperText"><strong> Il RISULTATO &eacute;
+                  GARANTITO!</strong></span></div>
           </div>
         </section>
 
@@ -269,7 +251,7 @@
         <!--* PARTNER -->
         <section id="partner" class="myShadow  blackGlass">
           <div class="headLine">
-            <h5 class="text-center semiBold upperText">i nostri clienti</h5>
+            <h2 class="text-center semiBold upperText">i nostri clienti</h2>
           </div>
           <div id="galleria2" class="">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -291,7 +273,31 @@
           </div>
         </section>
 
-    </main>
+        <!--*FORM-->
+        <section id="contatti" class="myShadow  blackGlass">
+          <h2 class="headLine semiBold upperText">Contattaci</h2>
+          <p class="w-80">Riempi il form con i tuoi dati e sarai ricontattato</p>
+          <form action=''>
+            <fieldset class="">
+              <label for="first-name">Inserisci il tuo nome:
+                <input id="first-name" name="first-name" type="text" required /></label>
+              <label for="last-name">di quale azienda: <input id="last-name" name="last-name" type="text"
+                  required /></label>
+              <label for="email">Inserisci la tua Email: <input id="email" name="email" type="email" required /></label>
+            </fieldset>            
+            <fieldset>
+              <label for="bio">Dicci di cosa hai bisogno:
+                <textarea id="bio" name="bio" rows="3" cols="20" placeholder="scrivi la tua richiesta..."></textarea>
+              </label>
+            </fieldset>
+            <label for="terms-and-conditions" name="terms-and-conditions">
+              <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
+              I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <input class="mb-2 mt-2 btnNew" type="submit" value="Submit" />
+          </form>
+        </section>
+</main>
     <!--*FOOTER-->
     <footer class="w-100 navGlass d-flex flex-row align-items-center text-white">
       <div class="w-100 ">
@@ -302,9 +308,8 @@
         <div class=" w-50 flex-column align-items-start">
           <h6>email:</h6>
           <p>isnns@gmail.com</p>
-        </div>        
+        </div>
       </div>
-
     </footer>
   </div>
   <!-- JavaScript Bundle with Popper -->
@@ -312,7 +317,7 @@
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
 
-    
+
 
 </body>
 
