@@ -391,10 +391,7 @@ section p {
   border: white 1px solid;
 }
 
-i {
-  filter: drop-shadow(2px 2px 2px var(--colore2));
-  padding-right: 8px;
-}
+
 
 .icon div i {
   color: var(--colore2);
@@ -488,7 +485,7 @@ footer div {
   box-shadow: var(--sfumaturaInterna);
 }
 
-#telButton {
+/* #telButton {
   position: fixed;
   bottom: 10vh;
   right: 1vw;
@@ -497,7 +494,7 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 #telButton i {
   color: #25D366;
