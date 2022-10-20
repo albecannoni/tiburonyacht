@@ -2,11 +2,9 @@
 @media screen and (min-width: 767px) and (max-width: 1023px) {
 
     /**---------------------------NAVBAR------------------------*/
-    p, #servizi ul li{
+    p, #servizi ul li {
         font-size: 1.3rem;
     }
-
-
 
     nav {
         position: fixed;
@@ -17,7 +15,6 @@
         z-index: 1002;
         box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
         height: 7vh;
-
     }
 
     #logo {
@@ -78,11 +75,122 @@
     }
 }
 
+/**------------------------------------------- FORM -------------------------------------------------*/
+#contatti {
+    padding: 2vh 0;
+}
+
+#contatti p {
+    width: 80%;
+    text-align: center;
+}
+
+#contatti p a {
+    font-size: 1.8rem;
+    color: rgb(9, 211, 9);
+}
 
 /*MEDIA QUERIES LAPTOP*/
 @media screen and (min-width: 1024px) {
 
-    * {
-        background-color: red;
+    p, #servizi ul li {
+        font-size: 1.3rem;
     }
+
+    nav {
+        position: fixed;
+        top: 0;
+        display: flex;
+        width: 100%;
+        background-color: var(--colore1);
+        z-index: 1002;
+        box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
+        height: 7vh;
+    }
+
+    #logo {
+        width: 80%;
+        height: 5vh;
+        background-image: url(/assets/images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* border: 2px solid yellowgreen; */
+        margin-bottom: 1vh;
+        margin-left: 1vw;
+        /* padding: 10px; */
+    }
+
+    #header ul {
+        list-style: none;
+        margin-top: 20px;
+        margin-bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+        padding-left: 0 !important;
+        padding-right: 1vw !important;
+        /* border: 2px solid red; */
+    }
+
+    #header ul li {
+        text-align: center;
+        margin-left: 1vw;
+        margin-right: 1vw !important;
+        padding-right: 1vw;
+        width: 100%;
+        color: var(--colore4);
+
+    }
+
+    .nav-link {
+        text-align: center;
+        text-transform: uppercase;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2em;
+        width: 13vw;
+        /* border: 2px solid greenyellow; */
+    }
+
+    #primaRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #primaRow section {
+        width: 45%;
+    }
+
+    #secondaRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #secondaRow section {
+        width: 45%;
+    }
+
+    #terzaRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #terzaRow section {
+        width: 45%;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
 }
