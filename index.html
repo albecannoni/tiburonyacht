@@ -276,9 +276,9 @@
         <section id="contatti" class="myShadow  blackGlass">
           <h2 class="headLine semiBold upperText">Contattaci</h2>
           <p class=" text-center">Riempi il form con i tuoi dati e sarai ricontattato, oppure scrivici su <a
-              href="https://wa.me/393890172024" target="_blank">whatsapp
+              id="btnHrefTel" onclick="fillWapp()" href="" target="_blank">whatsapp
               <i class="fa fa-whatsapp" aria-hidden="true"></i></a></p>
-          <form action=''>
+          <form id="formRichiesta" action='' method="post" enctype="multipart/form-data">
             <fieldset class="">
               <label for="first-name">Inserisci il tuo nome:
                 <input id="first-name" name="first-name" type="text" required /></label>
@@ -293,22 +293,22 @@
             </fieldset>
             <label for="terms-and-conditions" name="terms-and-conditions">
               <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
-              I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+              Accetto i <a href="https://www.freecodecamp.org/news/terms-of-service/">termini e condizioni</a>
             </label>
-            <input class="mb-2 mt-2 btnNew" type="submit" value="Submit" />
+            <input onclick="fillForm()" id="btnHrefMail" class="mb-2 mt-2 btnNew" type="submit" value="invia" />
           </form>
         </section>
     </main>
     <!--*FOOTER-->
     <footer class="w-100 navGlass d-flex flex-row align-items-center text-white">
       <div class="w-100 ">
-        <div class="w-50 flex-column align-items-start">
+        <div class="w-40 flex-column align-items-start">
           <h6>Tiburon yacht</h6>
-          <p>P.IVA 56468546854</p>
+          <p class="smallText">P.IVA 02758440412</p>
         </div>
-        <div class=" w-50 flex-column align-items-start">
+        <div class=" w-60 flex-column align-items-start">
           <h6>email:</h6>
-          <p>isnns@gmail.com</p>
+          <p class="smallText">info.tiburonyacht@gmail.com</p>
         </div>
       </div>
     </footer>

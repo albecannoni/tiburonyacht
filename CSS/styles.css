@@ -137,6 +137,12 @@ body {
   width: 100%;
 }
 
+.w-40 {
+  width: 40%;
+}
+.w-60 {
+  width: 60%;
+}
 .w-80 {
   width: 80%;
 }
@@ -155,6 +161,9 @@ body {
 
 .corsivo {
   font-style: italic;
+}
+.smallText{
+  font-size: small;
 }
 
 .glass {
