@@ -194,10 +194,7 @@ nav {
   top: 0;
   display: flex;
   width: 100%;
-  /* grid-column-end: auto; */
   background-color: var(--colore1);
-  /* background-image: var(--gradienteBlu) !important; */
-  /* border-bottom: 1px solid var(--colore4); */
   z-index: 1002;
   box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
 
@@ -210,7 +207,6 @@ nav {
   max-width: 300px;
   min-height: 40px;
   max-height: 80px;
-  /* border: #25D366 2px solid; */
   background-image: url(/assets/images/logo.png);
   background-size: contain;
   background-repeat: no-repeat;
