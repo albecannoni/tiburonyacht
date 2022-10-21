@@ -1,10 +1,9 @@
-/*MEDIA QUERIES TABLET*/
+/*!---------------------------------------------- MQ TABLET ------------------------------------------------*/
+
+/*?MEDIA QUERIES TABLET*/
 @media screen and (min-width: 767px) and (max-width: 1023px) {
 
     /**---------------------------NAVBAR------------------------*/
-    p, #servizi ul li {
-        font-size: 1.3rem;
-    }
 
     nav {
         position: fixed;
@@ -51,6 +50,7 @@
         width: 100%;
         color: var(--colore4);
 
+
     }
 
     .nav-link {
@@ -70,14 +70,20 @@
         padding: 2vh 0;
     }
 
-    .textFixed{
+    .textFixed {
         font-size: 1.3rem;
     }
 
     /**------------------------------COSA FACCIAMO----------------------------*/
-#servizi{
-    padding: 2vh 0;
-}
+
+    #servizi ul li {
+        font-size: 1.3rem;
+    }
+
+    #servizi {
+        padding: 2vh 0;
+    }
+
     #servizi ul {
         width: 90%;
         padding-bottom: 2vh;
@@ -88,7 +94,7 @@
         padding-top: 2vh;
     }
 
-/**------------------------------CAROSELLI--------------------------*/
+    /**------------------------------CAROSELLI--------------------------*/
     #galleria div img {
         height: 40vh;
 
@@ -99,52 +105,216 @@
     }
 
 
-/**-------------------------------------------- IL NOSTRO METODO ---------------------------------------------*/
-#nostroMetodo{
-    padding: 2vh 0;
-}
-#nostroMetodo div:nth-child(2){
-    margin-top: 2vh;
-}
-#nostroMetodo div div{
-    padding-top: 3vh;
-}
-#nostroMetodo div div p{
-    margin-left: 5vw;
+    /**-------------------------------------------- IL NOSTRO METODO ---------------------------------------------*/
+    #nostroMetodo {
+        padding: 2vh 0;
+    }
+
+    #nostroMetodo div:nth-child(2) {
+        margin-top: 2vh;
+    }
+
+    #nostroMetodo div div {
+        padding-top: 3vh;
+    }
+
+    #nostroMetodo div div p {
+        margin-left: 5vw;
+    }
+
+    .focus {
+        padding: 1vh 0;
+    }
+
+    /**------------------------------------------- FORM -------------------------------------------------*/
+    #contatti {
+        padding: 2vh 0;
+    }
+
+    #contatti p {
+        width: 80%;
+        text-align: center;
+    }
+
+    #contatti p a {
+        font-size: 1.8rem;
+        color: rgb(9, 211, 9);
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    /**------------------------------ FOOTER -----------------------------------*/
+    .smallText {
+        font-size: 1.2rem;
+    }
 }
 
-.focus{
-    padding: 1vh 0;
-}
 
-/**------------------------------------------- FORM -------------------------------------------------*/
-#contatti {
-    padding: 2vh 0;
-}
+/*!---------------------------------------------- MQ LAPTOP ------------------------------------------------*/
 
-#contatti p {
-    width: 80%;
-    text-align: center;
-}
+/*?MEDIA QUERIES LAPTOP*/
+@media screen and (min-width: 1024px) {
 
-#contatti p a {
-    font-size: 1.8rem;
-    color: rgb(9, 211, 9);
-}
+    /**------------------------------ NAVBAR -----------------------------------*/
+    .navGlass {
+        background: rgba(0, 0, 12, 0.80);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(2.5px);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+    }
 
-fieldset {
-    width: 100%;
-}
+    nav {
+        position: fixed;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: var(--colore1);
+        z-index: 1002;
+        box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);
+        height: 11vh;
+    }
 
-label {
-    font-size: 1.3rem;
-}
+    #logo {
+        width: 80%;
+        height: 7vh;
+        background-image: url(/assets/images/logo.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* border: 2px solid yellowgreen; */
+        margin-top: 1vh;
+        margin-left: 4vw;
+        /* padding: 10px; */
+    }
 
-/**------------------------------------------ FOOTER -----------------------------------------------*/
-.smallText{
-font-size: 1.2rem;
-}
+    #header ul {
+        list-style: none;
+        margin-top: 5vh;
+        margin-bottom: 0;
+        width: 100%;
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: flex-end;
+        padding-left: 0 !important;
+        padding-right: 1vw !important;
+        /* border: 2px solid red; */
+        margin-right: 1vw;
+    }
+
+    #header ul li {
+        text-align: center;
+        margin-left: 1vw;
+        margin-right: 1vw !important;
+        margin-top: 2vh;
+        padding-right: 1vw;
+        width: 100%;
+        color: var(--colore4);
+        height: auto;
+        font-size: large;
+    }
+
+    .nav-link {
+        text-align: center;
+        text-transform: uppercase;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 1.2em;
+        width: 9vw;
+        /* border: 2px solid greenyellow; */
+    }
+
+    /**------------------------ MAIN --------------------------------*/
+    #fondo {
+        top: 9.5vh;
+    }
+
+    section {
+        height: 60vh;
+        width: 40%;
+    }
+
+    #primaRow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #secondaRow {
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+    }
+
+    #secondaRow section {
+        height: 90%;
+    }
+
+    #terzaRow {
+        display: flex;
+        flex-direction: row;
+        /* border: 2px solid rgb(11, 195, 11); */
+        width: 100%;
+        height: auto;
+    }
+
+    /**------------------------------------ CHI SIAMO -------------------------------*/
+    #chiSiamo {
+        padding: 2vh 0;
+    }
+
+    .textFixed {
+        font-size: 1.4rem;
+    }
+
+    /**-------------------------------------------- CAROSELLO --------------------------------------------*/
+
+    #galleria {
+        background-color: transparent;
+        width: 46vw;
+    }
+
+    #galleria div img {
+        height: 60vh;
+        padding: 10px 2vw;
+        border-radius: 5% 5% 5% 5% / 3% 3% 3% 3%;
+
+    }
+
+    /*?-----clienti------*/
+    #galleria2 {
+        background-color: transparent;
+    }
+
+    #galleria2 div img {
+        height: 60vh;
+    }
+
+    /**----------------------------------------------- COSA FACCIAMO --------------------------------------*/
+    #servizi ul li {
+        font-size: 1.3rem;
+    }
+
+    #servizi {
+        padding: 2vh 0;
+    }
+
+    #servizi ul {
+        width: 90%;
+        padding: 2vh 0;
+        margin-left: 4vw;
+    }
+
+    #servizi ul li {
+        padding-top: 2vh;
+    }
 
 }
-/*MEDIA QUERIES LAPTOP*/
-@media screen and (min-width: 1024px) {}
