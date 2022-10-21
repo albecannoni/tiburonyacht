@@ -136,6 +136,10 @@ body {
 .w-100 {
   width: 100%;
 }
+.w-90 {
+  width: 90%;
+}
+
 
 .w-40 {
   width: 40%;
@@ -165,7 +169,9 @@ body {
 .smallText{
   font-size: small;
 }
-
+.textFixed{
+font-size: 0.9rem;
+}
 .glass {
   background: rgba(195, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(10px);
@@ -309,13 +315,12 @@ section p {
 }
 
 /**------------------------------------ CHI SIAMO -------------------------------*/
-#teaser {
+#chiSiamo {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: auto;
-
 }
 
 #headLineBox {
@@ -357,22 +362,28 @@ section p {
 #galleria2 div img {
   height: 24vh;
 }
-/**-------------------------------------------- SERVIZI ---------------------------------------------------------*/
+/**-------------------------------------------- COSA FACCIAMO ---------------------------------------------------------*/
+#servizi{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #servizi ul li{
   padding-top: 1vh;  
 }
 
-/**-------------------------------------------- PUNTI FORTI AZIENDA ---------------------------------------------*/
-#focusPoint {}
+/**-------------------------------------------- IL NOSTRO ---------------------------------------------*/
 
-#focusPoint div span h4 {
+
+#nostroMetodo div span h4 {
   text-decoration: underline;
   text-underline-offset: 6px;
   margin-left: 6vw;
 }
 
-#focusPoint div p {
+#nostroMetodo div p {
   margin-left: 3vw;
 }
 
@@ -389,15 +400,12 @@ section p {
   border: white 1px solid;
 }
 
-
-
 .icon div i {
   color: var(--colore2);
   margin: 0 auto;
 }
 
 /**-------------------------------------- PARTNER -----------------------------------------*/
-#partner {}
 
 .partnerLogo {
   height: 70px;
