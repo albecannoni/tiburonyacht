@@ -285,15 +285,6 @@
 
     }
 
-    /*?-----clienti------*/
-    #galleria2 {
-        background-color: transparent;
-    }
-
-    #galleria2 div img {
-        height: 60vh;
-    }
-
     /**------------------------- COSA FACCIAMO --------------------------------------*/
     #cosaFacciamo {
         display: flex;
@@ -387,6 +378,56 @@
 
     .pbLaptop {
         padding-bottom: 5vh;
+    }
+/**-------------------------------------- CAROSELLO CLIENTI ------------------------------*/
+     /*?-----clienti------*/
+     #partner {
+        background-color: transparent;
+        /* width: 36%; */
+    }
+
+    #galleria2 div img {
+        height: 50vh;
+        padding: 10px 2vw;
+        border-radius: 5% 5% 5% 5% / 3% 3% 3% 3%;
+    }
+
+      /**--------------------------- FORM -------------------------------------------------*/
+      #contatti {
+        padding: 2vh 0;
+        height: auto;
+    }
+
+    #contatti p {
+        width: 80%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    #contatti p a {
+        font-size: 1.8rem;
+        color: rgb(9, 211, 9);
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    label {
+        font-size: 1.3rem;
+    }
+
+    /**---------------------------- NAVE -------------------------------------*/
+    .boxNave{
+        position: absolute;        
+        display: flex;
+        z-index: 200000;
+        rotate: 90deg;
+        height: 90vh;
+        width: 15%;
+        top: 205vh;
+        bottom: 0px;
+        left: 15vw;
     }
 
 }
