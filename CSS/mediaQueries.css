@@ -3,7 +3,7 @@
 /*?MEDIA QUERIES TABLET*/
 @media screen and (min-width: 767px) and (max-width: 1023px) {
 
-    /**---------------------------NAVBAR------------------------*/
+    /**----------------------------- NAVBAR ------------------------*/
 
     nav {
         position: fixed;
@@ -65,7 +65,7 @@
         /* border: 2px solid greenyellow; */
     }
 
-    /**------------------------------------ CHI SIAMO -------------------------------*/
+    /**------------------------------ CHI SIAMO -------------------------------*/
     #chiSiamo {
         padding: 2vh 0;
     }
@@ -74,27 +74,27 @@
         font-size: 1.3rem;
     }
 
-    /**------------------------------COSA FACCIAMO----------------------------*/
+    /**------------------------------ COSA FACCIAMO----------------------------*/
 
-    #servizi ul li {
+    #cosaFacciamo ul li {
         font-size: 1.3rem;
     }
 
-    #servizi {
+    #cosaFacciamo {
         padding: 2vh 0;
     }
 
-    #servizi ul {
+    #cosaFacciamo ul {
         width: 90%;
         padding-bottom: 2vh;
         margin-left: 4vw;
     }
 
-    #servizi ul li {
+    #cosaFacciamo ul li {
         padding-top: 2vh;
     }
 
-    /**------------------------------CAROSELLI--------------------------*/
+    /**----------------------------- CAROSELLI--------------------------*/
     #galleria div img {
         height: 40vh;
 
@@ -105,7 +105,7 @@
     }
 
 
-    /**-------------------------------------------- IL NOSTRO METODO ---------------------------------------------*/
+    /**---------------------------- IL NOSTRO METODO ---------------------------------------------*/
     #nostroMetodo {
         padding: 2vh 0;
     }
@@ -126,7 +126,7 @@
         padding: 1vh 0;
     }
 
-    /**------------------------------------------- FORM -------------------------------------------------*/
+    /**--------------------------- FORM -------------------------------------------------*/
     #contatti {
         padding: 2vh 0;
     }
@@ -149,7 +149,7 @@
         font-size: 1.3rem;
     }
 
-    /**------------------------------ FOOTER -----------------------------------*/
+    /**--------------------------- FOOTER -----------------------------------*/
     .smallText {
         font-size: 1.2rem;
     }
@@ -161,7 +161,7 @@
 /*?MEDIA QUERIES LAPTOP*/
 @media screen and (min-width: 1024px) {
 
-    /**------------------------------ NAVBAR -----------------------------------*/
+    /**---------------------------  NAVBAR -----------------------------------*/
     .navGlass {
         background: rgba(0, 0, 12, 0.80);
         -webkit-backdrop-filter: blur(10px);
@@ -187,10 +187,9 @@
         background-image: url(/assets/images/logo.png);
         background-size: contain;
         background-repeat: no-repeat;
-        /* border: 2px solid yellowgreen; */
         margin-top: 1vh;
         margin-left: 4vw;
-        /* padding: 10px; */
+
     }
 
     #header ul {
@@ -205,7 +204,6 @@
         align-items: flex-end;
         padding-left: 0 !important;
         padding-right: 1vw !important;
-        /* border: 2px solid red; */
         margin-right: 1vw;
     }
 
@@ -230,7 +228,6 @@
         font-weight: 700;
         font-size: 1.2em;
         width: 9vw;
-        /* border: 2px solid greenyellow; */
     }
 
     /**------------------------ MAIN --------------------------------*/
@@ -251,7 +248,7 @@
     #secondaRow {
         display: flex;
         flex-direction: row;
-        height: 80vh;
+        height: 85vh;
     }
 
     #secondaRow section {
@@ -266,7 +263,7 @@
         height: auto;
     }
 
-    /**------------------------------------ CHI SIAMO -------------------------------*/
+    /**------------------------- CHI SIAMO -------------------------------*/
     #chiSiamo {
         padding: 2vh 0;
     }
@@ -275,8 +272,7 @@
         font-size: 1.4rem;
     }
 
-    /**-------------------------------------------- CAROSELLO --------------------------------------------*/
-
+    /**------------------------- CAROSELLO --------------------------------------------*/
     #galleria {
         background-color: transparent;
         width: 46vw;
@@ -298,23 +294,99 @@
         height: 60vh;
     }
 
-    /**----------------------------------------------- COSA FACCIAMO --------------------------------------*/
-    #servizi ul li {
+    /**------------------------- COSA FACCIAMO --------------------------------------*/
+    #cosaFacciamo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #cosaFacciamo div h2 {
+        margin-top: 0%;
+
+    }
+
+    #cosaFacciamo ul {
+        width: 80%;
+        margin-left: 1vw;
+
+        margin: 0;
+        padding-bottom: 5vh;
+    }
+
+    #cosaFacciamo ul li {
         font-size: 1.3rem;
-    }
-
-    #servizi {
-        padding: 2vh 0;
-    }
-
-    #servizi ul {
-        width: 90%;
-        padding: 2vh 0;
-        margin-left: 4vw;
-    }
-
-    #servizi ul li {
         padding-top: 2vh;
+    }
+
+    #cosaFacciamo {
+        padding: 2vh 0;
+    }
+
+    /**-------------------------- IL NOSTRO METODO---------------------------------------------*/
+    #nostroMetodo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nostroMetodo div h2 {
+        margin-top: 5vh;
+    }
+
+    #nostroMetodo div {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 2vh;
+    }
+
+    #nostroMetodo div span h4 {
+        margin-left: 1vw;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+    }
+
+    #nostroMetodo div p {
+        margin-left: 1vw;
+        margin-bottom: 3vh;
+    }
+
+    .focus {
+        margin: 0 auto;
+        padding-top: 0;
+    }
+
+    .icon {
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: white 1px solid;
+    }
+
+    .icon div i {
+        color: var(--colore2);
+        margin: 0 auto;
+    }
+
+    .textLaptop {
+        position: absolute;
+        width: 100%;
+        /* padding-top: 8vh; */
+        font-size: 1.4rem;
+        text-align: center;
+        /* border: 2px solid red; */
+        left: -2vh;
+        bottom: 0px;
+        top: 90%
+    }
+
+    .pbLaptop {
+        padding-bottom: 5vh;
     }
 
 }

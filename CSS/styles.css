@@ -363,18 +363,18 @@ section p {
   height: 24vh;
 }
 /**-------------------------------------------- COSA FACCIAMO ---------------------------------------------------------*/
-#servizi{
+#cosaFacciamo{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#servizi ul li{
+#cosaFacciamo ul li{
   padding-top: 1vh;  
 }
 
-/**-------------------------------------------- IL NOSTRO ---------------------------------------------*/
+/**-------------------------------------------- IL NOSTRO METODO---------------------------------------------*/
 
 
 #nostroMetodo div span h4 {
