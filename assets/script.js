@@ -6,20 +6,18 @@ let form = document.querySelector('#formRichiesta');
 window.addEventListener('load', init);
 
 function init() {
-   console.log('test'); 
-   
-      
+   console.log('test');   
+   fillForm();
+   fillWapp();
 }
 
 function fillForm (){
    let adrMail = document.querySelector('#formRichiesta');
-   adrMail.setAttribute("action", 'mailto:alberto.cannoni@outlook.it');
-   form.setAttribute('href', 'mailto:a.cannoni@hotmail.com')
-   form.setAttribute("action", "mailto:a.cannoni@hotmail.com");
+   adrMail.setAttribute("action", 'mailto:info.tiburonyacht@gmail.com');
+   form.setAttribute('href', 'mailto:info.tiburonyacht@gmail.com');
+   form.setAttribute("action", "mailto:info.tiburonyacht@gmail.com");
 }
 
 function fillWapp() {   
-   btnHrefTel.setAttribute("href", "https://wa.me/393890172024");
-   
-  
+   btnHrefTel.setAttribute("href", "https://wa.me/393512537311");  
 }
