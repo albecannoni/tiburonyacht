@@ -6,9 +6,7 @@ let form = document.querySelector('#formRichiesta');
 window.addEventListener('load', init);
 
 function init() {
-   console.log('test');   
-   fillForm();
-   fillWapp();
+   console.log('test');
 }
 
 function fillForm (){
