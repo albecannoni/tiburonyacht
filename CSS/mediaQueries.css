@@ -377,7 +377,7 @@
     }
 
     .pbLaptop {
-        padding-bottom: 5vh;
+        padding-bottom: 1vh;
     }
 /**-------------------------------------- CAROSELLO CLIENTI ------------------------------*/
      /*?-----clienti------*/
@@ -429,5 +429,12 @@
         bottom: 0px;
         left: 15vw;
     }
+
+    /**--------------------------- FOOTER -----------------------------------*/
+    .smallText {
+        font-size: 1.2rem;
+    }
+
+
 
 }
