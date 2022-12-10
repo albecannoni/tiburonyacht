@@ -20,7 +20,24 @@ body {
   height: auto;
   width: 100vw;
 }
+/**?-------------------------------------pagina sito in costruzione---------------------------------*/
 
+#contenitore{
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(8, 8, 72, 0.881);  
+  color: var(--colore1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contenitore h2{
+width: 100%;
+font-size: 3rem;
+color: rgba(255, 255, 255, 0.805);
+text-align: center;
+}                                                                                             
 /**--------------------------------------------- GENERICI ------------------------------------------*/
 .absolute {
   position: absolute;
