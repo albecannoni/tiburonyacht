@@ -6,7 +6,8 @@ let form = document.querySelector('#formRichiesta');
 window.addEventListener('load', init);
 
 function init() {
-   console.log('test');
+   console.log('test init');
+   underConstruction();
 }
 
 function fillForm (){
@@ -18,4 +19,14 @@ function fillForm (){
 
 function fillWapp() {   
    btnHrefTel.setAttribute("href", "https://wa.me/393512537311");  
+}
+
+function underConstruction(){
+let body = document.querySelector('#Body');
+console.log(body);
+body.innerHTML = '';
+body.innerHTML= `<div id="contenitore">
+<h2>sito in costruzione</h2>
+</div>`;
+
 }
