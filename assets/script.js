@@ -23,10 +23,9 @@ function fillWapp() {
 
 function underConstruction(){
 let body = document.querySelector('#Body');
-console.log(body);
 body.innerHTML = '';
 body.innerHTML= `<div id="contenitore">
 <h2>sito in costruzione</h2>
 </div>`;
-
+console.log('pagina in allestimento');
 }
