@@ -7,7 +7,7 @@ window.addEventListener('load', init);
 
 function init() {
    console.log('test init');
-   underConstruction();
+   // underConstruction();
 }
 
 function fillForm (){
