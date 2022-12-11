@@ -447,6 +447,10 @@ form, #contatti p{
   margin: 0 auto;
   /* border: #25D366 1px solid; */
 }
+.centratura{
+  /* border: 1px red solid; */
+  text-align: center;
+}
 form fieldset{
   /* border: #25D366 1px solid; */
   display: flex;
