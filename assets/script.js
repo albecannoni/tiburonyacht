@@ -25,7 +25,7 @@ function underConstruction(){
 let body = document.querySelector('#Body');
 body.innerHTML = '';
 body.innerHTML= `<div id="contenitore">
-<h2>sito in costruzione</h2>
+<h2>pagina in allestimento</h2>
 </div>`;
 console.log('pagina in allestimento');
 }
