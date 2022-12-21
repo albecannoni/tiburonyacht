@@ -161,11 +161,11 @@
 
         <!--sezioni-->
         <div id="primaRow">
-          <section id="chiSiamo" class=" blackGlass myShadow">
+          <section id="chiSiamo" class=" blackGlass myShadow bordoMare">
             <div id="" class="w-100">
               <h2 class="headLine semiBold upperText">Chi siamo</h2>
             </div>
-            <div class="w-80 h-100">
+            <div id="intro" class="w-80 h-100">
               <p class=" h-80 textFixed">Siamo specialisti nella <strong> copertistica navale</strong> (yacht,
                 catamarani, barche a vela,
                 e motoscafi), lavoriamo per aziende conosciute a livello mondiale:
@@ -176,7 +176,7 @@
           </section>
 
           <!--* CAROSELLO -->
-          <section id="galleria" class="myShadow  blackGlass">
+          <section id="galleria" class="myShadow bordoMare blackGlass">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -198,12 +198,13 @@
             </div>
           </section>
         </div>
-        <div id="secondaRow">
+        <div id="secondaRow" class="w-100">
           <!--*COSA FACCIAMO-->
-          <section id="cosaFacciamo" class="myShadow  blackGlass">
+          <section id="cosaFacciamo" class="myShadow bordoMare blackGlass">
             <div class="w-100 headLine">
               <h2 class="headLine semiBold upperText">Cosa facciamo</h2>
             </div>
+            <div id="listaServizi">
             <ul>
               <li><strong>Montaggio</strong> di accessori di coperta (bitte, osteriggi, plexiglass, teak, imbarchi,
                 musone ancora, delfiniera, pulpiti, candelieri, pultrusi e altri accessori.)</li>
@@ -213,10 +214,11 @@
               <li><strong>Riparazione</strong> e pulizia di Tek</li>
               <li><strong>Lavori su misura</strong> su qualsiasi superficie della barca.</li>
             </ul>
+          </div>
           </section>
 
           <!--* IL NOSTRO METODO---->
-          <section id="nostroMetodo" class="myShadow  blackGlass">
+          <section id="nostroMetodo" class="myShadow bordoMare blackGlass">
 
             <div class="headLine">
               <h2 class="text-center semiBold upperText">il nostro metodo</h2>
@@ -239,21 +241,24 @@
                 risultati, sia funzionali che estetici.</p>
             </div>
 
-            <div class="pt-2 w-75 focus">
-              <span class="">
-                <h4 class="semiBold "><i class="fa-sharp fa-solid fa-shield-dog"></i> Affidabilit&aacute;</h4>
-              </span>
-              <p class="pbLaptop">Diamo il massimo per rispettare i tempi e gli standard previsti.</p>
-              <div class="w-100 text-center pb-2">
-                <p class="upperText textLaptop"><strong> Il RISULTATO &eacute;
-                    GARANTITO!</strong></p>
+            <div class="pt-2 pt-lg-0 w-100 h-100 focus d-flex justify-content-center align-items-center">
+              <div class="affidabilità d-flex flex-column">
+                <span class="">
+                  <h4 class="semiBold "><i class="fa-sharp fa-solid fa-shield-dog"></i> Affidabilit&aacute;</h4>
+                </span>
+                <p class="">Diamo il massimo per rispettare i tempi e gli standard previsti.</p>
               </div>
+
+            </div>
+            <div id="risultatoGarantito" class="w-100 h-100 text-center">
+              <p class="upperText textLaptop"><strong> Il RISULTATO &eacute;
+                  GARANTITO!</strong></p>
             </div>
           </section>
         </div>
         <div id="terzaRow">
           <!--* PARTNER -->
-          <section id="partner" class="myShadow  blackGlass">
+          <section id="partner" class="myShadow bordoMare blackGlass">
             <div class="headLine">
               <h2 class="text-center semiBold upperText">i nostri clienti</h2>
             </div>
@@ -278,11 +283,11 @@
           </section>
 
           <!--*FORM-->
-          <section id="contatti" class="myShadow  blackGlass">
+          <section id="contatti" class="myShadow bordoMare blackGlass">
             <div>
               <h2 class="headLine semiBold upperText">Contattaci</h2>
-              <p class="centratura">Riempi il form con i tuoi dati e sarai ricontattato, oppure scrivici su<a id="btnHrefTel"
-                  onclick="fillWapp()" href="" target="_blank">whatsapp<i class="fa fa-whatsapp"
+              <p class="centratura">Riempi il form con i tuoi dati e sarai ricontattato, oppure scrivici su<a
+                  id="btnHrefTel" onclick="fillWapp()" href="" target="_blank">whatsapp<i class="fa fa-whatsapp"
                     aria-hidden="true"></i></a>
               </p>
             </div>
@@ -311,13 +316,13 @@
         </div>
     </main>
     <!--*FOOTER-->
-    <footer class="w-100 navGlass d-flex flex-row align-items-center text-white">
+    <footer id="footer" class="w-100 navGlass d-flex flex-row justify-content-center align-items-center text-white ">
       <div class="w-100 ">
-        <div class="w-40 flex-column align-items-start">
-          <h6 class="smallText">Tiburon yacht</h6>
+        <div class="w-40 flex-column ">
+          <h6 class="smallText ">Tiburon yacht</h6>
           <p class="smallText">P.IVA 02758440412</p>
         </div>
-        <div class=" w-60 flex-column align-items-start">
+        <div class=" w-60 flex-column ">
           <h6 class="smallText">email:</h6>
           <p class="smallText">info.tiburonyacht@gmail.com</p>
         </div>

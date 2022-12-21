@@ -392,7 +392,9 @@ section p {
 }
 
 /**-------------------------------------------- IL NOSTRO METODO---------------------------------------------*/
-
+.bordoMare{
+  border:rgba(0, 100, 255, 0.25) 3px solid
+}
 
 #nostroMetodo div span h4 {
   text-decoration: underline;
@@ -420,6 +422,23 @@ section p {
 .icon div i {
   color: var(--colore2);
   margin: 0 auto;
+}
+#risultatoGarantito{
+  /* border: 2px red solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#risultatoGarantito p{
+  margin: 0px !important;
+  padding: 2vh 0px 3vh 0px !important;
+  /* border:  1px solid white; */
+}
+
+.affidabilità{
+  /* border:  2px solid red; */
+  margin-left: -2vw;
+  width: 75%;
 }
 
 /**-------------------------------------- PARTNER -----------------------------------------*/
@@ -481,8 +500,18 @@ footer div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 4vw;
-  margin-top: 1vh;;
+  /* border: #25D366 solid 2px; */
+}
+#footer{
+  /* border: 3px solid greenyellow; */
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+#footer div div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /** ------------------------------------------ BOTTONI ------------------------------------------------*/
