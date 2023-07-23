@@ -521,7 +521,9 @@
     position: absolute;
     bottom: 0;
 }
-
+.textFixed, p, li{
+    font-size: 1.4rem !important;
+    }
 
 
 }

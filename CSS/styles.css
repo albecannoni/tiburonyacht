@@ -186,9 +186,10 @@ text-align: center;
 .smallText{
   font-size: small;
 }
-.textFixed, p, li{
-font-size: 1.4rem !important;
-}
+
+.textFixed{
+  font-size: 0.9rem;
+  }
 
 .glass {
   background: rgba(195, 255, 255, 0.4);
