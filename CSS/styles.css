@@ -186,9 +186,10 @@ text-align: center;
 .smallText{
   font-size: small;
 }
-.textFixed{
-font-size: 0.9rem;
+.textFixed, p, li{
+font-size: 1.4rem !important;
 }
+
 .glass {
   background: rgba(195, 255, 255, 0.4);
   -webkit-backdrop-filter: blur(10px);
