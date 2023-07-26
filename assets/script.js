@@ -16,11 +16,13 @@ function eventHandler(){
    let contatti = document.getElementById('contatti');
    contatti.addEventListener('click', modalShow)
 }
-
+//!----------------------------------------------------------------------------
+//*FINESTRA MODALE
 function modalShow(){   
-    let modale= document.getElementById('Modale')
+    let modale= document.getElementById('Modale');
     modale.classList.remove('hideMod');
     modale.classList.add('modale');
+    console.log('apertura finestra modale');
     
 }
 
@@ -30,9 +32,10 @@ function closeButton(){
 }
 
 function hideMod(){
-let modale= document.getElementById('Modale')
+let modale= document.getElementById('Modale');
     modale.classList.remove('modale');
     modale.classList.add('hideMod');
+    console.log('chiusura finestra modale');
 
 }
 
@@ -50,7 +53,7 @@ function fillFormMod (){
  }
  
  function fillWapp() {   
-    btnHrefTel.setAttribute("href", "https://wa.me/393512537311");  
+    btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
  }
  
  function underConstruction(){
