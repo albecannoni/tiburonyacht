@@ -19,25 +19,30 @@ body {
   background-color: transparent;
   height: auto;
   width: 100vw;
+  z-index: 1;
 }
+
 /**?-------------------------------------pagina sito in costruzione---------------------------------*/
 
-#contenitore{
+#contenitore {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(8, 8, 72, 0.881);  
+  background-color: rgba(8, 8, 72, 0.881);
   color: var(--colore1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#contenitore h2{
-width: 100%;
-font-size: 3rem;
-color: rgba(255, 255, 255, 0.805);
-text-align: center;
-}                                                                                             
+
+#contenitore h2 {
+  width: 100%;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.805);
+  text-align: center;
+}
+
+
 /**--------------------------------------------- GENERICI ------------------------------------------*/
 .absolute {
   position: absolute;
@@ -62,8 +67,7 @@ text-align: center;
   height: 100%;
   /* top: 100px; */
   background-color: rgba(0, 100, 255, 0.25);
-  z-index:
-    65;
+  z-index: 65;
 }
 
 .filtroNave {
@@ -153,6 +157,7 @@ text-align: center;
 .w-100 {
   width: 100%;
 }
+
 .w-90 {
   width: 90%;
 }
@@ -161,9 +166,11 @@ text-align: center;
 .w-40 {
   width: 40%;
 }
+
 .w-60 {
   width: 60%;
 }
+
 .w-80 {
   width: 80%;
 }
@@ -183,13 +190,14 @@ text-align: center;
 .corsivo {
   font-style: italic;
 }
-.smallText{
+
+.smallText {
   font-size: small;
 }
 
-.textFixed{
+.textFixed {
   font-size: 0.9rem;
-  }
+}
 
 .glass {
   background: rgba(195, 255, 255, 0.4);
@@ -200,6 +208,12 @@ text-align: center;
 
 .blackGlass {
   background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.blackGlassMod {
+  background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(2.5px);
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -263,7 +277,7 @@ nav {
   padding-right: 2.5vw;
   width: 100%;
   color: var(--colore4);
- 
+
 }
 
 .nav-link {
@@ -288,13 +302,97 @@ nav {
 
 }
 
+/**?modale*/
+
+.contatti {
+  color: var(--secondario);
+  text-transform: uppercase;
+  font-style: normal;
+  list-style: none;
+  width: 70%;
+  height: 10%;
+  margin: 0 auto;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contatti a {
+  color: red;
+  text-decoration: none;
+}
+
+.modale {
+  width: 78vw;
+  height: 80vh;
+  z-index: 102;
+  /* background-color: var(); */
+  /* border: red 2px solid !important; */
+  position: fixed;
+  top: 12vh;
+  right: 11vw;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 5%;
+}
+
+.hideMod {
+  width: 78vw;
+  height: 80vh;
+  z-index: 102;
+  /* background-color: var(); */
+  /* border: red 2px solid !important; */
+  position: fixed;
+  top: 12vh;
+  right: 9vw;
+  border-radius: 4px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: red;
+  border-radius: 5%;
+}
+
+
+.modale div {
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.closeButton {
+  /* color: red; */
+  position: absolute;
+  top: 18px;
+  right: 24px;
+  font-size: x-large;
+}
+#formModale{
+  /* background-color: #25D366!important; */
+ 
+}
+
 /**------------------------------------ MAIN ------------------------------------*/
 #fondo {
   position: absolute;
   top: 5.7vh;
   height: auto;
   width: 100vw;
-  z-index: 1;
+  z-index: 0;
 }
 
 main {
@@ -310,7 +408,7 @@ main {
   width: auto;
   height: auto;
   margin: 10px auto 20px auto;
-  z-index: 10000;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -383,21 +481,22 @@ section p {
 #galleria2 div img {
   height: 24vh;
 }
+
 /**-------------------------------------------- COSA FACCIAMO ---------------------------------------------------------*/
-#cosaFacciamo{
+#cosaFacciamo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#cosaFacciamo ul li{
-  padding-top: 1vh;  
+#cosaFacciamo ul li {
+  padding-top: 1vh;
 }
 
 /**-------------------------------------------- IL NOSTRO METODO---------------------------------------------*/
-.bordoMare{
-  border:rgba(0, 100, 255, 0.25) 3px solid
+.bordoMare {
+  border: rgba(0, 100, 255, 0.25) 3px solid
 }
 
 #nostroMetodo div span h4 {
@@ -427,19 +526,21 @@ section p {
   color: var(--colore2);
   margin: 0 auto;
 }
-#risultatoGarantito{
+
+#risultatoGarantito {
   /* border: 2px red solid; */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#risultatoGarantito p{
+
+#risultatoGarantito p {
   margin: 0px !important;
   padding: 2vh 0px 3vh 0px !important;
   /* border:  1px solid white; */
 }
 
-.affidabilità{
+.affidabilità {
   /* border:  2px solid red; */
   margin-left: -2vw;
   width: 75%;
@@ -458,11 +559,11 @@ section p {
 }
 
 /**------------------------------------------- FORM -------------------------------------------------*/
-#contatti{
+#contatti {
   padding: 2vh auto;
 }
 
-form, #contatti p{
+form, #contatti p {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -470,11 +571,13 @@ form, #contatti p{
   margin: 0 auto;
   /* border: #25D366 1px solid; */
 }
-.centratura{
+
+.centratura {
   /* border: 1px red solid; */
   text-align: center;
 }
-form fieldset{
+
+form fieldset {
   /* border: #25D366 1px solid; */
   display: flex;
   flex-direction: column;
@@ -482,7 +585,8 @@ form fieldset{
   align-items: center;
   margin: 2vh auto;
 }
-fieldset label{
+
+fieldset label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -506,13 +610,15 @@ footer div {
   align-items: center;
   /* border: #25D366 solid 2px; */
 }
-#footer{
+
+#footer {
   /* border: 3px solid greenyellow; */
   display: flex;
   justify-content: center;
   flex-direction: row-reverse;
 }
-#footer div div{
+
+#footer div div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -564,3 +670,10 @@ footer div {
   max-width: 200px;
   min-width: 150px;
 }
+
+
+#containerModale {
+  z-index: 100001;
+}
+
+/* dare una posizione fissa e centrale alla finestra modale, centrata e in primo piano* /
