@@ -212,6 +212,7 @@ body {
   backdrop-filter: blur(2.5px);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
+
 .blackGlassMod {
   background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(10px);
@@ -381,9 +382,10 @@ nav {
   right: 24px;
   font-size: x-large;
 }
-#formModale{
+
+#formModale {
   /* background-color: #25D366!important; */
- 
+
 }
 
 /**------------------------------------ MAIN ------------------------------------*/
