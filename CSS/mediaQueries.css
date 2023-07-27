@@ -588,14 +588,13 @@
     .boxNave {
         position: absolute;
         left: 12vw;
-        top: -49vh !important;
+        top: -56vh !important;
         display: flex;
         z-index: 200000;
         rotate: 90deg;
         height: 60vh;
         width: 10vw;
         scale: 0.95;
-
     }
 
     /**--------------------------- FOOTER -----------------------------------*/
