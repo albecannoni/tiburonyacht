@@ -362,7 +362,7 @@ nav {
   color: red;
   border-radius: 5%;
 }
-
+ 
 
 .modale div {
   width: 100%;
@@ -674,8 +674,4 @@ footer div {
 }
 
 
-#containerModale {
-  z-index: 100001;
-}
 
-/* dare una posizione fissa e centrale alla finestra modale, centrata e in primo piano* /

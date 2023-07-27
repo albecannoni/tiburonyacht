@@ -539,9 +539,10 @@
     }
 
     .testoModale {
-        border: 4px dotted green !important;
+        /* border: 4px dotted green !important; */
         position: absolute;
-        top: 10%;
+        top: 16%;
+        font-size:xx-large
     }
 
     .closeButton {
@@ -556,10 +557,30 @@
         /* background-color: #25D366!important; */
         display: flex;
         flex-direction: row;
+        /* border: 4px dotted green !important; */
         position: absolute;
         bottom: 10%;
+        width: 50%;
 
     }
+    .campi1{
+        /* border: 2px dotted yellow; */
+    }
+    .modalBox1{
+        /* border: 2px rgb(219, 12, 226) dotted;
+         */
+        /* position: absolute; */
+        bottom: 0;
+        right: 0;
+        margin-top: -6vh;
+    }
+
+#telButton{
+    /* border: 2px solid red; */
+    width: auto;
+    margin-left: 0vw;
+    margin-top: -18vh;
+}
 
     /**---------------------------- NAVE -------------------------------------*/
     .boxNave {
