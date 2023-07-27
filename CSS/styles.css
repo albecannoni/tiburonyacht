@@ -673,5 +673,18 @@ footer div {
   min-width: 150px;
 }
 
-
+.boxNave {
+  position: absolute;
+  top: -36vh!important;
+  left: 10vh;
+  display: flex;
+  scale: 0.3;  
+  z-index: 200000;
+  rotate: 90deg;
+  height: 60vh;
+  width: 10vw;
+       
+        
+ 
+}
 

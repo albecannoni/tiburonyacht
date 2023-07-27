@@ -542,7 +542,7 @@
         /* border: 4px dotted green !important; */
         position: absolute;
         top: 16%;
-        font-size:xx-large
+        font-size: xx-large
     }
 
     .closeButton {
@@ -563,10 +563,12 @@
         width: 50%;
 
     }
-    .campi1{
+
+    .campi1 {
         /* border: 2px dotted yellow; */
     }
-    .modalBox1{
+
+    .modalBox1 {
         /* border: 2px rgb(219, 12, 226) dotted;
          */
         /* position: absolute; */
@@ -575,24 +577,25 @@
         margin-top: -6vh;
     }
 
-#telButton{
-    /* border: 2px solid red; */
-    width: auto;
-    margin-left: 0vw;
-    margin-top: -18vh;
-}
+    #telButton {
+        /* border: 2px solid red; */
+        width: auto;
+        margin-left: 0vw;
+        margin-top: -18vh;
+    }
 
     /**---------------------------- NAVE -------------------------------------*/
     .boxNave {
         position: absolute;
+        left: 12vw;
+        top: -49vh !important;
         display: flex;
         z-index: 200000;
         rotate: 90deg;
-        height: 90vh;
-        width: 15%;
-        top: 205vh;
-        bottom: 0px;
-        left: 15vw;
+        height: 60vh;
+        width: 10vw;
+        scale: 0.95;
+
     }
 
     /**--------------------------- FOOTER -----------------------------------*/
