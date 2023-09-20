@@ -275,32 +275,32 @@
               </div>
               <form id="contactForm">
                 <fieldset class="campi1">
-    
+
                   <label for="nome">Nome:</label>
                   <input type="text" id="nome" name="nome" required><br><br>
-    
+
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" required><br><br>
                 </fieldset>
                 <div class="modalBox1 ">
                   <label for="messaggio">Messaggio:</label><br>
                   <textarea id="bio" name="messaggio" rows="3" cols="20" required></textarea><br><br>
-    
+
                   <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
                 </div>
               </form>
-    
+
               <script>
                 function inviaEmail() {
                   var nome = document.getElementById("nome").value;
                   var email = document.getElementById("email").value;
                   var bio = document.getElementById("bio").value;
-    
+
                   var oggetto = "Messaggio da " + nome;
                   var indirizzo = "mailto:info@tiburonyacht.com" +
                     "?subject=" + encodeURIComponent(oggetto) +
                     "&body=" + encodeURIComponent(bio);
-    
+
                   window.location.href = indirizzo;
                 }
               </script>
