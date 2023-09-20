@@ -91,27 +91,38 @@
                   aria-hidden="true"></i></a>
             </p>
           </div>
-          <form id="formModale" action='' method="post" enctype="multipart/form-data">
+          <form id="formModale">
             <fieldset class="campi1">
-              <label for="first-name">Inserisci il tuo nome:
-                <input id="first-name" name="first-name" type="text" required /></label>
-              <label for="last-name">di quale azienda: <input id="last-name" name="last-name" type="text"
-                  required /></label>
-              <label for="email">Inserisci la tua Email: <input id="email" name="email" type="email" required /></label>
-            </fieldset>
-            <div class="modalBox1">
-              <fieldset>
-                <label for="bio">Dicci di cosa hai bisogno:
-                  <textarea id="bio" name="bio" rows="3" cols="20" placeholder="scrivi la tua richiesta..."></textarea>
-                </label>
-              </fieldset>
-              <!-- <label for="terms-and-conditions" name="terms-and-conditions">
-            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
-            Accetto i <a href="https://www.freecodecamp.org/news/terms-of-service/">termini e condizioni</a>
-          </label> -->
-              <input onclick="fillFormMod()" id="btnHrefMail" class="mb-2 mt-2 btnNew" type="submit" value="invia" />
-            </div>
-          </form>
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+          </fieldset>
+          <div class="modalBox1 ">
+            <label for="messaggio">Messaggio:</label><br>
+            <textarea id="messaggio" name="messaggio" rows="4" cols="50" required></textarea><br><br>
+    
+            <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
+          </div>
+        </form>
+    
+        <script>
+            function inviaEmail() {
+                var nome = document.getElementById("nome").value;
+                var email = document.getElementById("email").value;
+                var messaggio = document.getElementById("messaggio").value;
+    
+                var oggetto = "Messaggio da " + nome;
+                var indirizzo = "mailto:info@tiburonyacht.com" +
+                    "?subject=" + encodeURIComponent(oggetto) +
+                    "&body=" + encodeURIComponent(messaggio);
+    
+                window.location.href = indirizzo;
+            }
+        </script>
+          
           </form>
 
         </div>
@@ -262,27 +273,33 @@
                       aria-hidden="true"></i></a>
                 </p>
               </div>
-              <form id="formRichiesta" action='' method="post" enctype="multipart/form-data">
-                <fieldset class="">
-                  <label for="first-name">Inserisci il tuo nome:
-                    <input id="first-name" name="first-name" type="text" required /></label>
-                  <label for="last-name">di quale azienda: <input id="last-name" name="last-name" type="text"
-                      required /></label>
-                  <label for="email">Inserisci la tua Email: <input id="email" name="email" type="email"
-                      required /></label>
-                </fieldset>
-                <fieldset>
-                  <label for="bio">Dicci di cosa hai bisogno:
-                    <textarea id="bio" name="bio" rows="3" cols="20"
-                      placeholder="scrivi la tua richiesta..."></textarea>
-                  </label>
-                </fieldset>
-                <!-- <label for="terms-and-conditions" name="terms-and-conditions">
-                <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" />
-                Accetto i <a href="https://www.freecodecamp.org/news/terms-of-service/">termini e condizioni</a>
-              </label> -->
-                <input onclick="fillForm()" id="btnHrefMail" class="mb-2 mt-2 btnNew" type="submit" value="invia" />
-              </form>
+              <form id="contactForm" class="">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+        
+                <label for="messaggio">Messaggio:</label><br>
+                <textarea id="messaggio" name="messaggio" rows="4" cols="50" required></textarea><br><br>
+        
+                <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
+            </form>
+        
+            <script>
+                function inviaEmail() {
+                    var nome = document.getElementById("nome").value;
+                    var email = document.getElementById("email").value;
+                    var messaggio = document.getElementById("messaggio").value;
+        
+                    var oggetto = "Messaggio da " + nome;
+                    var indirizzo = "mailto:info@tiburonyacht.com" +
+                        "?subject=" + encodeURIComponent(oggetto) +
+                        "&body=" + encodeURIComponent(messaggio);
+        
+                    window.location.href = indirizzo;
+                }
+            </script>
             </section>
 
           </div>
