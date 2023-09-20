@@ -560,12 +560,14 @@
         flex-direction: row;
         /* border: 4px dotted green !important; */
         position: absolute;
-        bottom: 10%;
+        bottom: 6%;
         width: 50%;
     }
 
     .campi1 {
         /* border: 2px dotted yellow; */
+        margin-bottom: 13%;
+        
     }
 
     .modalBox1 {

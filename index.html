@@ -93,43 +93,43 @@
           </div>
           <form id="formModale">
             <fieldset class="campi1">
-            
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-          </fieldset>
-          <div class="modalBox1 ">
-            <label for="messaggio">Messaggio:</label><br>
-            <textarea id="messaggio" name="messaggio" rows="4" cols="50" required></textarea><br><br>
-    
-            <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
-          </div>
-        </form>
-    
-        <script>
+
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required><br><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+            <div class="modalBox1 ">
+              <label for="messaggio">Messaggio:</label><br>
+              <textarea id="messaggio" name="messaggio" rows="4" cols="50" required></textarea><br><br>
+
+              <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
+            </div>
+          </form>
+
+          <script>
             function inviaEmail() {
-                var nome = document.getElementById("nome").value;
-                var email = document.getElementById("email").value;
-                var messaggio = document.getElementById("messaggio").value;
-    
-                var oggetto = "Messaggio da " + nome;
-                var indirizzo = "mailto:info@tiburonyacht.com" +
-                    "?subject=" + encodeURIComponent(oggetto) +
-                    "&body=" + encodeURIComponent(messaggio);
-    
-                window.location.href = indirizzo;
+              var nome = document.getElementById("nome").value;
+              var email = document.getElementById("email").value;
+              var messaggio = document.getElementById("messaggio").value;
+
+              var oggetto = "Messaggio da " + nome;
+              var indirizzo = "mailto:info@tiburonyacht.com" +
+                "?subject=" + encodeURIComponent(oggetto) +
+                "&body=" + encodeURIComponent(messaggio);
+
+              window.location.href = indirizzo;
             }
-        </script>
-          
+          </script>
+
           </form>
 
         </div>
       </div>
       <!--??****************************************MODALE*****************************************-->
       <!--!--------------------------------------------------------------------->
-      
+
       <!--!--------------------------------------------------------------------->
       <!--* CONTAINER PRINCIPALE -------->
       <main class="w-100">
@@ -149,7 +149,8 @@
                 <p class=" h-80 textFixed">Siamo specialisti nella <strong> copertistica navale</strong> (yacht,
                   catamarani, barche a vela,
                   e motoscafi), lavoriamo per aziende conosciute a livello mondiale:
-                  Rivas, Azimut, Italia Yacht, Solaris Sailing e Solaris Power, Cantiere del Pardo, Grand Soleil. <strong>Garantiamo</strong> costruzione,
+                  Rivas, Azimut, Italia Yacht, Solaris Sailing e Solaris Power, Cantiere del Pardo, Grand Soleil.
+                  <strong>Garantiamo</strong> costruzione,
                   assistenza e garanzia; lavoriamo sia in cantiere che in porto.
                 </p>
               </div>
@@ -269,37 +270,37 @@
               <div>
                 <h2 class="headLine semiBold upperText">Contattaci</h2>
                 <p class="centratura">Riempi il form con i tuoi dati e sarai ricontattato, oppure scrivici su<a
-                    id="btnHrefTel" onclick="fillWapp()" href="" target="_blank">whatsapp<i class="fa fa-whatsapp"
-                      aria-hidden="true"></i></a>
+                  id="btnHrefTel2" onclick="fillWapp()" href="" target="_blank">whatsapp<i class="fa fa-whatsapp"
+                    aria-hidden="true"></i></a>
                 </p>
               </div>
               <form id="contactForm" class="">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required><br><br>
-        
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br><br>
-        
+
                 <label for="messaggio">Messaggio:</label><br>
                 <textarea id="messaggio" name="messaggio" rows="4" cols="50" required></textarea><br><br>
-        
+
                 <input class="btnNew" type="button" value="Invia" onclick="inviaEmail()">
-            </form>
-        
-            <script>
+              </form>
+
+              <script>
                 function inviaEmail() {
-                    var nome = document.getElementById("nome").value;
-                    var email = document.getElementById("email").value;
-                    var messaggio = document.getElementById("messaggio").value;
-        
-                    var oggetto = "Messaggio da " + nome;
-                    var indirizzo = "mailto:info@tiburonyacht.com" +
-                        "?subject=" + encodeURIComponent(oggetto) +
-                        "&body=" + encodeURIComponent(messaggio);
-        
-                    window.location.href = indirizzo;
+                  var nome = document.getElementById("nome").value;
+                  var email = document.getElementById("email").value;
+                  var messaggio = document.getElementById("messaggio").value;
+
+                  var oggetto = "Messaggio da " + nome;
+                  var indirizzo = "mailto:info@tiburonyacht.com" +
+                    "?subject=" + encodeURIComponent(oggetto) +
+                    "&body=" + encodeURIComponent(messaggio);
+
+                  window.location.href = indirizzo;
                 }
-            </script>
+              </script>
             </section>
 
           </div>
@@ -318,79 +319,79 @@
           </div>
         </div>
         <!--*NAVE-->
-      <div class="boxNave">
-        <div class="h-100 w-100">
-          <div id="" class="absolute "></div>
-        </div>
+        <div class="boxNave">
+          <div class="h-100 w-100">
+            <div id="" class="absolute "></div>
+          </div>
 
-        <div id="prua" class="absolute filtroNave">
-          <div class=" absolute galleggiante bg-danger left1 top1 rotate1"></div>
-          <div class=" absolute galleggiante bg-danger left2 top2 rotate2"></div>
-          <div class=" absolute galleggiante bg-danger left3 top3 rotate1"></div>
-          <div class=" absolute galleggiante bg-danger right1 top1 invRotate1"></div>
-          <div class=" absolute galleggiante bg-danger right2 top2 invRotate2"></div>
-          <div class=" absolute galleggiante bg-danger right3 top3 invRotate1"></div>
-          <!-- <div id="sdraioPrua" class="absolute sdraio">
+          <div id="prua" class="absolute filtroNave">
+            <div class=" absolute galleggiante bg-danger left1 top1 rotate1"></div>
+            <div class=" absolute galleggiante bg-danger left2 top2 rotate2"></div>
+            <div class=" absolute galleggiante bg-danger left3 top3 rotate1"></div>
+            <div class=" absolute galleggiante bg-danger right1 top1 invRotate1"></div>
+            <div class=" absolute galleggiante bg-danger right2 top2 invRotate2"></div>
+            <div class=" absolute galleggiante bg-danger right3 top3 invRotate1"></div>
+            <!-- <div id="sdraioPrua" class="absolute sdraio">
                 <div class="absolute cuscinoSdraio"></div>
               </div>
               <div id="sdraioPrua2" class="absolute sdraio">
                 <div class="absolute cuscinoSdraio"></div>
               </div> -->
 
-          <!-- <div class="absolute scalino teak"></div> -->
-        </div>
-        <div id="muso" class="absolute centro filtroNave ">
-          <div id="muso2" class="absolute centro">
-            <div id="filtroMuso" class="absolute"></div>
-            <div id="parabrezza" class="absolute vetro"></div>
-            <div id="fondoParabrezza" class="absolute "></div>
-            <div id="calotta" class="absolute "></div>
-            <div id="calotta2" class="absolute "></div>
-            <div id="calotta3" class="absolute "></div>
+            <!-- <div class="absolute scalino teak"></div> -->
           </div>
-        </div>
-
-        <div id="tetto" class="absolute">
-          <div id="antenne" class="absolute filtroNave">
-
-            <div id="cabrio" class="absolute vetro"></div>
-            <div id="fondoCabrio" class="absolute"></div>
-            <div id="radar" class="absolute "></div>
-            <div id="radar2" class="absolute"></div>
-            <div id="gps" class="absolute">
-              <div class="absolute left"></div>
-              <div class="absolute right"></div>
-              <div class="absolute pinna"></div>
+          <div id="muso" class="absolute centro filtroNave ">
+            <div id="muso2" class="absolute centro">
+              <div id="filtroMuso" class="absolute"></div>
+              <div id="parabrezza" class="absolute vetro"></div>
+              <div id="fondoParabrezza" class="absolute "></div>
+              <div id="calotta" class="absolute "></div>
+              <div id="calotta2" class="absolute "></div>
+              <div id="calotta3" class="absolute "></div>
             </div>
           </div>
-        </div>
 
-        <div id="ponte" class="absolute teak filtroNave filtroInvGradientGray">
-          <div class="absolute  divano">
-            <div class="absolute cuscino"></div>
-            <div class="absolute cuscino"></div>
-            <div class="absolute cuscino"></div>
-            <div class="absolute cuscino2"></div>
-            <div class="absolute cuscino2"></div>
-            <div class="absolute cuscino2"></div>
-          </div>
-          <div class="absolute sdraio">
-            <div class="absolute cuscinoSdraio"></div>
-          </div>
-          <div class="absolute sdraio2">
-            <div class="absolute cuscinoSdraio"></div>
-          </div>
-          <div class="absolute sdraio3">
-            <div class="absolute cuscinoSdraio"></div>
-          </div>
-          <div class="bordo absolute leftBorder"></div>
-          <div class="bordo absolute rightBorder"></div>
-          <div class="bordoPoppa absolute"></div>
-        </div>
+          <div id="tetto" class="absolute">
+            <div id="antenne" class="absolute filtroNave">
 
-      </div>
+              <div id="cabrio" class="absolute vetro"></div>
+              <div id="fondoCabrio" class="absolute"></div>
+              <div id="radar" class="absolute "></div>
+              <div id="radar2" class="absolute"></div>
+              <div id="gps" class="absolute">
+                <div class="absolute left"></div>
+                <div class="absolute right"></div>
+                <div class="absolute pinna"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="ponte" class="absolute teak filtroNave filtroInvGradientGray">
+            <div class="absolute  divano">
+              <div class="absolute cuscino"></div>
+              <div class="absolute cuscino"></div>
+              <div class="absolute cuscino"></div>
+              <div class="absolute cuscino2"></div>
+              <div class="absolute cuscino2"></div>
+              <div class="absolute cuscino2"></div>
+            </div>
+            <div class="absolute sdraio">
+              <div class="absolute cuscinoSdraio"></div>
+            </div>
+            <div class="absolute sdraio2">
+              <div class="absolute cuscinoSdraio"></div>
+            </div>
+            <div class="absolute sdraio3">
+              <div class="absolute cuscinoSdraio"></div>
+            </div>
+            <div class="bordo absolute leftBorder"></div>
+            <div class="bordo absolute rightBorder"></div>
+            <div class="bordoPoppa absolute"></div>
+          </div>
+
+        </div>
       </footer>
-      
+
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"

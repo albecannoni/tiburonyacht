@@ -54,6 +54,7 @@ function fillFormMod (){
  
  function fillWapp() {   
     btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
+    btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
  }
  
  function underConstruction(){
