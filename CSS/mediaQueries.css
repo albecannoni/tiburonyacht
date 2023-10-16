@@ -206,7 +206,7 @@
     #logo {
         width: 80%;
         height: 7vh;
-        background-image: url(/assets/images/logo.png);
+        background-image: url(/assets/images/logo2.png);
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 1vh;
@@ -583,7 +583,7 @@
         width: auto;
         margin-left: 0vw;
         margin-top: -18vh;
-        padding-top: 6px;
+        padding-top: 8vh;
     }
 
     /**---------------------------- NAVE -------------------------------------*/
