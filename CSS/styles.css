@@ -240,6 +240,7 @@ nav {
 }
 
 #logo {
+  margin-top: 1.3vh;
   width: auto;
   height: 50%;
   min-width: 200px;
@@ -302,6 +303,18 @@ nav {
   box-shadow: 0 -13px 14.5px -18px #dddddd;
 
 }
+
+/**----------------------------------------------------POOL JAVASCRIPT--------------------------------------------------------------*/
+
+#Pool{
+  border: 4px greenyellow solid;
+  position: absolute;
+  top: 4vh;
+  min-height: 80vh;
+  width: inherit;
+  
+}
+
 
 /**?modale*/
 

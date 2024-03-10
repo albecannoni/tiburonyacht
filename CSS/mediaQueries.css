@@ -65,116 +65,9 @@
         /* border: 2px solid greenyellow; */
     }
 
-    /**------------------------------ CHI SIAMO -------------------------------*/
-    #chiSiamo {
-        padding: 2vh 0;
-    }
+    
+    
 
-    .textFixed {
-        font-size: 1.3rem;
-    }
-
-    /**------------------------------ COSA FACCIAMO----------------------------*/
-
-    #cosaFacciamo ul li {
-        font-size: 1.3rem;
-    }
-
-    #cosaFacciamo {
-        padding: 2vh 0;
-    }
-
-    #cosaFacciamo ul {
-        width: 90%;
-        padding-bottom: 2vh;
-        margin-left: 4vw;
-    }
-
-    #cosaFacciamo ul li {
-        padding-top: 2vh;
-    }
-
-    /**----------------------------- CAROSELLI--------------------------*/
-    #galleria div img {
-        height: 40vh;
-
-    }
-
-    #galleria2 div img {
-        height: auto;
-    }
-
-
-    /**---------------------------- IL NOSTRO METODO ---------------------------------------------*/
-    #nostroMetodo {
-        padding: 2vh 0;
-    }
-
-    #nostroMetodo div:nth-child(2) {
-        margin-top: 2vh;
-    }
-
-    #nostroMetodo div div {
-        padding-top: 3vh;
-    }
-
-    #nostroMetodo div div p {
-        margin-left: 5vw;
-    }
-
-    .focus {
-        padding: 1vh 0;
-    }
-
-    #risultatoGarantito {
-        /* border: 2px red solid; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #risultatoGarantito p {
-        margin: 0px !important;
-        padding: 0px !important;
-        /* border:  1px solid white; */
-        font-size: x-large;
-    }
-
-    .affidabilità {
-        /* border:  2px solid red; */
-        margin-bottom: 8vh;
-        margin-left: 8vw;
-        width: 100%;
-    }
-
-    /**--------------------------- FORM -------------------------------------------------*/
-    #contatti {
-        padding: 2vh 0;
-
-    }
-
-    #contatti p {
-        width: 80%;
-        text-align: center;
-    }
-
-    #contatti p a {
-        font-size: 1.8rem;
-        color: rgb(9, 211, 9);
-    }
-
-    fieldset {
-        width: 100%;
-    }
-
-    label {
-        font-size: 1.3rem;
-    }
-
-    /**--------------------------- FOOTER -----------------------------------*/
-    .smallText {
-        font-size: 1.2rem;
-    }
 }
 
 
@@ -209,7 +102,7 @@
         background-image: url(/assets/images/logo2.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 1vh;
+        margin-top: 6vh;
         margin-left: 4vw;
 
     }
@@ -227,6 +120,7 @@
         padding-left: 0 !important;
         padding-right: 1vw !important;
         margin-right: 1vw;
+        
     }
 
     #header ul li {

@@ -1,21 +1,51 @@
-//*SCRIPT PER TIBURONYACHT.COM
-//variabii globali
-let modale = document.getElementById('Modale')
+//*SCRIPT APP
+//variabili globali
+let modale = document.getElementById('Modale');
+
+
+
 
 
 //*innesco init
 window.addEventListener('load', init);
 
 function init() {
-    eventHandler()
+    eventHandler()   
     // underConstruction();
 }
 
 function eventHandler() {
     console.log('in ascolto');
+
     let contatti = document.getElementById('contatti');
-    contatti.addEventListener('click', modalShow)
+    let bio = document.getElementById('Bio');
+    let experience = document.querySelector('#Experience');
+    let services = document.querySelector('#Services');
+    let partner = document.querySelector('#Partner');
+
+    contatti.addEventListener('click', modalShow);    
+    bio.addEventListener('click', bioGen);    
+    experience.addEventListener('click', experienceGen);
+    services.addEventListener('click', servicesGen);
+    partner.addEventListener('click', partnerGen);
 }
+
+//funzioni che generano i contenuti
+
+function bioGen() {
+    console.log('click biografia');
+};
+function experienceGen() {
+    console.log('click experience');
+};
+function servicesGen() {
+    console.log('click services');
+};
+function partnerGen() {
+    console.log('click partner');
+};
+
+
 //!----------------------------------------------------------------------------
 //*FINESTRA MODALE
 function modalShow() {
@@ -56,7 +86,7 @@ function fillWapp() {
     btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
     btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
 }
-
+//under costruction
 function underConstruction() {
     let body = document.querySelector('#Body');
     body.innerHTML = '';
@@ -65,14 +95,4 @@ function underConstruction() {
  </div>`;
     console.log('pagina in allestimento');
 }
-// function modalShow(){
-//     closeButton = document.querySelector('.closeButton')
-//     console.log('modalTest');
-//     Modale.setAttribute('class', 'showMod');
-//     closeButton.addEventListener('click', closeModal);
-// }
 
-// function closeModal(){
-//     console.log('test close modal');
-//     Modal.setAttribute('class', 'modale');
-// }
