@@ -1,14 +1,14 @@
 //*SCRIPT APP
+
 //variabili globali
 let modale = document.getElementById('Modale');
 
-
-
-
-
-//*innesco init
+//innesco init
 window.addEventListener('load', init);
 
+
+//!----------------------------------------------------------------------------
+//Preparazione all' utente
 function init() {
     eventHandler()   
     // underConstruction();
@@ -30,6 +30,7 @@ function eventHandler() {
     partner.addEventListener('click', partnerGen);
 }
 
+//!----------------------------------------------------------------------------
 //funzioni che generano i contenuti
 
 function bioGen() {
@@ -44,7 +45,6 @@ function servicesGen() {
 function partnerGen() {
     console.log('click partner');
 };
-
 
 //!----------------------------------------------------------------------------
 //*FINESTRA MODALE
