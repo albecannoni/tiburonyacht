@@ -86,7 +86,9 @@ function fillWapp() {
     btnHrefTel.setAttribute("href", "https://wa.me/393512537311");
     btnHrefTel2.setAttribute("href", "https://wa.me/393512537311");
 }
-//under costruction
+
+//!----------------------------------------------------------------------------
+//manutenzione
 function underConstruction() {
     let body = document.querySelector('#Body');
     body.innerHTML = '';
