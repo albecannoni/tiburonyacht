@@ -2,22 +2,20 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: 'Lato', sans-serif;
-  font-family: 'Oswald', sans-serif; */
   font-family: 'Open Sans', sans-serif;
 }
 
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  height: auto;
+  /* height: auto; */
   width: 100vw;
   background-color: var(--colore1);
 }
 
 body {
   background-color: transparent;
-  height: auto;
+  height: 100% !important;
   width: 100vw;
   z-index: 1;
 }
@@ -43,190 +41,7 @@ body {
 }
 
 
-/**--------------------------------------------- GENERICI ------------------------------------------*/
-.absolute {
-  position: absolute;
-}
 
-.mostra {
-  width: 100px;
-  height: 100px;
-  border: 2px solid red;
-  top: 40%;
-  z-index: 10000;
-}
-
-.svuota {
-  border: black 2px solid !important;
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  background-image: unset !important;
-}
-
-.filtroMare {
-  width: 100%;
-  height: 100%;
-  /* top: 100px; */
-  background-color: rgba(0, 100, 255, 0.25);
-  z-index: 65;
-}
-
-.filtroNave {
-  width: 100%;
-  height: 100%;
-  /* top: 100px; */
-  background-color: rgba(100, 95, 77, 0.05);
-  z-index:
-    65;
-}
-
-.filtroGradientGray {
-  background: var(--transpGray);
-}
-
-.filtroInvGradientGray {
-  background: var(--transpGrayInverted);
-}
-
-.nascondi {
-  display: none !important;
-}
-
-.centro {
-  margin: 0 auto;
-}
-
-.resetBootstrap {
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.centraturaFlex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.upperText {
-  text-transform: uppercase;
-}
-
-.giustificato {
-  text-align: start;
-
-}
-
-.segnaposto {
-  height: auto;
-  width: 100%;
-  border-bottom: 1px var(--colore4) dashed;
-  border-top: 1px var(--colore4) dashed;
-  padding: 20px 0;
-}
-
-.selfAlign {
-  display: flex;
-  align-self: center;
-}
-
-.ombra {
-  box-shadow: inset 0px 0px 4px 1px var(--colore4);
-}
-
-.evidenziato {
-  font-size: larger;
-  text-decoration: underline;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  margin: 0 auto;
-}
-
-.grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-}
-
-.marginTop {
-  margin-top: 15px;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.w-90 {
-  width: 90%;
-}
-
-
-.w-40 {
-  width: 40%;
-}
-
-.w-60 {
-  width: 60%;
-}
-
-.w-80 {
-  width: 80%;
-}
-
-.h-80 {
-  height: 90%;
-}
-
-.bold {
-  font-weight: 800;
-}
-
-.semiBold {
-  font-weight: 700;
-}
-
-.corsivo {
-  font-style: italic;
-}
-
-.smallText {
-  font-size: small;
-}
-
-.textFixed {
-  font-size: 0.9rem;
-}
-
-.glass {
-  background: rgba(195, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.blackGlass {
-  background: rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-.blackGlassMod {
-  background: rgba(0, 0, 0, 0.6);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-
-.navGlass {
-  background: rgba(0, 0, 0, 0.55);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(2.5px);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
 
 /**------------------------------------------------- NAVBAR ---------------------------------------------------*/
 nav {
@@ -306,17 +121,62 @@ nav {
 
 /**----------------------------------------------------POOL JAVASCRIPT--------------------------------------------------------------*/
 
-#Pool{
+#Pool {
   border: 4px greenyellow solid;
-  position: absolute;
+  position: relative;
   top: 4vh;
   min-height: 80vh;
+  max-height: fit-content;
   width: inherit;
-  
+  padding-bottom: 10vh;
+
 }
 
+/*** biografia */
 
-/**?modale*/
+.fototessera {
+
+  width: 40vw;
+  height: 15vh;
+  border: 3px red dotted;
+  background-color: whitesmoke;
+  margin-top: 5vh;
+}
+
+.testoBio {
+  width: 80vw;
+  height: auto;
+  border: #25D366 3px dotted;
+  margin-top: 5vh;
+}
+
+/**------------------------------------ MAIN ------------------------------------*/
+#fondo {
+  position: absolute;
+  top: 5.7vh;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+/**------------------------------------------ FOOTER -----------------------------------------------*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: var(--colore1);
+  width: 100vw;
+  border: green 3px solid;
+  z-index: 20001;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+/**?--------------------------------------modale*/
 
 .contatti {
   color: var(--secondario);
@@ -375,7 +235,7 @@ nav {
   color: red;
   border-radius: 5%;
 }
- 
+
 
 .modale div {
   width: 100%;
@@ -396,181 +256,7 @@ nav {
   font-size: x-large;
 }
 
-#formModale {
-  /* background-color: #25D366!important; */
 
-}
-
-/**------------------------------------ MAIN ------------------------------------*/
-#fondo {
-  position: absolute;
-  top: 5.7vh;
-  height: auto;
-  width: 100vw;
-  z-index: 0;
-}
-
-main {
-  
-  z-index: 1;
-  padding-bottom: 10vh;
-  margin-bottom: 10vh;
-}
-
-#sectionBox {
-  position: relative;
-  width: auto;
-  height: auto;
-  margin: 10px auto 20px auto;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* display: none; */
-}
-
-section {
-  position: relative;
-  z-index: 101;
-  color: white;
-  margin: 5vh auto 5vw auto;
-  width: 80%;
-  padding: 0;
-  border-radius: 5%;
-}
-
-section p {
-  position: relative;
-  top: 15%;
-  width: 100%;
-}
-
-
-
-/**------------------------------------ CHI SIAMO -------------------------------*/
-#chiSiamo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: auto;
-}
-
-#headLineBox {
-  position: absolute;
-  top: 0;
-}
-
-.headLine {
-  z-index: 101;
-  /* border: yellow 2px solid; */
-  text-align: center;
-  padding-top: 8px;
-}
-
-/**-------------------------------------------- CAROSELLO --------------------------------------------*/
-
-#galleria {
-  background-color: transparent;
-}
-
-#galleria div {
-  border-radius: 5%;
-}
-
-#galleria div img {
-  height: 24vh;
-}
-
-/*?-----clienti------*/
-#galleria2 {
-  background-color: transparent;
-}
-
-#galleria2 div {
-  border-radius: 5% 5% 5% 5% / 0% 0% 5% 5%;
-  ;
-}
-
-#galleria2 div img {
-  height: 24vh;
-}
-
-/**-------------------------------------------- COSA FACCIAMO ---------------------------------------------------------*/
-#cosaFacciamo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#cosaFacciamo ul li {
-  padding-top: 1vh;
-}
-
-/**-------------------------------------------- IL NOSTRO METODO---------------------------------------------*/
-.bordoMare {
-  border: rgba(0, 100, 255, 0.25) 3px solid
-}
-
-#nostroMetodo div span h4 {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  margin-left: 6vw;
-}
-
-#nostroMetodo div p {
-  margin-left: 3vw;
-}
-
-.focus {
-  margin: 0 auto;
-}
-
-.icon {
-  height: auto;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: white 1px solid;
-}
-
-.icon div i {
-  color: var(--colore2);
-  margin: 0 auto;
-}
-
-#risultatoGarantito {
-  /* border: 2px red solid; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#risultatoGarantito p {
-  margin: 0px !important;
-  padding: 2vh 0px 3vh 0px !important;
-  /* border:  1px solid white; */
-}
-
-.affidabilità {
-  /* border:  2px solid red; */
-  margin-left: -2vw;
-  width: 75%;
-}
-
-/**-------------------------------------- PARTNER -----------------------------------------*/
-
-.partnerLogo {
-  height: 70px;
-  width: 65%;
-  background-color: var(--colore1);
-  margin: 8px 8px 8px 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 /**------------------------------------------- FORM -------------------------------------------------*/
 #contatti {
@@ -586,10 +272,7 @@ form, #contatti p {
   /* border: #25D366 1px solid; */
 }
 
-.centratura {
-  /* border: 1px red solid; */
-  text-align: center;
-}
+
 
 form fieldset {
   /* border: #25D366 1px solid; */
@@ -606,36 +289,6 @@ fieldset label {
   justify-content: center;
   text-align: center;
   margin: 1vh auto;
-}
-
-/**------------------------------------------ FOOTER -----------------------------------------------*/
-footer {
-  z-index: 10001;
-  background-color: var(--colore1);
-  color: wheat;
-  position: absolute;
-  bottom: 0;
-  height: 10vh;
-}
-
-footer div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* border: #25D366 solid 2px; */
-}
-
-#footer {
-  /* border: 3px solid greenyellow; */
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-}
-
-#footer div div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /** ------------------------------------------ BOTTONI ------------------------------------------------*/
@@ -685,18 +338,169 @@ footer div {
   min-width: 150px;
 }
 
-.boxNave {
+/**--------------------------------------------- GENERICI ------------------------------------------*/
+.absolute {
   position: absolute;
-  top: -36vh!important;
-  left: 10vh;
-  display: flex;
-  scale: 0.3;  
-  z-index: 200000;
-  rotate: 90deg;
-  height: 60vh;
-  width: 10vw;
-       
-        
- 
 }
 
+.mostra {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  top: 40%;
+  z-index: 10000;
+}
+
+.svuota {
+  border: black 2px solid !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  background-image: unset !important;
+}
+
+.filtroMare {
+  width: 100%;
+  height: 100%;
+  /* top: 100px; */
+  background-color: rgba(0, 100, 255, 0.25);
+  z-index: 65;
+}
+
+.filtroNave {
+  width: 100%;
+  height: 100%;
+  /* top: 100px; */
+  background-color: rgba(100, 95, 77, 0.05);
+  z-index:
+    65;
+}
+
+.nascondi {
+  display: none !important;
+}
+
+.centro {
+  margin: 0 auto;
+}
+
+.resetBootstrap {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.centraturaFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperText {
+  text-transform: uppercase;
+}
+
+.giustificato {
+  text-align: start;
+}
+
+.selfAlign {
+  display: flex;
+  align-self: center;
+}
+
+.ombra {
+  box-shadow: inset 0px 0px 4px 1px var(--colore4);
+}
+
+.evidenziato {
+  font-size: larger;
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 0 auto;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.marginTop {
+  margin-top: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-90 {
+  width: 90%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.h-80 {
+  height: 90%;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.semiBold {
+  font-weight: 700;
+}
+
+.corsivo {
+  font-style: italic;
+}
+
+.smallText {
+  font-size: small;
+}
+
+.textFixed {
+  font-size: 0.9rem;
+}
+
+.glass {
+  background: rgba(195, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.blackGlass {
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.blackGlassMod {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.navGlass {
+  background: rgba(0, 0, 0, 0.55);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
