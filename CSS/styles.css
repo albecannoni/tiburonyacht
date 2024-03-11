@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 350;
 }
 
 html {
@@ -90,16 +91,15 @@ nav {
   padding-right: 2.5vw;
   width: 100%;
   color: var(--colore4);
-
 }
 
 .nav-link {
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   height: 100%;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.2em;
   width: 33vw;
 }
@@ -112,13 +112,7 @@ nav {
   -webkit-box-shadow: 0 -13px 14.5px -18px #dddddd;
   -moz-box-shadow: 0 -13px 14.5px -18px #dddddd;
   box-shadow: 0 -13px 14.5px -18px #dddddd;
-
 }
-
-
-
-
-
 /**------------------------------------ MAIN ------------------------------------*/
 .page-container {
   position: relative;
@@ -128,36 +122,35 @@ nav {
 /**----------------------------------------------------POOL JAVASCRIPT--------------------------------------------------------------*/
 
 #Pool {
-  border: 4px greenyellow solid;
+  /* border: 4px greenyellow solid; */
   position: relative;
   top: 0vh;
   min-height: 100vh;
   max-height: fit-content;
   width: inherit;
   padding-top: 10vh;
-  padding-bottom: 10vh;
-
+  padding-bottom: 92vh;
 }
 
 /**------------------------------------------ FOOTER -----------------------------------------------*/
 footer {
-  background-color: yellow;
+  background-color: grey;
   width: 100vw;
-  height: 10vh;
-  border: green 3px solid;
-  z-index: 20001;
+  min-height: 86vh;
+  /* border: green 3px solid; */
+  z-index: 2;
   position: absolute;
   bottom: 0;
-  
+  box-shadow: 0px 0px 5px 1px rgba(10, 31, 59, 0.6);  
 }
 
 /***---------------------------------------- biografia */
 
 .fototessera {
 
-  width: 40vw;
-  height: 15vh;
-  border: 3px red dotted;
+  width: 80vw;
+  height: 25vh;
+  /* border: 1px grey solid; */
   background-color: whitesmoke;
   margin-top: 5vh;
 }
@@ -165,9 +158,21 @@ footer {
 .testoBio {
   width: 80vw;
   height: auto;
-  border: #25D366 3px dotted;
+  /* border: #25D366 3px dotted; */
+  margin-top: 5vh;
+  color: black;
+  font-size: larger;
+}
+
+.boxService {
+  width: 80vw;
+  height: 25vh;
+  /* border: 1px grey solid; */
+  background-color: whitesmoke;
   margin-top: 5vh;
 }
+
+
 
 /**?--------------------------------------modale-----------------------------------------------------*/
 
@@ -183,7 +188,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .contatti a {
@@ -195,8 +199,6 @@ footer {
   width: 78vw;
   height: 80vh;
   z-index: 102;
-  /* background-color: var(); */
-  /* border: red 2px solid !important; */
   position: fixed;
   top: 12vh;
   right: 11vw;
@@ -214,8 +216,6 @@ footer {
   width: 78vw;
   height: 80vh;
   z-index: 102;
-  /* background-color: var(); */
-  /* border: red 2px solid !important; */
   position: fixed;
   top: 12vh;
   right: 9vw;
@@ -242,15 +242,11 @@ footer {
 }
 
 .closeButton {
-  /* color: red; */
   position: absolute;
   top: 18px;
   right: 24px;
   font-size: x-large;
 }
-
-
-
 /**------------------------------------------- FORM -------------------------------------------------*/
 #contatti {
   padding: 2vh auto;
@@ -262,11 +258,9 @@ form, #contatti p {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* border: #25D366 1px solid; */
 }
 
 form fieldset {
-  /* border: #25D366 1px solid; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,17 +302,6 @@ fieldset label {
   padding: 2px;
   box-shadow: var(--sfumaturaInterna);
 }
-
-/* #telButton {
-  position: fixed;
-  bottom: 10vh;
-  right: 1vw;
-  border-radius: 50%;
-  z-index: 20001;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 #telButton i {
   color: #25D366;
@@ -452,7 +435,7 @@ fieldset label {
 }
 
 .semiBold {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .corsivo {
