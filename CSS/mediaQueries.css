@@ -65,116 +65,9 @@
         /* border: 2px solid greenyellow; */
     }
 
-    /**------------------------------ CHI SIAMO -------------------------------*/
-    #chiSiamo {
-        padding: 2vh 0;
-    }
+    
+    
 
-    .textFixed {
-        font-size: 1.3rem;
-    }
-
-    /**------------------------------ COSA FACCIAMO----------------------------*/
-
-    #cosaFacciamo ul li {
-        font-size: 1.3rem;
-    }
-
-    #cosaFacciamo {
-        padding: 2vh 0;
-    }
-
-    #cosaFacciamo ul {
-        width: 90%;
-        padding-bottom: 2vh;
-        margin-left: 4vw;
-    }
-
-    #cosaFacciamo ul li {
-        padding-top: 2vh;
-    }
-
-    /**----------------------------- CAROSELLI--------------------------*/
-    #galleria div img {
-        height: 40vh;
-
-    }
-
-    #galleria2 div img {
-        height: auto;
-    }
-
-
-    /**---------------------------- IL NOSTRO METODO ---------------------------------------------*/
-    #nostroMetodo {
-        padding: 2vh 0;
-    }
-
-    #nostroMetodo div:nth-child(2) {
-        margin-top: 2vh;
-    }
-
-    #nostroMetodo div div {
-        padding-top: 3vh;
-    }
-
-    #nostroMetodo div div p {
-        margin-left: 5vw;
-    }
-
-    .focus {
-        padding: 1vh 0;
-    }
-
-    #risultatoGarantito {
-        /* border: 2px red solid; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #risultatoGarantito p {
-        margin: 0px !important;
-        padding: 0px !important;
-        /* border:  1px solid white; */
-        font-size: x-large;
-    }
-
-    .affidabilità {
-        /* border:  2px solid red; */
-        margin-bottom: 8vh;
-        margin-left: 8vw;
-        width: 100%;
-    }
-
-    /**--------------------------- FORM -------------------------------------------------*/
-    #contatti {
-        padding: 2vh 0;
-
-    }
-
-    #contatti p {
-        width: 80%;
-        text-align: center;
-    }
-
-    #contatti p a {
-        font-size: 1.8rem;
-        color: rgb(9, 211, 9);
-    }
-
-    fieldset {
-        width: 100%;
-    }
-
-    label {
-        font-size: 1.3rem;
-    }
-
-    /**--------------------------- FOOTER -----------------------------------*/
-    .smallText {
-        font-size: 1.2rem;
-    }
 }
 
 
@@ -182,6 +75,11 @@
 
 /*?MEDIA QUERIES LAPTOP*/
 @media screen and (min-width: 1080px) {
+
+    /*?--------TIPOGRAFIA---------*/
+    #BioText{
+        font-size: 16px;
+    }
 
     /**---------------------------  NAVBAR -----------------------------------*/
     .navGlass {
@@ -209,7 +107,7 @@
         background-image: url(/assets/images/logo2.png);
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 1vh;
+        margin-top: 6vh;
         margin-left: 4vw;
 
     }
@@ -227,6 +125,7 @@
         padding-left: 0 !important;
         padding-right: 1vw !important;
         margin-right: 1vw;
+        
     }
 
     #header ul li {
@@ -261,226 +160,23 @@
         height: 60vh;
         width: 40%;
     }
+/*** biografia */
 
-    #primaRow {
-        display: flex;
-        flex-direction: row;
+.fototessera{
+
+    width: 33vw;
+    height: 20vh;
+    border: 3px red dotted;
+    background-color: whitesmoke;
+    margin-top: 10vh;
     }
-
-    #secondaRow {
-        display: flex;
-        flex-direction: row;
-        height: 85vh;
-    }
-
-    #secondaRow section {
-        height: 90%;
-    }
-
-    #terzaRow {
-        display: flex;
-        flex-direction: row;
-        /* border: 2px solid rgb(11, 195, 11); */
-        width: 100%;
-        height: auto;
-    }
-
-    /**------------------------- CHI SIAMO -------------------------------*/
-    #chiSiamo {
-        padding: 2vh 0;
-    }
-
-    .textFixed {
-        font-size: 1.4rem;
-    }
-
-    #intro {
-        /* border: 2px red solid; */
-        position: relative;
-        bottom: 8%;
-        left: 10px;
-    }
-
-    /**------------------------- CAROSELLO --------------------------------------------*/
-    #galleria {
-        background-color: transparent;
-        width: 46vw;
-    }
-
-    #galleria div img {
-        height: 60vh;
-        padding: 10px 2vw;
-        border-radius: 5% 5% 5% 5% / 3% 3% 3% 3%;
-
-    }
-
-    /**------------------------- COSA FACCIAMO --------------------------------------*/
-    #cosaFacciamo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #cosaFacciamo div ul li {
-        font-size: 1.14rem;
-        width: 100%;
-        /* border: 2px white solid; */
-
-    }
-
-    #listaServizi {
-        /* border: 2px solid yellow; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 8%;
-        /* border: 2px solid violet; */
-
-    }
-
-    #listaServizi ul {
-        /* border: 2px solid violet; */
-        padding-top: 8px;
-        width: 100%;
-        padding: 0;
-        margin: 0px 0px;
-        position: relative;
-        top: 8vh;
-
-    }
-
-    #listaServizi ul li {
-        /* border: 2px solid violet; */
-        width: 100%;
-        padding: 0;
-        margin: 0 0;
-        margin-left: 20px;
-    }
-
-    #cosaFacciamo div h2 {
-        /* margin-top: 0%; */
-        /* border: 2px solid brown; */
-        position: absolute;
-        top: 4vh;
-
-        width: 100%;
-
-    }
-
-    #cosaFacciamo ul {
-        width: 80%;
-        margin: 0;
-        padding-bottom: 5vh;
-    }
-
-    #cosaFacciamo ul li {
-        font-size: 1.3rem;
-        padding-top: 2vh;
-    }
-
-    #cosaFacciamo {
-        /* padding: 2vh 0; */
-    }
-
-    /**-------------------------- IL NOSTRO METODO---------------------------------------------*/
-    #nostroMetodo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #nostroMetodo div h2 {
-        margin-top: 5vh;
-    }
-
-    #nostroMetodo div {
-        margin: 0;
-        padding: 0;
-        padding-bottom: 2vh;
-    }
-
-    #nostroMetodo div span h4 {
-        margin-left: 1vw;
-        margin-top: 0;
-        margin-bottom: 0;
-        width: 100%;
-    }
-
-    #nostroMetodo div p {
-        margin-left: 1vw;
-        margin-bottom: 3vh;
-    }
-
-    .focus {
-        margin: 0 auto;
-        padding-top: 0;
-    }
-
-    .icon {
-        height: auto;
-        width: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: white 1px solid;
-    }
-
-    .icon div i {
-        color: var(--colore2);
-        margin: 0 auto;
-    }
-
-    .textLaptop {
-        position: absolute;
-        width: 100%;
-        /* padding-top: 8vh; */
-        font-size: 1.4rem;
-        text-align: center;
-        /* border: 2px solid red; */
-        left: -2vh;
-        bottom: 0px;
-        top: 90%
-    }
-
-    #risultatoGarantito {
-        /* border: 2px red solid; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0px;
-    }
-
-    #risultatoGarantito p {
-        width: 100%;
-        height: 15%;
-        margin: inherit !important;
-        padding: 0px 0px !important;
-        /* border:  3px solid rgb(184, 21, 21); */
-    }
-
-    .affidabilità {
-        /* border:  2px solid red; */
-        margin-left: 8vw;
-        width: 75%;
-    }
-
-    /**-------------------------------------- CAROSELLO CLIENTI ------------------------------*/
-    /*?-----clienti------*/
-    #partner {
-        background-color: transparent;
-        /* width: 36%; */
-    }
-
-    #galleria2 div img {
-        height: 50vh;
-        padding: 10px 2vw;
-        border-radius: 5% 5% 5% 5% / 3% 3% 3% 3%;
+    
+    .testoBio{
+      width:  50vw;
+      height: auto;
+      border: #25D366 3px dotted;
+      margin-top: 10vh;
+      font-size: 1.4rem;
     }
 
     /**--------------------------- FORM -------------------------------------------------*/
